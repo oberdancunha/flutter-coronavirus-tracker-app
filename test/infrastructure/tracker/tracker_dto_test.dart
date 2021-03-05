@@ -1,0 +1,76 @@
+import 'package:coronavirusTrackerApp/domain/tracker/contamination.dart';
+import 'package:coronavirusTrackerApp/domain/tracker/location.dart';
+import 'package:coronavirusTrackerApp/domain/tracker/tracker.dart';
+import 'package:coronavirusTrackerApp/infrastructure/tracker/tracker_dto.dart';
+import 'package:flutter_test/flutter_test.dart';
+
+import '../../data/json_reader.dart';
+
+void main() {
+  group('Tracker DTO | ', () {
+    Tracker? tracker;
+    Map<String, dynamic>? trackerDataMockedJson;
+
+    setUp(() {
+      trackerDataMockedJson = jsonReader('tracker_data_mocked.json');
+      tracker = TrackerDto.fromApi(trackerDataMockedJson!).toDomain();
+    });
+
+    test(
+      'Should be a Tracker entity',
+      () {
+        expect(tracker, isA<Tracker>());
+      },
+    );
+  });
+
+  group('Contamination DTO | ', () {
+    Contamination? contamination;
+
+    setUp(() {
+      contamination = ContaminationDto(
+        confirmed: 114442646,
+        deaths: 2538808,
+        recovered: 14076469,
+        lastUpdated: '2021-03-02T16:04:33.535436Z',
+      ).toDomain();
+    });
+
+    test(
+      'Should be a Contamination entity',
+      () {
+        expect(contamination, isA<Contamination>());
+      },
+    );
+  });
+
+  group('Location DTO | ', () {
+    Location? location;
+
+    setUp(() {
+      location = LocationDto(
+        id: 0,
+        country: 'Afghanistan',
+        countryCode: 'AF',
+        countryPopulation: 37172386,
+        latitude: double.tryParse('33.93911')!,
+        longitude: double.tryParse('67.709953')!,
+        contaminations: [
+          ContaminationDto(
+            confirmed: 55733,
+            deaths: 2444,
+            recovered: 49344,
+            lastUpdated: '2021-03-02T16:04:33.535436Z',
+          ),
+        ],
+      ).toDomain();
+    });
+
+    test(
+      'Should be a Location entity',
+      () {
+        expect(location, isA<Location>());
+      },
+    );
+  });
+}
