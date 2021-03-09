@@ -1,9 +1,9 @@
-import 'package:coronavirusTrackerApp/core/exceptions/server_exception.dart';
-import 'package:coronavirusTrackerApp/core/network/i_network_info.dart';
-import 'package:coronavirusTrackerApp/domain/core/failures.dart';
-import 'package:coronavirusTrackerApp/domain/tracker/i_tracker_data_source.dart';
-import 'package:coronavirusTrackerApp/domain/tracker/tracker.dart';
-import 'package:coronavirusTrackerApp/infrastructure/tracker/tracker_repository.dart';
+import 'package:coronavirus_tracker_app/core/exceptions/server_exception.dart';
+import 'package:coronavirus_tracker_app/core/network/i_network_info.dart';
+import 'package:coronavirus_tracker_app/domain/core/failures.dart';
+import 'package:coronavirus_tracker_app/domain/tracker/i_tracker_data_source.dart';
+import 'package:coronavirus_tracker_app/domain/tracker/tracker.dart';
+import 'package:coronavirus_tracker_app/infrastructure/tracker/tracker_repository.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';

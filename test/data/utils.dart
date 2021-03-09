@@ -1,6 +1,6 @@
-import 'package:coronavirusTrackerApp/domain/tracker/contamination.dart';
-import 'package:coronavirusTrackerApp/domain/tracker/location.dart';
-import 'package:coronavirusTrackerApp/domain/tracker/tracker.dart';
+import 'package:coronavirus_tracker_app/domain/tracker/contamination.dart';
+import 'package:coronavirus_tracker_app/domain/tracker/location.dart';
+import 'package:coronavirus_tracker_app/domain/tracker/tracker.dart';
 import 'package:kt_dart/kt.dart';
 
 Tracker getTrackerDataEntity() => Tracker(
@@ -33,7 +33,7 @@ Tracker getTrackerDataEntity() => Tracker(
           countryCode: 'CA',
           countryPopulation: 37058856,
           latitude: 64.2823,
-          longitude: -135.0,
+          longitude: -135,
           contaminations: KtList.of(
             Contamination(
               confirmed: 875388,

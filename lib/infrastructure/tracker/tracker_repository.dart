@@ -1,9 +1,9 @@
-import 'package:coronavirusTrackerApp/core/exceptions/server_exception.dart';
-import 'package:coronavirusTrackerApp/domain/tracker/i_tracker_data_source.dart';
 import 'package:dartz/dartz.dart';
 
+import '../../core/exceptions/server_exception.dart';
 import '../../core/network/i_network_info.dart';
 import '../../domain/core/failures.dart';
+import '../../domain/tracker/i_tracker_data_source.dart';
 import '../../domain/tracker/i_tracker_repository.dart';
 import '../../domain/tracker/tracker.dart';
 

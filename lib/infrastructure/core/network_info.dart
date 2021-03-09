@@ -9,7 +9,7 @@ class NetworkInfo implements INetworkInfo {
 
   @override
   Future<bool> get isConnected async {
-    final connectivityResult = await (connectivity.checkConnectivity());
+    final connectivityResult = await connectivity.checkConnectivity();
     final isConnected = connectivityResult != ConnectivityResult.none;
 
     return isConnected;

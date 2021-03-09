@@ -1,6 +1,6 @@
-import 'package:coronavirusTrackerApp/core/exceptions/server_exception.dart';
-import 'package:coronavirusTrackerApp/domain/tracker/tracker.dart';
-import 'package:coronavirusTrackerApp/infrastructure/tracker/tracker_data_source.dart';
+import 'package:coronavirus_tracker_app/core/exceptions/server_exception.dart';
+import 'package:coronavirus_tracker_app/domain/tracker/tracker.dart';
+import 'package:coronavirus_tracker_app/infrastructure/tracker/tracker_data_source.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart';
 import 'package:matcher/matcher.dart';
@@ -97,8 +97,8 @@ void main() {
           setUpMockClientFailure404();
           final dataSourceCall = trackerDataSource.get;
           expect(
-            () => dataSourceCall(),
-            throwsA(TypeMatcher<ServerException>()),
+            dataSourceCall,
+            throwsA(const TypeMatcher<ServerException>()),
           );
         },
       );

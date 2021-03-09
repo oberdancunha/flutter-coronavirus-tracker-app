@@ -1,5 +1,5 @@
 import 'package:connectivity/connectivity.dart';
-import 'package:coronavirusTrackerApp/infrastructure/core/network_info.dart';
+import 'package:coronavirus_tracker_app/infrastructure/core/network_info.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 

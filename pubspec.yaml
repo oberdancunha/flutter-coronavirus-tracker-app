@@ -1,4 +1,4 @@
-name: coronavirusTrackerApp
+name: coronavirus_tracker_app
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -26,7 +26,7 @@ dependencies:
   connectivity: ^3.0.2
   cupertino_icons: ^1.0.0
   dartz: ^0.10.0-nullsafety.1
-  freezed_annotation: ^0.13.0-nullsafety.0
+  freezed_annotation: ^0.14.0
   http: ^0.13.0
   kt_dart: ^0.9.0-nullsafety.0
 
