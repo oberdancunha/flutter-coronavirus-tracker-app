@@ -22,7 +22,7 @@ class TrackerRepository implements ITrackerRepository {
       try {
         final trackerResult = await trackerDataSource.get();
 
-        return (right(trackerResult!));
+        return right(trackerResult!);
       } on ServerException {
         return left(Failure.serverError());
       }

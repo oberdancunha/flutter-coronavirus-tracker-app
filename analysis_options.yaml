@@ -1,4 +1,4 @@
-include: package:pedantic/analysis_options.yaml
+include: package:lint/analysis_options.yaml
 
 analyzer:
   plugins:
@@ -8,6 +8,7 @@ analyzer:
     missing_required_param: error
     must_be_immutable: error
     sort_unnamed_constructors_first: ignore
+    avoid_function_literals_in_foreach_calls: ignore
 
 dart_code_metrics:
   anti-patterns:

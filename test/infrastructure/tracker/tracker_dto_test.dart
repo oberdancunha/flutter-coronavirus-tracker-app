@@ -5,21 +5,31 @@ import 'package:coronavirusTrackerApp/infrastructure/tracker/tracker_dto.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import '../../data/json_reader.dart';
+import '../../data/utils.dart';
 
 void main() {
   group('Tracker DTO | ', () {
     Tracker? tracker;
     Map<String, dynamic>? trackerDataMockedJson;
+    Tracker? trackerDataEntityMocked;
 
     setUp(() {
       trackerDataMockedJson = jsonReader('tracker_data_mocked.json');
       tracker = TrackerDto.fromApi(trackerDataMockedJson!).toDomain();
+      trackerDataEntityMocked = getTrackerDataEntity();
     });
 
     test(
       'Should be a Tracker entity',
       () {
         expect(tracker, isA<Tracker>());
+      },
+    );
+
+    test(
+      'Should normalize data according to country repetition, where data for each province are detailed ',
+      () {
+        expect(tracker, equals(trackerDataEntityMocked));
       },
     );
   });

@@ -20,8 +20,8 @@ void main() {
   setUp(() {
     mockClient = MockClient();
     trackerDataSource = TrackerDataSource(mockClient);
-    trackerDataJsonMocked = jsonReaderToString('brazil_tracker_data_mocked.json');
-    trackerDataEntityMocked = getTrackerEntity();
+    trackerDataJsonMocked = jsonReaderToString('tracker_data_mocked.json');
+    trackerDataEntityMocked = getTrackerDataEntity();
   });
 
   group('Success request | ', () {

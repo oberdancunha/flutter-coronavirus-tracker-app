@@ -27,7 +27,7 @@ void main() {
       networkInfo: mockNetworkInfo!,
       trackerDataSource: mockTrackerDataSource!,
     );
-    trackerDataEntityMocked = getTrackerEntity();
+    trackerDataEntityMocked = getTrackerDataEntity();
   });
 
   group('Device is NOT connected | ', () {
