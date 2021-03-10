@@ -75,7 +75,7 @@ void main() {
   });
 
   group(
-    'Request failure',
+    'Request failure | ',
     () {
       void setUpMockClientFailure404() {
         when(mockClient!).calls(#get).withArgs(
