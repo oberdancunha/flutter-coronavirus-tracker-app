@@ -1,12 +1,13 @@
+import 'package:dartz/dartz.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:mocktail/mocktail.dart';
+
 import 'package:coronavirus_tracker_app/application/tracker/tracker_application.dart';
 import 'package:coronavirus_tracker_app/core/providers/tracker_provider.dart';
 import 'package:coronavirus_tracker_app/domain/core/failures.dart';
 import 'package:coronavirus_tracker_app/domain/tracker/i_tracker_repository.dart';
 import 'package:coronavirus_tracker_app/domain/tracker/tracker.dart';
-import 'package:dartz/dartz.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:mocktail/mocktail.dart';
 
 import '../../data/utils.dart';
 

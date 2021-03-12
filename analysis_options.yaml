@@ -3,6 +3,7 @@ include: package:lint/analysis_options.yaml
 analyzer:
   exclude:
     - .fvm/**
+    - ios/.symlinks/**
     - lib/**.g.dart
     - lib/**.freezed.dart
   plugins:
@@ -21,7 +22,7 @@ dart_code_metrics:
     - long-parameter-list
   metrics:
     cyclomatic-complexity: 20
-    lines-of-executable-code: 50
+    lines-of-executable-code: 100
     number-of-arguments: 4
     maximum-nesting: 5
     root-folder: ./
@@ -79,7 +80,6 @@ linter:
     - comment_references
     - constant_identifier_names
     - control_flow_in_finally
-    - diagnostic_describe_all_properties
     - directives_ordering
     - do_not_use_environment
     - empty_statements
@@ -151,7 +151,6 @@ linter:
     - unsafe_html
     - use_full_hex_values_for_flutter_colors
     - use_is_even_rather_than_modulo
-    - use_key_in_widget_constructors
     - use_late_for_private_fields_and_variables
     - use_raw_strings
     - use_setters_to_change_properties

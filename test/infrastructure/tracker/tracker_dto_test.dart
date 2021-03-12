@@ -1,8 +1,9 @@
+import 'package:flutter_test/flutter_test.dart';
+
 import 'package:coronavirus_tracker_app/domain/tracker/contamination.dart';
 import 'package:coronavirus_tracker_app/domain/tracker/location.dart';
 import 'package:coronavirus_tracker_app/domain/tracker/tracker.dart';
 import 'package:coronavirus_tracker_app/infrastructure/tracker/tracker_dto.dart';
-import 'package:flutter_test/flutter_test.dart';
 
 import '../../data/json_reader.dart';
 import '../../data/utils.dart';

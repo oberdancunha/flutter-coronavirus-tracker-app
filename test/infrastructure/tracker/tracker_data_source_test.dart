@@ -1,10 +1,11 @@
-import 'package:coronavirus_tracker_app/core/exceptions/server_exception.dart';
-import 'package:coronavirus_tracker_app/domain/tracker/tracker.dart';
-import 'package:coronavirus_tracker_app/infrastructure/tracker/tracker_data_source.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart';
 import 'package:matcher/matcher.dart';
 import 'package:mocktail/mocktail.dart';
+
+import 'package:coronavirus_tracker_app/core/exceptions/server_exception.dart';
+import 'package:coronavirus_tracker_app/domain/tracker/tracker.dart';
+import 'package:coronavirus_tracker_app/infrastructure/tracker/tracker_data_source.dart';
 
 import '../../data/json_reader.dart';
 import '../../data/utils.dart';
