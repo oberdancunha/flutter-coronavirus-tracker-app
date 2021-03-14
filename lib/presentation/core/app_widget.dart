@@ -8,8 +8,12 @@ class AppWidget extends StatelessWidget {
         title: 'Coronavirus tracker app',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          primarySwatch: Colors.blue,
-          visualDensity: VisualDensity.adaptivePlatformDensity,
+          fontFamily: 'PTSans',
+          textTheme: const TextTheme(
+            bodyText1: TextStyle(
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
         home: AppPage(),
       );

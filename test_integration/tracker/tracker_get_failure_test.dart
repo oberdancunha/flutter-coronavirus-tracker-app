@@ -1,5 +1,4 @@
 //@dart=2.8
-import 'package:coronavirus_tracker_app/presentation/splash/splash_page.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -15,6 +14,7 @@ import 'package:coronavirus_tracker_app/domain/tracker/tracker.dart';
 import 'package:coronavirus_tracker_app/presentation/core/app_page.dart';
 import 'package:coronavirus_tracker_app/presentation/core/app_widget.dart';
 import 'package:coronavirus_tracker_app/presentation/core/failure_page.dart';
+import 'package:coronavirus_tracker_app/presentation/splash/splash_page.dart';
 
 class MockTrackerRepository extends Mock implements ITrackerRepository {}
 

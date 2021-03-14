@@ -5,6 +5,7 @@ import '../../application/tracker/tracker_application.dart';
 import '../../domain/core/failures.dart';
 import '../splash/splash_page.dart';
 import 'failure_page.dart';
+import 'main_page.dart';
 
 class AppPage extends StatelessWidget {
   @override
@@ -14,7 +15,7 @@ class AppPage extends StatelessWidget {
             final response = watch(trackerApplicationGetProvider);
 
             return response.map(
-              data: (_) => Container(),
+              data: (_) => MainPage(tracker: _.value),
               loading: (_) => SplashPage(),
               error: (_) {
                 final failure = _.error as Failure;
