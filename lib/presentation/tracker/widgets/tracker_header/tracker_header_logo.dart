@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
 
 class TrackerHeaderLogo extends StatelessWidget {
+  final logo = 'assets/images/coronavirus.png';
+
   @override
   Widget build(BuildContext context) => Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
+        children: [
           Image(
+            key: Key(logo),
             width: 93,
             height: 93,
-            image: AssetImage('assets/images/coronavirus.png'),
+            image: AssetImage(logo),
           ),
-          Text(
+          const Text(
             'Coronavirus Tracker',
             style: TextStyle(
               color: Colors.white,

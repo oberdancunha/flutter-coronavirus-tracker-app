@@ -1,6 +1,7 @@
 //@dart=2.8
 
 import 'package:dartz/dartz.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
@@ -18,6 +19,12 @@ import 'package:coronavirus_tracker_app/presentation/core/app_widget.dart';
 import 'package:coronavirus_tracker_app/presentation/core/main_page.dart';
 import 'package:coronavirus_tracker_app/presentation/splash/splash_page.dart';
 import 'package:coronavirus_tracker_app/presentation/tracker/tracker_page.dart';
+import 'package:coronavirus_tracker_app/presentation/tracker/widgets/tracker_body/tracker_body.dart';
+import 'package:coronavirus_tracker_app/presentation/tracker/widgets/tracker_body/tracker_body_pie.dart';
+import 'package:coronavirus_tracker_app/presentation/tracker/widgets/tracker_body/tracker_body_text.dart';
+import 'package:coronavirus_tracker_app/presentation/tracker/widgets/tracker_header/tracker_header.dart';
+import 'package:coronavirus_tracker_app/presentation/tracker/widgets/tracker_header/tracker_header_data.dart';
+import 'package:coronavirus_tracker_app/presentation/tracker/widgets/tracker_header/tracker_header_logo.dart';
 
 class MockTrackerRepository extends Mock implements ITrackerRepository {}
 
@@ -97,6 +104,21 @@ void main() {
       await tester.pump();
       await expectLater(find.byType(MainPage), findsOneWidget);
       await expectLater(find.byType(TrackerPage), findsOneWidget);
+      await expectLater(find.byType(TrackerHeader), findsOneWidget);
+      await expectLater(find.byType(TrackerHeaderData), findsOneWidget);
+      await expectLater(find.byType(TrackerHeaderLogo), findsOneWidget);
+      await expectLater(find.byType(TrackerBody), findsOneWidget);
+      await expectLater(find.byType(TrackerBodyText), findsOneWidget);
+      await expectLater(find.byType(TrackerBodyPie), findsNothing);
+      await expectLater(find.text('Total of cases'), findsOneWidget);
+      await expectLater(find.text('Last update March 02, 2021, 16:04'), findsOneWidget);
+      await expectLater(find.text('114,442,646'), findsOneWidget);
+      await expectLater(find.text('Coronavirus Tracker'), findsOneWidget);
+      await expectLater(find.byKey(const Key('assets/images/coronavirus.png')), findsOneWidget);
+      await expectLater(find.text('14,076,469'), findsOneWidget);
+      await expectLater(find.text('recovered'), findsOneWidget);
+      await expectLater(find.text('2,538,808'), findsOneWidget);
+      await expectLater(find.text('deaths'), findsOneWidget);
     },
   );
 }

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/constants.dart';
 import '../../../../domain/tracker/tracker.dart';
-import '../tracker_header_logo.dart';
 import 'tracker_header_data.dart';
+import 'tracker_header_logo.dart';
 
 class TrackerHeader extends StatelessWidget {
   final Tracker? tracker;
@@ -16,9 +17,9 @@ class TrackerHeader extends StatelessWidget {
   Widget build(BuildContext context) => SafeArea(
         child: Column(
           children: [
-            const Text(
-              'Powered by https://coronavirus-tracker-api.herokuapp.com',
-              style: TextStyle(
+            Text(
+              'Powered by https://$mainUrl',
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 16,
                 fontStyle: FontStyle.italic,

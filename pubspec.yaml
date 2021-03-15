@@ -27,6 +27,7 @@ dependencies:
   cupertino_icons: ^1.0.0
   dartz: ^0.10.0-nullsafety.1
   ff_navigation_bar: ^0.1.5
+  fl_chart: ^0.20.1
   flutter_riverpod: ^0.13.1
   freezed_annotation: ^0.14.0
   http: ^0.13.0

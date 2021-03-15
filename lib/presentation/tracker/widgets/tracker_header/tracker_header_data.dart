@@ -24,7 +24,7 @@ class TrackerHeaderData extends StatelessWidget {
           ),
           const SizedBox(height: 20),
           const Text(
-            'Total os cases',
+            'Total of cases',
             style: TextStyle(
               color: Colors.white,
               fontSize: 20,
@@ -36,7 +36,7 @@ class TrackerHeaderData extends StatelessWidget {
             ),
             style: const TextStyle(
               color: Colors.white,
-              fontSize: 40,
+              fontSize: 35,
             ),
           ),
         ],
