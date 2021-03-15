@@ -109,7 +109,7 @@ void main() {
       await expectLater(find.byType(TrackerHeaderLogo), findsOneWidget);
       await expectLater(find.byType(TrackerBody), findsOneWidget);
       await expectLater(find.byType(TrackerBodyText), findsOneWidget);
-      await expectLater(find.byType(TrackerBodyPie), findsNothing);
+      await expectLater(find.byType(TrackerBodyPie), findsOneWidget);
       await expectLater(find.text('Total of cases'), findsOneWidget);
       await expectLater(find.text('Last update March 02, 2021, 16:04'), findsOneWidget);
       await expectLater(find.text('114,442,646'), findsOneWidget);
