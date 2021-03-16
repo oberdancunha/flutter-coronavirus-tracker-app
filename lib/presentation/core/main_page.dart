@@ -3,7 +3,7 @@ import 'package:ff_navigation_bar/ff_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
 import '../../domain/tracker/tracker.dart';
-import '../tracker/tracker_page.dart';
+import '../contamination/contamination_page.dart';
 
 class MainPage extends StatefulWidget {
   final Tracker? tracker;
@@ -25,7 +25,7 @@ class _MainPageState extends State<MainPage> {
   void initState() {
     super.initState();
     widgets = [
-      TrackerPage(tracker: widget.tracker),
+      ContaminationPage(contamination: widget.tracker!.contamination),
       Container(),
     ];
   }

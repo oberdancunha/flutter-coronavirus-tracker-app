@@ -4,10 +4,10 @@ import 'package:intl/intl.dart';
 import '../../../../core/constants.dart';
 import '../../../../domain/tracker/contamination.dart';
 
-class TrackerBodyText extends StatelessWidget {
+class ContaminationBodyText extends StatelessWidget {
   final Contamination contamination;
 
-  const TrackerBodyText({
+  const ContaminationBodyText({
     required this.contamination,
     Key? key,
   }) : super(key: key);

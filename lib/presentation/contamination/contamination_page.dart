@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-import '../../domain/tracker/tracker.dart';
+import '../../domain/tracker/contamination.dart';
+import 'widgets/contamination_header/contamination_header.dart';
 import 'widgets/tracker_body/tracker_body.dart';
-import 'widgets/tracker_header/tracker_header.dart';
 
-class TrackerPage extends StatelessWidget {
-  final Tracker? tracker;
+class ContaminationPage extends StatelessWidget {
+  final Contamination contamination;
 
-  const TrackerPage({
-    required this.tracker,
+  const ContaminationPage({
+    required this.contamination,
     Key? key,
   }) : super(key: key);
 
@@ -18,10 +18,10 @@ class TrackerPage extends StatelessWidget {
           Container(
             color: Colors.black,
             height: MediaQuery.of(context).size.height / 3.5,
-            child: TrackerHeader(tracker: tracker),
+            child: ContaminationHeader(contamination: contamination),
           ),
           TrackerBody(
-            contamination: tracker!.contamination,
+            contamination: contamination,
           ),
         ],
       );

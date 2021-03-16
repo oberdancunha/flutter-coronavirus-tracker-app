@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class TrackerHeaderLogo extends StatelessWidget {
+class ContaminationHeaderLogo extends StatelessWidget {
   final logo = 'assets/images/coronavirus.png';
 
   @override

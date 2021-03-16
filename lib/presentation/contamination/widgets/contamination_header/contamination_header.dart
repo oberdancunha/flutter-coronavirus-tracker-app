@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants.dart';
-import '../../../../domain/tracker/tracker.dart';
-import 'tracker_header_data.dart';
-import 'tracker_header_logo.dart';
+import '../../../../domain/tracker/contamination.dart';
+import 'contamination_header_data.dart';
+import 'contamination_header_logo.dart';
 
-class TrackerHeader extends StatelessWidget {
-  final Tracker? tracker;
+class ContaminationHeader extends StatelessWidget {
+  final Contamination? contamination;
 
-  const TrackerHeader({
-    required this.tracker,
+  const ContaminationHeader({
+    required this.contamination,
     Key? key,
   }) : super(key: key);
 
@@ -34,13 +34,13 @@ class TrackerHeader extends StatelessWidget {
                 children: [
                   SizedBox(
                     width: MediaQuery.of(context).size.width * 0.65,
-                    child: TrackerHeaderData(
-                      contamination: tracker!.contamination,
+                    child: ContaminationHeaderData(
+                      contamination: contamination,
                     ),
                   ),
                   SizedBox(
                     width: MediaQuery.of(context).size.width * 0.3,
-                    child: TrackerHeaderLogo(),
+                    child: ContaminationHeaderLogo(),
                   ),
                 ],
               ),

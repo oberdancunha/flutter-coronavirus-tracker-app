@@ -3,10 +3,10 @@ import 'package:intl/intl.dart';
 
 import '../../../../domain/tracker/contamination.dart';
 
-class TrackerHeaderData extends StatelessWidget {
+class ContaminationHeaderData extends StatelessWidget {
   final Contamination? contamination;
 
-  const TrackerHeaderData({
+  const ContaminationHeaderData({
     required this.contamination,
     Key? key,
   }) : super(key: key);
@@ -36,7 +36,7 @@ class TrackerHeaderData extends StatelessWidget {
             ),
             style: const TextStyle(
               color: Colors.white,
-              fontSize: 35,
+              fontSize: 30,
             ),
           ),
         ],

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../../domain/tracker/contamination.dart';
-import 'tracker_body_pie.dart';
-import 'tracker_body_text.dart';
+import '../contamination_body/contamination_body_pie.dart';
+import '../contamination_body/contamination_body_text.dart';
 
 class TrackerBody extends StatelessWidget {
   final Contamination contamination;
@@ -17,11 +17,11 @@ class TrackerBody extends StatelessWidget {
         children: [
           SizedBox(
             height: MediaQuery.of(context).size.height / 6,
-            child: TrackerBodyText(contamination: contamination),
+            child: ContaminationBodyText(contamination: contamination),
           ),
           SizedBox(
             height: MediaQuery.of(context).size.height / 3,
-            child: TrackerBodyPie(contamination: contamination),
+            child: ContaminationBodyPie(contamination: contamination),
           ),
         ],
       );
