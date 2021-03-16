@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../domain/tracker/contamination.dart';
+import 'widgets/contamination_body/contamination_body.dart';
 import 'widgets/contamination_header/contamination_header.dart';
-import 'widgets/tracker_body/tracker_body.dart';
 
 class ContaminationPage extends StatelessWidget {
   final Contamination contamination;
@@ -20,7 +20,7 @@ class ContaminationPage extends StatelessWidget {
             height: MediaQuery.of(context).size.height / 3.5,
             child: ContaminationHeader(contamination: contamination),
           ),
-          TrackerBody(
+          ContaminationBody(
             contamination: contamination,
           ),
         ],

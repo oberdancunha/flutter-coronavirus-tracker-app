@@ -113,7 +113,7 @@ void main() {
       await expectLater(find.text('Total of cases'), findsOneWidget);
       await expectLater(find.text('Last update March 02, 2021, 16:04'), findsOneWidget);
       await expectLater(find.text('114,442,646'), findsOneWidget);
-      await expectLater(find.text('Coronavirus Contamination'), findsOneWidget);
+      await expectLater(find.text('Coronavirus Tracker'), findsOneWidget);
       await expectLater(find.byKey(const Key('assets/images/coronavirus.png')), findsOneWidget);
       await expectLater(find.text('14,076,469'), findsOneWidget);
       await expectLater(find.text('recovered'), findsOneWidget);
