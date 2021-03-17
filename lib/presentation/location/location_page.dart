@@ -40,8 +40,9 @@ class _LocationPageState extends State<LocationPage> {
             point: LatLng(location.latitude, location.longitude),
             width: _markerSize,
             height: _markerSize,
-            builder: (_) => const Icon(
+            builder: (_) => Icon(
               Icons.location_on,
+              key: Key(location.country),
               size: _markerSize,
             ),
             anchorPos: AnchorPos.align(AnchorAlign.top),
@@ -60,7 +61,6 @@ class _LocationPageState extends State<LocationPage> {
 
   @override
   Widget build(BuildContext context) => FlutterMap(
-        key: const Key('tracker_map'),
         mapController: _mapController,
         options: MapOptions(
           zoom: _zoom,

@@ -1,6 +1,5 @@
 //@dart=2.8
 
-import 'package:coronavirus_tracker_app/presentation/location/location_popup.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/plugin_api.dart';
@@ -20,6 +19,7 @@ import 'package:coronavirus_tracker_app/presentation/core/app_page.dart';
 import 'package:coronavirus_tracker_app/presentation/core/app_widget.dart';
 import 'package:coronavirus_tracker_app/presentation/core/main_page.dart';
 import 'package:coronavirus_tracker_app/presentation/location/location_page.dart';
+import 'package:coronavirus_tracker_app/presentation/location/location_popup.dart';
 import 'package:coronavirus_tracker_app/presentation/splash/splash_page.dart';
 
 class MockTrackerRepository extends Mock implements ITrackerRepository {}
@@ -93,6 +93,7 @@ void main() {
           .calls(#get)
           .thenAnswer((_) async => right<Failure, Tracker>(trackerDataEntityMocked));
       await tester.pumpWidget(providerScope);
+      await tester.pump();
       expect(find.byType(AppPage), findsOneWidget);
       final splashPage = find.byType(SplashPage);
       await tester.pump(const Duration(seconds: 3));
@@ -105,7 +106,8 @@ void main() {
       await expectLater(find.byType(LocationPage), findsOneWidget);
       await tester.pump(const Duration(seconds: 5));
       await expectLater(find.byType(FlutterMap), findsOneWidget);
-      await tester.tap(find.byKey(const Key('tracker_map')));
+      await tester.pump(const Duration(seconds: 5));
+      await tester.tap(find.byKey(const Key('Brazil')));
       await tester.pump(const Duration(seconds: 5));
       await expectLater(find.byType(LocationPopup), findsOneWidget);
     },

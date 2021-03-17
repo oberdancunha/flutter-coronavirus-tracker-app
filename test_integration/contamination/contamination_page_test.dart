@@ -97,6 +97,7 @@ void main() {
           .calls(#get)
           .thenAnswer((_) async => right<Failure, Tracker>(trackerDataEntityMocked));
       await tester.pumpWidget(providerScope);
+      await tester.pump();
       expect(find.byType(AppPage), findsOneWidget);
       final splashPage = find.byType(SplashPage);
       await tester.pump(const Duration(seconds: 3));

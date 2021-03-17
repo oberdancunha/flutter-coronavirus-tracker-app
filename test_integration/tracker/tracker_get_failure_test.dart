@@ -39,6 +39,7 @@ void main() {
 
   Future<void> mainBody(WidgetTester tester) async {
     await tester.pumpWidget(providerScope);
+    await tester.pump();
     expect(find.byType(AppPage), findsOneWidget);
     final splashPage = find.byType(SplashPage);
     await expectLater(splashPage, findsOneWidget);
