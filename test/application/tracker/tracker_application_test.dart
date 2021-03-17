@@ -17,10 +17,14 @@ void main() {
   MockTrackerRepository? mockTrackerRepository;
   Tracker? trackerDataEntityMocked;
   late ProviderContainer providerContainer;
+  final DateTime time = DateTime.now();
 
-  setUp(() {
+  setUpAll(() {
     mockTrackerRepository = MockTrackerRepository();
     trackerDataEntityMocked = getTrackerDataEntity();
+  });
+
+  setUp(() {
     providerContainer = ProviderContainer(
       overrides: [
         trackerRepositoryProvider.overrideWithProvider(
@@ -32,7 +36,7 @@ void main() {
 
   Future<void> setUpLoadAndWaitResult() async {
     expect(
-      providerContainer.read(trackerApplicationGetProvider),
+      providerContainer.read(trackerApplicationGetProvider(time)),
       const AsyncValue<Tracker>.loading(),
     );
     await Future<void>.value();
@@ -57,7 +61,7 @@ void main() {
         () async {
           await setUpMockRepositoryAndProviderStates();
           expect(
-            providerContainer.read(trackerApplicationGetProvider),
+            providerContainer.read(trackerApplicationGetProvider(time)),
             AsyncValue<Tracker>.data(trackerDataEntityMocked!),
           );
         },
@@ -68,7 +72,7 @@ void main() {
         () async {
           await setUpMockRepositoryAndProviderStates();
           expect(
-            providerContainer.read(trackerApplicationGetProvider).data!.value,
+            providerContainer.read(trackerApplicationGetProvider(time)).data!.value,
             isA<Tracker>(),
           );
         },
@@ -80,7 +84,7 @@ void main() {
           await setUpMockRepositoryAndProviderStates();
           expect(
             providerContainer
-                .read(trackerApplicationGetProvider)
+                .read(trackerApplicationGetProvider(time))
                 .data!
                 .value
                 .locations
@@ -105,7 +109,7 @@ void main() {
               .thenAnswer((_) async => left<Failure, Tracker>(Failure.serverError()));
           await setUpLoadAndWaitResult();
           expect(
-            providerContainer.read(trackerApplicationGetProvider).maybeMap(
+            providerContainer.read(trackerApplicationGetProvider(time)).maybeMap(
                   error: (failure) => failure.error,
                   // ignore: no-empty-block
                   orElse: () {},

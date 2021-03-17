@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'app_page.dart';
+
 class FailurePage extends StatelessWidget {
   final String title;
   final String image;
@@ -42,9 +44,10 @@ class FailurePage extends StatelessWidget {
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
                 ),
-                onPressed: () {
-                  print('Oi');
-                },
+                onPressed: () => Navigator.of(context).pushAndRemoveUntil(
+                  MaterialPageRoute(builder: (_) => AppPage()),
+                  (route) => false,
+                ),
                 child: const Text(
                   'Try again',
                   style: TextStyle(

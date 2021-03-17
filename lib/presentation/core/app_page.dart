@@ -8,11 +8,13 @@ import 'failure_page.dart';
 import 'main_page.dart';
 
 class AppPage extends StatelessWidget {
+  final time = DateTime.now();
+
   @override
   Widget build(BuildContext context) => Scaffold(
         body: Consumer(
           builder: (context, watch, child) {
-            final response = watch(trackerApplicationGetProvider);
+            final response = watch(trackerApplicationGetProvider(time));
 
             return response.map(
               data: (_) => MainPage(tracker: _.value),
