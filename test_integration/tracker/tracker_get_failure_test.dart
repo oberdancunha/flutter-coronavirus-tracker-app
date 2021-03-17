@@ -23,8 +23,11 @@ void main() {
   MockTrackerRepository mockTrackerRepository;
   ProviderScope providerScope;
 
-  setUp(() {
+  setUpAll(() {
     mockTrackerRepository = MockTrackerRepository();
+  });
+
+  setUp(() {
     providerScope = ProviderScope(
       overrides: [
         trackerRepositoryProvider.overrideWithProvider(

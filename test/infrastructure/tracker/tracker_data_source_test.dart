@@ -18,7 +18,7 @@ void main() {
   String? trackerDataJsonMocked;
   Tracker? trackerDataEntityMocked;
 
-  setUp(() {
+  setUpAll(() {
     mockClient = MockClient();
     trackerDataSource = TrackerDataSource(mockClient);
     trackerDataJsonMocked = jsonReaderToString('tracker_data_mocked.json');

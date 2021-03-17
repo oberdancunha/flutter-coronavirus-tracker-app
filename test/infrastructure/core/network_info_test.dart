@@ -9,7 +9,7 @@ void main() {
   MockConnectivity? mockConnectivity;
   late NetworkInfo networkInfo;
 
-  setUp(() {
+  setUpAll(() {
     mockConnectivity = MockConnectivity();
     networkInfo = NetworkInfo(mockConnectivity!);
   });

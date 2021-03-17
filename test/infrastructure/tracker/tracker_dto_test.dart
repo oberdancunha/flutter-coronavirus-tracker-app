@@ -14,7 +14,7 @@ void main() {
     Map<String, dynamic>? trackerDataMockedJson;
     Tracker? trackerDataEntityMocked;
 
-    setUp(() {
+    setUpAll(() {
       trackerDataMockedJson = jsonReader('tracker_data_mocked.json');
       tracker = TrackerDto.fromApi(trackerDataMockedJson!).toDomain();
       trackerDataEntityMocked = getTrackerDataEntity();
@@ -38,7 +38,7 @@ void main() {
   group('Contamination DTO | ', () {
     Contamination? contamination;
 
-    setUp(() {
+    setUpAll(() {
       contamination = const ContaminationDto(
         confirmed: 114442646,
         deaths: 2538808,
@@ -58,7 +58,7 @@ void main() {
   group('Location DTO | ', () {
     Location? location;
 
-    setUp(() {
+    setUpAll(() {
       location = LocationDto(
         id: 0,
         country: 'Afghanistan',

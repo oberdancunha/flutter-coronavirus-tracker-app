@@ -21,7 +21,7 @@ void main() {
   late TrackerRepository trackerRepository;
   Tracker? trackerDataEntityMocked;
 
-  setUp(() {
+  setUpAll(() {
     mockNetworkInfo = MockNetworkInfo();
     mockTrackerDataSource = MockTrackerDataSource();
     trackerRepository = TrackerRepository(

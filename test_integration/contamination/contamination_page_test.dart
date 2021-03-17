@@ -34,7 +34,7 @@ void main() {
   ProviderScope providerScope;
   Tracker trackerDataEntityMocked;
 
-  setUp(() {
+  setUpAll(() {
     mockTrackerRepository = MockTrackerRepository();
     trackerDataEntityMocked = Tracker(
       contamination: Contamination(
@@ -78,6 +78,9 @@ void main() {
         ),
       ),
     );
+  });
+
+  setUp(() {
     providerScope = ProviderScope(
       overrides: [
         trackerRepositoryProvider.overrideWithProvider(
