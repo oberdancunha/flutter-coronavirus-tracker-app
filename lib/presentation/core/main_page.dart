@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../../domain/tracker/tracker.dart';
 import '../contamination/contamination_page.dart';
+import '../location/location_page.dart';
 
 class MainPage extends StatefulWidget {
   final Tracker? tracker;
@@ -26,7 +27,7 @@ class _MainPageState extends State<MainPage> {
     super.initState();
     widgets = [
       ContaminationPage(contamination: widget.tracker!.contamination),
-      Container(),
+      LocationPage(locations: widget.tracker!.locations),
     ];
   }
 
@@ -45,10 +46,12 @@ class _MainPageState extends State<MainPage> {
           },
           items: [
             FFNavigationBarItem(
+              key: const Key('contamination_bar'),
               iconData: Icons.pie_chart,
-              label: 'Stats',
+              label: 'Contamination',
             ),
             FFNavigationBarItem(
+              key: const Key('locations_bar'),
               iconData: Icons.location_on,
               label: 'Locations',
             ),

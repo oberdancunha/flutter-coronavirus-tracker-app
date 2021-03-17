@@ -6,6 +6,6 @@ String source = 'jhu';
 String timelineData = 'false';
 Color confirmedColor = Colors.black;
 Color recoveredColorLight = const Color(0xffC6FFCA);
-Color recoveredColorDark = const Color(0xff119500);
+Color recoveredColorDark = const Color(0xff0F8100);
 Color deathsColorLight = const Color(0xffFFE5E5);
 Color deathsColorDark = const Color(0xff950000);

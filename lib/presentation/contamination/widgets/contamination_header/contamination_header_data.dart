@@ -36,7 +36,7 @@ class ContaminationHeaderData extends StatelessWidget {
             ),
             style: const TextStyle(
               color: Colors.white,
-              fontSize: 30,
+              fontSize: 40,
             ),
           ),
         ],

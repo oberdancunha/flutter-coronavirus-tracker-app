@@ -17,7 +17,7 @@ class ContaminationHeaderLogo extends StatelessWidget {
             'Coronavirus Tracker',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 14,
+              fontSize: 17,
             ),
           ),
         ],

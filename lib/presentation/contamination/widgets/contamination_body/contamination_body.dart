@@ -20,8 +20,9 @@ class ContaminationBody extends StatelessWidget {
             child: ContaminationBodyText(contamination: contamination),
           ),
           SizedBox(
-            height: MediaQuery.of(context).size.height / 3,
-            child: ContaminationBodyPie(contamination: contamination),
+            child: Center(
+              child: ContaminationBodyPie(contamination: contamination),
+            ),
           ),
         ],
       );

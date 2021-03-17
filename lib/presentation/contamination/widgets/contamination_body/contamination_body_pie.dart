@@ -14,7 +14,7 @@ class ContaminationBodyPie extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final contaminationPieData = [
+    final _contaminationPieData = [
       _ContaminationPieData(
         value: contamination.confirmed,
         label: 'confirmed',
@@ -41,7 +41,7 @@ class ContaminationBodyPie extends StatelessWidget {
           ),
           sectionsSpace: 0,
           centerSpaceRadius: 0,
-          sections: _listData(contaminationPieData),
+          sections: _listData(_contaminationPieData),
         ),
       ),
     );
@@ -56,7 +56,7 @@ class ContaminationBodyPie extends StatelessWidget {
               title: contamination.label,
               radius: 135,
               titleStyle: const TextStyle(
-                fontSize: 15,
+                fontSize: 18,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
