@@ -8,7 +8,7 @@ import 'package:kt_dart/collection.dart';
 import 'package:latlong/latlong.dart';
 
 import '../../domain/tracker/location.dart';
-import 'location_popup.dart';
+import 'widgets/location_popup.dart';
 
 class LocationPage extends StatefulWidget {
   final KtList<Location> locations;

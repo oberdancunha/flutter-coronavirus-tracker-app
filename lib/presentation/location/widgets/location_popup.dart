@@ -5,8 +5,8 @@ import 'package:flutter_map/plugin_api.dart';
 import 'package:intl/intl.dart';
 import 'package:kt_dart/collection.dart';
 
-import '../../core/constants.dart';
-import '../../domain/tracker/location.dart';
+import '../../../core/constants.dart';
+import '../../../domain/tracker/location.dart';
 
 class LocationPopup extends StatefulWidget {
   final KtList<Location> locations;
