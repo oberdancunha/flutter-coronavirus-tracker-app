@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-import '../../../../core/constants.dart';
-import '../../../../domain/tracker/contamination.dart';
+import '../../../../../core/constants.dart';
+import '../../../../../domain/tracker/contamination.dart';
 
 class ContaminationBodyText extends StatelessWidget {
   final Contamination contamination;

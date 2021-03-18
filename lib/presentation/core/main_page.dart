@@ -3,8 +3,8 @@ import 'package:ff_navigation_bar/ff_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
 import '../../domain/tracker/tracker.dart';
-import '../contamination/contamination_page.dart';
-import '../location/location_page.dart';
+import '../tracker/contamination/contamination_page.dart';
+import '../tracker/location/location_page.dart';
 
 class MainPage extends StatefulWidget {
   final Tracker? tracker;

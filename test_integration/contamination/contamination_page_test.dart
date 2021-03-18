@@ -14,17 +14,17 @@ import 'package:coronavirus_tracker_app/domain/tracker/contamination.dart';
 import 'package:coronavirus_tracker_app/domain/tracker/i_tracker_repository.dart';
 import 'package:coronavirus_tracker_app/domain/tracker/location.dart';
 import 'package:coronavirus_tracker_app/domain/tracker/tracker.dart';
-import 'package:coronavirus_tracker_app/presentation/contamination/contamination_page.dart';
-import 'package:coronavirus_tracker_app/presentation/contamination/widgets/contamination_body/contamination_body.dart';
-import 'package:coronavirus_tracker_app/presentation/contamination/widgets/contamination_body/contamination_body_pie.dart';
-import 'package:coronavirus_tracker_app/presentation/contamination/widgets/contamination_body/contamination_body_text.dart';
-import 'package:coronavirus_tracker_app/presentation/contamination/widgets/contamination_header/contamination_header.dart';
-import 'package:coronavirus_tracker_app/presentation/contamination/widgets/contamination_header/contamination_header_data.dart';
-import 'package:coronavirus_tracker_app/presentation/contamination/widgets/contamination_header/contamination_header_logo.dart';
 import 'package:coronavirus_tracker_app/presentation/core/app_page.dart';
 import 'package:coronavirus_tracker_app/presentation/core/app_widget.dart';
 import 'package:coronavirus_tracker_app/presentation/core/main_page.dart';
 import 'package:coronavirus_tracker_app/presentation/splash/splash_page.dart';
+import 'package:coronavirus_tracker_app/presentation/tracker/contamination/contamination_page.dart';
+import 'package:coronavirus_tracker_app/presentation/tracker/contamination/widgets/contamination_body/contamination_body.dart';
+import 'package:coronavirus_tracker_app/presentation/tracker/contamination/widgets/contamination_body/contamination_body_pie.dart';
+import 'package:coronavirus_tracker_app/presentation/tracker/contamination/widgets/contamination_body/contamination_body_text.dart';
+import 'package:coronavirus_tracker_app/presentation/tracker/contamination/widgets/contamination_header/contamination_header.dart';
+import 'package:coronavirus_tracker_app/presentation/tracker/contamination/widgets/contamination_header/contamination_header_data.dart';
+import 'package:coronavirus_tracker_app/presentation/tracker/contamination/widgets/contamination_header/contamination_header_logo.dart';
 
 class MockTrackerRepository extends Mock implements ITrackerRepository {}
 

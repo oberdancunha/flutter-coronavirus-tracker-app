@@ -7,7 +7,7 @@ import 'package:kt_dart/collection.dart';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:latlong/latlong.dart';
 
-import '../../domain/tracker/location.dart';
+import '../../../domain/tracker/location.dart';
 import 'widgets/location_popup.dart';
 
 class LocationPage extends StatefulWidget {

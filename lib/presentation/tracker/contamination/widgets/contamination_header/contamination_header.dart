@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/constants.dart';
-import '../../../../domain/tracker/contamination.dart';
+import '../../../../../core/constants.dart';
+import '../../../../../domain/tracker/contamination.dart';
 import 'contamination_header_data.dart';
 import 'contamination_header_logo.dart';
 

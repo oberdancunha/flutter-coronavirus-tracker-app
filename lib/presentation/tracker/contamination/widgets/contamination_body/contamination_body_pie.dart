@@ -1,8 +1,8 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../core/constants.dart';
-import '../../../../domain/tracker/contamination.dart';
+import '../../../../../core/constants.dart';
+import '../../../../../domain/tracker/contamination.dart';
 
 class ContaminationBodyPie extends StatelessWidget {
   final Contamination contamination;

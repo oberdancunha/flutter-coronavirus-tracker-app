@@ -18,9 +18,9 @@ import 'package:coronavirus_tracker_app/domain/tracker/tracker.dart';
 import 'package:coronavirus_tracker_app/presentation/core/app_page.dart';
 import 'package:coronavirus_tracker_app/presentation/core/app_widget.dart';
 import 'package:coronavirus_tracker_app/presentation/core/main_page.dart';
-import 'package:coronavirus_tracker_app/presentation/location/location_page.dart';
-import 'package:coronavirus_tracker_app/presentation/location/widgets/location_popup.dart';
 import 'package:coronavirus_tracker_app/presentation/splash/splash_page.dart';
+import 'package:coronavirus_tracker_app/presentation/tracker/location/location_page.dart';
+import 'package:coronavirus_tracker_app/presentation/tracker/location/widgets/location_popup.dart';
 
 class MockTrackerRepository extends Mock implements ITrackerRepository {}
 

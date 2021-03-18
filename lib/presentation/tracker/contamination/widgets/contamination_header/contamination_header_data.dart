@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-import '../../../../domain/tracker/contamination.dart';
+import '../../../../../domain/tracker/contamination.dart';
 
 class ContaminationHeaderData extends StatelessWidget {
   final Contamination? contamination;

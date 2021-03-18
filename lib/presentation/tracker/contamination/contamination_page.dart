@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../domain/tracker/contamination.dart';
+import '../../../domain/tracker/contamination.dart';
 import 'widgets/contamination_body/contamination_body.dart';
 import 'widgets/contamination_header/contamination_header.dart';
 
