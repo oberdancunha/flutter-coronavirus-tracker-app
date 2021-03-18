@@ -73,9 +73,6 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Alegreya
-      fonts:
-        - asset: assets/fonts/Alegreya-Bold.ttf
     - family: PTSans
       fonts:
         - asset: assets/fonts/PTSans-Bold.ttf

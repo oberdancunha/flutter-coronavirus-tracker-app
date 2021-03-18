@@ -1,29 +1,32 @@
 import 'package:flutter/material.dart';
 
-class SplashPage extends StatelessWidget {
+class SplashPage extends StatefulWidget {
   @override
-  Widget build(BuildContext context) => Container(
-        color: Colors.black,
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image.asset(
-                'assets/images/coronavirus.png',
-                fit: BoxFit.cover,
-              ),
-              const SizedBox(height: 50),
-              const Text(
-                'Coronavirus Tracker App',
-                style: TextStyle(
-                  fontSize: 35,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: 'Alegreya',
-                ),
-              ),
-            ],
-          ),
-        ),
+  _SplashPageState createState() => _SplashPageState();
+}
+
+class _SplashPageState extends State<SplashPage> {
+  late Image cachedSplashImage;
+
+  @override
+  void initState() {
+    super.initState();
+    cachedSplashImage = Image.asset(
+      'assets/images/splash.png',
+      fit: BoxFit.cover,
+    );
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    precacheImage(cachedSplashImage.image, context);
+  }
+
+  @override
+  Widget build(BuildContext context) => SizedBox(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
+        child: cachedSplashImage,
       );
 }
