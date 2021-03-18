@@ -21,7 +21,7 @@ class ContaminationHeader extends StatelessWidget {
               'Powered by https://$mainUrl',
               style: const TextStyle(
                 color: Colors.white,
-                fontSize: 16,
+                fontSize: 18,
                 fontStyle: FontStyle.italic,
               ),
             ),

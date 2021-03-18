@@ -19,7 +19,7 @@ class ContaminationHeaderData extends StatelessWidget {
             'Last update ${DateFormat('MMMM dd, yyyy, kk:mm').format(contamination!.lastUpdated)}',
             style: const TextStyle(
               color: Colors.white,
-              fontSize: 15,
+              fontSize: 18,
             ),
           ),
           const SizedBox(height: 20),
@@ -27,7 +27,7 @@ class ContaminationHeaderData extends StatelessWidget {
             'Total of cases',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 20,
+              fontSize: 22,
             ),
           ),
           Text(
@@ -36,7 +36,7 @@ class ContaminationHeaderData extends StatelessWidget {
             ),
             style: const TextStyle(
               color: Colors.white,
-              fontSize: 40,
+              fontSize: 43,
             ),
           ),
         ],
