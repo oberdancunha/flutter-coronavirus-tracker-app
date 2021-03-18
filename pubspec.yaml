@@ -45,6 +45,7 @@ dev_dependencies:
     sdk: flutter
   build_runner: ^1.11.1
   dart_code_metrics: ^2.4.1
+  flutter_launcher_icons: ^0.8.1
   freezed: ^0.14.0-nullsafety.0
   lint: ^1.5.3
   mocktail: ^0.0.1-dev.12
@@ -92,3 +93,8 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+flutter_icons:
+  image_path: "assets/icons/app_icon.png"
+  android: true
+  ios: true
