@@ -87,7 +87,7 @@ class _LocationPopupState extends State<LocationPopup> {
               _printContamination(
                 foregroundColor: deathsColorDark,
                 value: _location.contaminations.first().deaths,
-                label: 'deaths',
+                label: 'Deaths',
               ),
             ],
           ),
