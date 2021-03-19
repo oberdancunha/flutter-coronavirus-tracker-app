@@ -1,16 +1,79 @@
-# coronavirusTrackerApp
+# Coronavirus Tracker App
 
-A new Flutter project.
+Aplicação para consulta dos dados de covid.
 
-## Getting Started
+## Tecnologias/bibliotecas
 
-This project is a starting point for a Flutter application.
+Algumas das tecnologias/bibliotecas utilizadas na construção desse aplicativo foram:
 
-A few resources to get you started if this is your first Flutter project:
+- **Framework:** Flutter 2.0.2 (null safety) e dart 2.12.1
+- **Provider:** flutter_riverpod, incluindo injeção de dependência
+- **Acesso à API:** Pacote http
+- **Verificação de conexão:** pacote connectivity
+- **Mapa de localidades:** flutter_map
+- **Mock para os testes:** Mocktail
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Além dessas, há também outras bibliotecas. O pubspec.yaml possui a lista completa das bibliotecas utilizadas.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Relatórios
+
+### Dados gerais (contamination tab)
+
+Dados totais da contaminação pelo mundo, como:
+
+1 - Endereço da api utlizada (cabeçalho da aplicação)
+2 - Data da última atualização
+3 - Total de casos (cases)
+4 - Total de recuperados (recovered)
+5 - Total de mortes (deaths)
+
+Ao final um gráfico mostrando a proporção dos dados gerais da contaminação.
+
+<img
+  src="images/general_data.png"
+  alt="generaldata"
+  title="General data"
+  width="270"
+  height="600"
+  border= "1px solid black"
+/>
+
+### Dados por localidade (Locations tab)
+
+Dados de contaminação de cada país. Nesse caso é um mapa com um marcador para cada país onde, ao clicar nesse marcador, uma janela (popup) apresenta os detalhes de contaminação (país, casos, recuperados e mortos).
+
+![Alt Text](images/location_data.gif)
+
+## Erros
+
+A aplicação pode apresentar os seguintes erros:
+
+- **An unknown error has occurred!:** algum erro não identificado na api utilizada.
+- **Device is not connected!:** desconexão ou alta latência de rede, impedindo que o dispositivo acesse a api
+
+<p
+  float="left"
+>
+  <img
+    src="images/server_error.png"
+    alt="servererror"
+    title="Server error"
+    width="270"
+    height="600"
+    border= "1px solid black"
+  />
+  <img
+    src="images/device_not_connected.png"
+    alt="devicenotconnected"
+    title="Device not connected"
+    width="270"
+    height="600"
+    border= "1px solid black"
+  />
+</p>
+
+Ao final da página tem um botão chamando **Try again**, permitindo que o usuário tente realizar uma nova busca dos dados, sem a necessidade de reiniciar o aplicativo.
+
+## API de consulta
+
+<https://coronavirus-tracker-api.herokuapp.com>

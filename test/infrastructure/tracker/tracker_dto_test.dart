@@ -1,19 +1,23 @@
-import 'package:coronavirusTrackerApp/domain/tracker/contamination.dart';
-import 'package:coronavirusTrackerApp/domain/tracker/location.dart';
-import 'package:coronavirusTrackerApp/domain/tracker/tracker.dart';
-import 'package:coronavirusTrackerApp/infrastructure/tracker/tracker_dto.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+import 'package:coronavirus_tracker_app/domain/tracker/contamination.dart';
+import 'package:coronavirus_tracker_app/domain/tracker/location.dart';
+import 'package:coronavirus_tracker_app/domain/tracker/tracker.dart';
+import 'package:coronavirus_tracker_app/infrastructure/tracker/tracker_dto.dart';
+
 import '../../data/json_reader.dart';
+import '../../data/utils.dart';
 
 void main() {
   group('Tracker DTO | ', () {
     Tracker? tracker;
     Map<String, dynamic>? trackerDataMockedJson;
+    Tracker? trackerDataEntityMocked;
 
-    setUp(() {
+    setUpAll(() {
       trackerDataMockedJson = jsonReader('tracker_data_mocked.json');
       tracker = TrackerDto.fromApi(trackerDataMockedJson!).toDomain();
+      trackerDataEntityMocked = getTrackerDataEntity();
     });
 
     test(
@@ -22,13 +26,20 @@ void main() {
         expect(tracker, isA<Tracker>());
       },
     );
+
+    test(
+      'Should normalize data according to country repetition, where data for each province are detailed ',
+      () {
+        expect(tracker, equals(trackerDataEntityMocked));
+      },
+    );
   });
 
   group('Contamination DTO | ', () {
     Contamination? contamination;
 
-    setUp(() {
-      contamination = ContaminationDto(
+    setUpAll(() {
+      contamination = const ContaminationDto(
         confirmed: 114442646,
         deaths: 2538808,
         recovered: 14076469,
@@ -47,7 +58,7 @@ void main() {
   group('Location DTO | ', () {
     Location? location;
 
-    setUp(() {
+    setUpAll(() {
       location = LocationDto(
         id: 0,
         country: 'Afghanistan',
@@ -56,7 +67,7 @@ void main() {
         latitude: double.tryParse('33.93911')!,
         longitude: double.tryParse('67.709953')!,
         contaminations: [
-          ContaminationDto(
+          const ContaminationDto(
             confirmed: 55733,
             deaths: 2444,
             recovered: 49344,

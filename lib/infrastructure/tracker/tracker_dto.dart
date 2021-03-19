@@ -18,7 +18,7 @@ class TrackerDto with _$TrackerDto {
 
   Tracker toDomain() => Tracker(
         contamination: contamination.toDomain(),
-        locations: locations
+        locations: _totalConfirmationsFromProvinces(locations)!
             .map(
               (location) => location.toDomain(),
             )
@@ -26,33 +26,62 @@ class TrackerDto with _$TrackerDto {
       );
 
   factory TrackerDto.fromApi(Map<String, dynamic> trackerJson) => TrackerDto(
-        contamination: ContaminationDto(
-          confirmed: trackerJson['latest']['confirmed'],
-          deaths: trackerJson['latest']['deaths'],
-          recovered: trackerJson['latest']['recovered'],
-          lastUpdated: (trackerJson['locations'] as List)[0]['last_updated'],
+        contamination: ContaminationDto.fromCoronaTrackerApi(
+          contaminationJson: trackerJson,
+          lastUpdated: (trackerJson['locations'] as List)[0]['last_updated'].toString(),
         ),
         locations: (trackerJson['locations'] as List)
-            .map(
-              (location) => LocationDto(
-                id: location['id'],
-                country: location['country'],
-                countryCode: location['country_code'],
-                countryPopulation: location['country_population'] ?? 0,
-                latitude: double.tryParse(location['coordinates']['latitude']) ?? 0.0,
-                longitude: double.tryParse(location['coordinates']['longitude']) ?? 0.0,
-                contaminations: [
-                  ContaminationDto(
-                    confirmed: location['latest']['confirmed'],
-                    deaths: location['latest']['deaths'],
-                    recovered: location['latest']['recovered'],
-                    lastUpdated: location['last_updated'],
-                  ),
-                ],
-              ),
-            )
+            .map((location) => LocationDto.fromCoronaTrackerApi(location as Map<String, dynamic>))
             .toList(),
       );
+
+  List<LocationDto>? _totalConfirmationsFromProvinces(List<LocationDto> locations) {
+    final locationNormalized = <LocationDto>[];
+    var countryCode = '';
+    var sumConfirmed = 0;
+    var sumDeaths = 0;
+    var sumRecovered = 0;
+    var lastUpdated = '';
+    late LocationDto locationPrior;
+    locations.forEach(
+      (location) {
+        if (countryCode != '' && countryCode != location.countryCode) {
+          lastUpdated = locationPrior.contaminations.first.lastUpdated.toString();
+          locationPrior.contaminations.removeAt(0);
+          locationPrior.contaminations.add(
+            ContaminationDto(
+              confirmed: sumConfirmed,
+              deaths: sumDeaths,
+              recovered: sumRecovered,
+              lastUpdated: lastUpdated,
+            ),
+          );
+          locationNormalized.add(locationPrior);
+          sumConfirmed = 0;
+          sumDeaths = 0;
+          sumRecovered = 0;
+        }
+        sumDeaths += location.contaminations.first.deaths;
+        sumConfirmed += location.contaminations.first.confirmed;
+        sumRecovered += location.contaminations.first.recovered;
+        countryCode = location.countryCode;
+        locationPrior = location;
+      },
+    );
+    lastUpdated = locationPrior.contaminations.first.lastUpdated.toString();
+    locationPrior.contaminations.removeAt(0);
+    locationPrior.contaminations.add(
+      ContaminationDto(
+        confirmed: sumConfirmed,
+        deaths: sumDeaths,
+        recovered: sumRecovered,
+        lastUpdated: lastUpdated,
+      ),
+    );
+    locationNormalized.add(locationPrior);
+
+    return locationNormalized;
+  }
 }
 
 @freezed
@@ -71,6 +100,17 @@ class ContaminationDto with _$ContaminationDto {
         deaths: deaths,
         recovered: recovered,
         lastUpdated: DateTime.tryParse(lastUpdated)!,
+      );
+
+  factory ContaminationDto.fromCoronaTrackerApi({
+    required Map<String, dynamic> contaminationJson,
+    required String lastUpdated,
+  }) =>
+      ContaminationDto(
+        confirmed: int.tryParse(contaminationJson['latest']['confirmed'].toString())!,
+        deaths: int.tryParse(contaminationJson['latest']['deaths'].toString())!,
+        recovered: int.tryParse(contaminationJson['latest']['recovered'].toString())!,
+        lastUpdated: lastUpdated,
       );
 }
 
@@ -100,5 +140,20 @@ class LocationDto with _$LocationDto {
               (contamination) => contamination.toDomain(),
             )
             .toImmutableList(),
+      );
+
+  factory LocationDto.fromCoronaTrackerApi(Map<String, dynamic> locationJson) => LocationDto(
+        id: int.tryParse(locationJson['id'].toString())!,
+        country: locationJson['country'].toString(),
+        countryCode: locationJson['country_code'].toString(),
+        countryPopulation: int.tryParse(locationJson['country_population'].toString()) ?? 0,
+        latitude: double.tryParse(locationJson['coordinates']['latitude'].toString()) ?? 0.0,
+        longitude: double.tryParse(locationJson['coordinates']['longitude'].toString()) ?? 0.0,
+        contaminations: [
+          ContaminationDto.fromCoronaTrackerApi(
+            contaminationJson: locationJson,
+            lastUpdated: locationJson['last_updated'].toString(),
+          ),
+        ],
       );
 }

@@ -1,9 +1,9 @@
-import 'package:coronavirusTrackerApp/domain/tracker/contamination.dart';
-import 'package:coronavirusTrackerApp/domain/tracker/location.dart';
-import 'package:coronavirusTrackerApp/domain/tracker/tracker.dart';
+import 'package:coronavirus_tracker_app/domain/tracker/contamination.dart';
+import 'package:coronavirus_tracker_app/domain/tracker/location.dart';
+import 'package:coronavirus_tracker_app/domain/tracker/tracker.dart';
 import 'package:kt_dart/kt.dart';
 
-Tracker getTrackerEntity() => Tracker(
+Tracker getTrackerDataEntity() => Tracker(
       contamination: Contamination(
         confirmed: 114442646,
         deaths: 2538808,
@@ -24,6 +24,22 @@ Tracker getTrackerEntity() => Tracker(
               deaths: 255720,
               recovered: 9437611,
               lastUpdated: DateTime.tryParse('2021-03-02T16:04:34.882427Z')!,
+            ),
+          ),
+        ),
+        Location(
+          id: 54,
+          country: 'Canada',
+          countryCode: 'CA',
+          countryPopulation: 37058856,
+          latitude: 64.2823,
+          longitude: -135,
+          contaminations: KtList.of(
+            Contamination(
+              confirmed: 875388,
+              deaths: 22014,
+              recovered: 0,
+              lastUpdated: DateTime.tryParse('2021-03-02T16:04:35.583773Z')!,
             ),
           ),
         ),

@@ -1,0 +1,4667 @@
+{
+  "latest": {
+    "confirmed": 114442646,
+    "deaths": 2538808,
+    "recovered": 14076469
+  },
+  "locations": [
+    {
+      "id": 0,
+      "country": "Afghanistan",
+      "country_code": "AF",
+      "country_population": 37172386,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:33.535436Z",
+      "coordinates": {
+        "latitude": "33.93911",
+        "longitude": "67.709953"
+      },
+      "latest": {
+        "confirmed": 55733,
+        "deaths": 2444,
+        "recovered": 49344
+      }
+    },
+    {
+      "id": 1,
+      "country": "Albania",
+      "country_code": "AL",
+      "country_population": 2866376,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:33.574671Z",
+      "coordinates": {
+        "latitude": "41.1533",
+        "longitude": "20.1683"
+      },
+      "latest": {
+        "confirmed": 107931,
+        "deaths": 1816,
+        "recovered": 70413
+      }
+    },
+    {
+      "id": 2,
+      "country": "Algeria",
+      "country_code": "DZ",
+      "country_population": 42228429,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:33.612118Z",
+      "coordinates": {
+        "latitude": "28.0339",
+        "longitude": "1.6596"
+      },
+      "latest": {
+        "confirmed": 113255,
+        "deaths": 2987,
+        "recovered": 78234
+      }
+    },
+    {
+      "id": 3,
+      "country": "Andorra",
+      "country_code": "AD",
+      "country_population": 77006,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:33.664732Z",
+      "coordinates": {
+        "latitude": "42.5063",
+        "longitude": "1.5218"
+      },
+      "latest": {
+        "confirmed": 10889,
+        "deaths": 110,
+        "recovered": 10475
+      }
+    },
+    {
+      "id": 4,
+      "country": "Angola",
+      "country_code": "AO",
+      "country_population": 30809762,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:33.716788Z",
+      "coordinates": {
+        "latitude": "-11.2027",
+        "longitude": "17.8739"
+      },
+      "latest": {
+        "confirmed": 20854,
+        "deaths": 508,
+        "recovered": 19400
+      }
+    },
+    {
+      "id": 5,
+      "country": "Antigua and Barbuda",
+      "country_code": "AG",
+      "country_population": 96286,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:33.761481Z",
+      "coordinates": {
+        "latitude": "17.0608",
+        "longitude": "-61.7964"
+      },
+      "latest": {
+        "confirmed": 769,
+        "deaths": 14,
+        "recovered": 307
+      }
+    },
+    {
+      "id": 6,
+      "country": "Argentina",
+      "country_code": "AR",
+      "country_population": 44494502,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:33.803544Z",
+      "coordinates": {
+        "latitude": "-38.4161",
+        "longitude": "-63.6167"
+      },
+      "latest": {
+        "confirmed": 2112023,
+        "deaths": 52077,
+        "recovered": 1911338
+      }
+    },
+    {
+      "id": 7,
+      "country": "Armenia",
+      "country_code": "AM",
+      "country_population": 2951776,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:33.838006Z",
+      "coordinates": {
+        "latitude": "40.0691",
+        "longitude": "45.0382"
+      },
+      "latest": {
+        "confirmed": 172216,
+        "deaths": 3195,
+        "recovered": 163511
+      }
+    },
+    {
+      "id": 8,
+      "country": "Australia",
+      "country_code": "AU",
+      "country_population": 24992369,
+      "province": "Australian Capital Territory",
+      "last_updated": "2021-03-02T16:04:33.888483Z",
+      "coordinates": {
+        "latitude": "-35.4735",
+        "longitude": "149.0124"
+      },
+      "latest": {
+        "confirmed": 118,
+        "deaths": 3,
+        "recovered": 115
+      }
+    },
+    {
+      "id": 9,
+      "country": "Australia",
+      "country_code": "AU",
+      "country_population": 24992369,
+      "province": "New South Wales",
+      "last_updated": "2021-03-02T16:04:33.931910Z",
+      "coordinates": {
+        "latitude": "-33.8688",
+        "longitude": "151.2093"
+      },
+      "latest": {
+        "confirmed": 5183,
+        "deaths": 54,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 10,
+      "country": "Australia",
+      "country_code": "AU",
+      "country_population": 24992369,
+      "province": "Northern Territory",
+      "last_updated": "2021-03-02T16:04:33.978905Z",
+      "coordinates": {
+        "latitude": "-12.4634",
+        "longitude": "130.8456"
+      },
+      "latest": {
+        "confirmed": 105,
+        "deaths": 0,
+        "recovered": 103
+      }
+    },
+    {
+      "id": 11,
+      "country": "Australia",
+      "country_code": "AU",
+      "country_population": 24992369,
+      "province": "Queensland",
+      "last_updated": "2021-03-02T16:04:34.026177Z",
+      "coordinates": {
+        "latitude": "-27.4698",
+        "longitude": "153.0251"
+      },
+      "latest": {
+        "confirmed": 1335,
+        "deaths": 6,
+        "recovered": 1313
+      }
+    },
+    {
+      "id": 12,
+      "country": "Australia",
+      "country_code": "AU",
+      "country_population": 24992369,
+      "province": "South Australia",
+      "last_updated": "2021-03-02T16:04:34.062576Z",
+      "coordinates": {
+        "latitude": "-34.9285",
+        "longitude": "138.6007"
+      },
+      "latest": {
+        "confirmed": 617,
+        "deaths": 4,
+        "recovered": 610
+      }
+    },
+    {
+      "id": 13,
+      "country": "Australia",
+      "country_code": "AU",
+      "country_population": 24992369,
+      "province": "Tasmania",
+      "last_updated": "2021-03-02T16:04:34.102495Z",
+      "coordinates": {
+        "latitude": "-42.8821",
+        "longitude": "147.3272"
+      },
+      "latest": {
+        "confirmed": 234,
+        "deaths": 13,
+        "recovered": 221
+      }
+    },
+    {
+      "id": 14,
+      "country": "Australia",
+      "country_code": "AU",
+      "country_population": 24992369,
+      "province": "Victoria",
+      "last_updated": "2021-03-02T16:04:34.134235Z",
+      "coordinates": {
+        "latitude": "-37.8136",
+        "longitude": "144.9631"
+      },
+      "latest": {
+        "confirmed": 20481,
+        "deaths": 820,
+        "recovered": 19651
+      }
+    },
+    {
+      "id": 15,
+      "country": "Australia",
+      "country_code": "AU",
+      "country_population": 24992369,
+      "province": "Western Australia",
+      "last_updated": "2021-03-02T16:04:34.171487Z",
+      "coordinates": {
+        "latitude": "-31.9505",
+        "longitude": "115.8605"
+      },
+      "latest": {
+        "confirmed": 913,
+        "deaths": 9,
+        "recovered": 901
+      }
+    },
+    {
+      "id": 16,
+      "country": "Austria",
+      "country_code": "AT",
+      "country_population": 8847037,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:34.221987Z",
+      "coordinates": {
+        "latitude": "47.5162",
+        "longitude": "14.5501"
+      },
+      "latest": {
+        "confirmed": 460849,
+        "deaths": 8574,
+        "recovered": 432016
+      }
+    },
+    {
+      "id": 17,
+      "country": "Azerbaijan",
+      "country_code": "AZ",
+      "country_population": 9942334,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:34.271698Z",
+      "coordinates": {
+        "latitude": "40.1431",
+        "longitude": "47.5769"
+      },
+      "latest": {
+        "confirmed": 234662,
+        "deaths": 3223,
+        "recovered": 228839
+      }
+    },
+    {
+      "id": 18,
+      "country": "Bahamas",
+      "country_code": "BS",
+      "country_population": 385640,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:34.309822Z",
+      "coordinates": {
+        "latitude": "25.025885",
+        "longitude": "-78.035889"
+      },
+      "latest": {
+        "confirmed": 8519,
+        "deaths": 179,
+        "recovered": 7309
+      }
+    },
+    {
+      "id": 19,
+      "country": "Bahrain",
+      "country_code": "BH",
+      "country_population": 1569439,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:34.348027Z",
+      "coordinates": {
+        "latitude": "26.0275",
+        "longitude": "50.55"
+      },
+      "latest": {
+        "confirmed": 123039,
+        "deaths": 452,
+        "recovered": 115895
+      }
+    },
+    {
+      "id": 20,
+      "country": "Bangladesh",
+      "country_code": "BD",
+      "country_population": 161356039,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:34.381791Z",
+      "coordinates": {
+        "latitude": "23.685",
+        "longitude": "90.3563"
+      },
+      "latest": {
+        "confirmed": 546801,
+        "deaths": 8416,
+        "recovered": 497797
+      }
+    },
+    {
+      "id": 21,
+      "country": "Barbados",
+      "country_code": "BB",
+      "country_population": 286641,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:34.416204Z",
+      "coordinates": {
+        "latitude": "13.1939",
+        "longitude": "-59.5432"
+      },
+      "latest": {
+        "confirmed": 3115,
+        "deaths": 36,
+        "recovered": 2443
+      }
+    },
+    {
+      "id": 22,
+      "country": "Belarus",
+      "country_code": "BY",
+      "country_population": 9485386,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:34.455153Z",
+      "coordinates": {
+        "latitude": "53.7098",
+        "longitude": "27.9534"
+      },
+      "latest": {
+        "confirmed": 288267,
+        "deaths": 1985,
+        "recovered": 278661
+      }
+    },
+    {
+      "id": 23,
+      "country": "Belgium",
+      "country_code": "BE",
+      "country_population": 11422068,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:34.494047Z",
+      "coordinates": {
+        "latitude": "50.8333",
+        "longitude": "4.469936"
+      },
+      "latest": {
+        "confirmed": 772294,
+        "deaths": 22106,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 24,
+      "country": "Belize",
+      "country_code": "BZ",
+      "country_population": 383071,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:34.535683Z",
+      "coordinates": {
+        "latitude": "17.1899",
+        "longitude": "-88.4976"
+      },
+      "latest": {
+        "confirmed": 12313,
+        "deaths": 315,
+        "recovered": 11860
+      }
+    },
+    {
+      "id": 25,
+      "country": "Benin",
+      "country_code": "BJ",
+      "country_population": 11485048,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:34.593004Z",
+      "coordinates": {
+        "latitude": "9.3077",
+        "longitude": "2.3158"
+      },
+      "latest": {
+        "confirmed": 5434,
+        "deaths": 70,
+        "recovered": 4248
+      }
+    },
+    {
+      "id": 26,
+      "country": "Bhutan",
+      "country_code": "BT",
+      "country_population": 754394,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:34.662962Z",
+      "coordinates": {
+        "latitude": "27.5142",
+        "longitude": "90.4336"
+      },
+      "latest": {
+        "confirmed": 867,
+        "deaths": 1,
+        "recovered": 865
+      }
+    },
+    {
+      "id": 27,
+      "country": "Bolivia",
+      "country_code": "BO",
+      "country_population": 11353142,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:34.732457Z",
+      "coordinates": {
+        "latitude": "-16.2902",
+        "longitude": "-63.5887"
+      },
+      "latest": {
+        "confirmed": 249767,
+        "deaths": 11666,
+        "recovered": 193652
+      }
+    },
+    {
+      "id": 28,
+      "country": "Bosnia and Herzegovina",
+      "country_code": "BA",
+      "country_population": 3323929,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:34.800979Z",
+      "coordinates": {
+        "latitude": "43.9159",
+        "longitude": "17.6791"
+      },
+      "latest": {
+        "confirmed": 130979,
+        "deaths": 5071,
+        "recovered": 115847
+      }
+    },
+    {
+      "id": 29,
+      "country": "Botswana",
+      "country_code": "BW",
+      "country_population": 2254126,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:34.849192Z",
+      "coordinates": {
+        "latitude": "-22.3285",
+        "longitude": "24.6849"
+      },
+      "latest": {
+        "confirmed": 30727,
+        "deaths": 332,
+        "recovered": 24884
+      }
+    },
+    {
+      "id": 30,
+      "country": "Brazil",
+      "country_code": "BR",
+      "country_population": 209469333,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:34.882427Z",
+      "coordinates": {
+        "latitude": "-14.235",
+        "longitude": "-51.9253"
+      },
+      "latest": {
+        "confirmed": 10587001,
+        "deaths": 255720,
+        "recovered": 9437611
+      }
+    },
+    {
+      "id": 31,
+      "country": "Brunei",
+      "country_code": "BN",
+      "country_population": 428962,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:34.933223Z",
+      "coordinates": {
+        "latitude": "4.5353",
+        "longitude": "114.7277"
+      },
+      "latest": {
+        "confirmed": 186,
+        "deaths": 3,
+        "recovered": 181
+      }
+    },
+    {
+      "id": 32,
+      "country": "Bulgaria",
+      "country_code": "BG",
+      "country_population": 7000039,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:34.983809Z",
+      "coordinates": {
+        "latitude": "42.7339",
+        "longitude": "25.4858"
+      },
+      "latest": {
+        "confirmed": 249626,
+        "deaths": 10308,
+        "recovered": 206630
+      }
+    },
+    {
+      "id": 33,
+      "country": "Burkina Faso",
+      "country_code": "BF",
+      "country_population": 19751535,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:35.034112Z",
+      "coordinates": {
+        "latitude": "12.2383",
+        "longitude": "-1.5616"
+      },
+      "latest": {
+        "confirmed": 12030,
+        "deaths": 143,
+        "recovered": 11588
+      }
+    },
+    {
+      "id": 34,
+      "country": "Burma",
+      "country_code": "MM",
+      "country_population": 53708395,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:35.080421Z",
+      "coordinates": {
+        "latitude": "21.9162",
+        "longitude": "95.956"
+      },
+      "latest": {
+        "confirmed": 141916,
+        "deaths": 3199,
+        "recovered": 131487
+      }
+    },
+    {
+      "id": 35,
+      "country": "Burundi",
+      "country_code": "BI",
+      "country_population": 11175378,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:35.119283Z",
+      "coordinates": {
+        "latitude": "-3.3731",
+        "longitude": "29.9189"
+      },
+      "latest": {
+        "confirmed": 2217,
+        "deaths": 3,
+        "recovered": 773
+      }
+    },
+    {
+      "id": 36,
+      "country": "Cabo Verde",
+      "country_code": "CV",
+      "country_population": 543767,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:35.151588Z",
+      "coordinates": {
+        "latitude": "16.5388",
+        "longitude": "-23.0418"
+      },
+      "latest": {
+        "confirmed": 15432,
+        "deaths": 147,
+        "recovered": 14875
+      }
+    },
+    {
+      "id": 37,
+      "country": "Cambodia",
+      "country_code": "KH",
+      "country_population": 16249798,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:35.184931Z",
+      "coordinates": {
+        "latitude": "11.55",
+        "longitude": "104.9167"
+      },
+      "latest": {
+        "confirmed": 844,
+        "deaths": 0,
+        "recovered": 478
+      }
+    },
+    {
+      "id": 38,
+      "country": "Cameroon",
+      "country_code": "CM",
+      "country_population": 25216237,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:35.216309Z",
+      "coordinates": {
+        "latitude": "3.848",
+        "longitude": "11.5021"
+      },
+      "latest": {
+        "confirmed": 35714,
+        "deaths": 551,
+        "recovered": 32594
+      }
+    },
+    {
+      "id": 39,
+      "country": "Canada",
+      "country_code": "CA",
+      "country_population": 37058856,
+      "province": "Alberta",
+      "last_updated": "2021-03-02T16:04:35.250045Z",
+      "coordinates": {
+        "latitude": "53.9333",
+        "longitude": "-116.5765"
+      },
+      "latest": {
+        "confirmed": 133795,
+        "deaths": 1888,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 40,
+      "country": "Canada",
+      "country_code": "CA",
+      "country_population": 37058856,
+      "province": "British Columbia",
+      "last_updated": "2021-03-02T16:04:35.272049Z",
+      "coordinates": {
+        "latitude": "53.7267",
+        "longitude": "-127.6476"
+      },
+      "latest": {
+        "confirmed": 80672,
+        "deaths": 1363,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 41,
+      "country": "Canada",
+      "country_code": "CA",
+      "country_population": 37058856,
+      "province": "Diamond Princess",
+      "last_updated": "2021-03-02T16:04:35.297545Z",
+      "coordinates": {
+        "latitude": "0.0",
+        "longitude": "0.0"
+      },
+      "latest": {
+        "confirmed": 0,
+        "deaths": 1,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 42,
+      "country": "Canada",
+      "country_code": "CA",
+      "country_population": 37058856,
+      "province": "Grand Princess",
+      "last_updated": "2021-03-02T16:04:35.320054Z",
+      "coordinates": {
+        "latitude": "0.0",
+        "longitude": "0.0"
+      },
+      "latest": {
+        "confirmed": 13,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 43,
+      "country": "Canada",
+      "country_code": "CA",
+      "country_population": 37058856,
+      "province": "Manitoba",
+      "last_updated": "2021-03-02T16:04:35.344276Z",
+      "coordinates": {
+        "latitude": "53.7609",
+        "longitude": "-98.8139"
+      },
+      "latest": {
+        "confirmed": 31894,
+        "deaths": 896,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 44,
+      "country": "Canada",
+      "country_code": "CA",
+      "country_population": 37058856,
+      "province": "New Brunswick",
+      "last_updated": "2021-03-02T16:04:35.365141Z",
+      "coordinates": {
+        "latitude": "46.5653",
+        "longitude": "-66.4619"
+      },
+      "latest": {
+        "confirmed": 1431,
+        "deaths": 27,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 45,
+      "country": "Canada",
+      "country_code": "CA",
+      "country_population": 37058856,
+      "province": "Newfoundland and Labrador",
+      "last_updated": "2021-03-02T16:04:35.389155Z",
+      "coordinates": {
+        "latitude": "53.1355",
+        "longitude": "-57.6604"
+      },
+      "latest": {
+        "confirmed": 989,
+        "deaths": 6,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 46,
+      "country": "Canada",
+      "country_code": "CA",
+      "country_population": 37058856,
+      "province": "Northwest Territories",
+      "last_updated": "2021-03-02T16:04:35.410995Z",
+      "coordinates": {
+        "latitude": "64.8255",
+        "longitude": "-124.8457"
+      },
+      "latest": {
+        "confirmed": 47,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 47,
+      "country": "Canada",
+      "country_code": "CA",
+      "country_population": 37058856,
+      "province": "Nova Scotia",
+      "last_updated": "2021-03-02T16:04:35.433040Z",
+      "coordinates": {
+        "latitude": "44.682",
+        "longitude": "-63.7443"
+      },
+      "latest": {
+        "confirmed": 1642,
+        "deaths": 65,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 48,
+      "country": "Canada",
+      "country_code": "CA",
+      "country_population": 37058856,
+      "province": "Nunavut",
+      "last_updated": "2021-03-02T16:04:35.453704Z",
+      "coordinates": {
+        "latitude": "70.2998",
+        "longitude": "-83.1076"
+      },
+      "latest": {
+        "confirmed": 358,
+        "deaths": 1,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 49,
+      "country": "Canada",
+      "country_code": "CA",
+      "country_population": 37058856,
+      "province": "Ontario",
+      "last_updated": "2021-03-02T16:04:35.476170Z",
+      "coordinates": {
+        "latitude": "51.2538",
+        "longitude": "-85.3232"
+      },
+      "latest": {
+        "confirmed": 307176,
+        "deaths": 6982,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 50,
+      "country": "Canada",
+      "country_code": "CA",
+      "country_population": 37058856,
+      "province": "Prince Edward Island",
+      "last_updated": "2021-03-02T16:04:35.496540Z",
+      "coordinates": {
+        "latitude": "46.5107",
+        "longitude": "-63.4168"
+      },
+      "latest": {
+        "confirmed": 132,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 51,
+      "country": "Canada",
+      "country_code": "CA",
+      "country_population": 37058856,
+      "province": "Quebec",
+      "last_updated": "2021-03-02T16:04:35.517354Z",
+      "coordinates": {
+        "latitude": "52.9399",
+        "longitude": "-73.5491"
+      },
+      "latest": {
+        "confirmed": 288353,
+        "deaths": 10399,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 52,
+      "country": "Canada",
+      "country_code": "CA",
+      "country_population": 37058856,
+      "province": "Repatriated Travellers",
+      "last_updated": "2021-03-02T16:04:35.539128Z",
+      "coordinates": {
+        "latitude": "",
+        "longitude": ""
+      },
+      "latest": {
+        "confirmed": 13,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 53,
+      "country": "Canada",
+      "country_code": "CA",
+      "country_population": 37058856,
+      "province": "Saskatchewan",
+      "last_updated": "2021-03-02T16:04:35.559431Z",
+      "coordinates": {
+        "latitude": "52.9399",
+        "longitude": "-106.4509"
+      },
+      "latest": {
+        "confirmed": 28801,
+        "deaths": 385,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 54,
+      "country": "Canada",
+      "country_code": "CA",
+      "country_population": 37058856,
+      "province": "Yukon",
+      "last_updated": "2021-03-02T16:04:35.583773Z",
+      "coordinates": {
+        "latitude": "64.2823",
+        "longitude": "-135.0"
+      },
+      "latest": {
+        "confirmed": 72,
+        "deaths": 1,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 55,
+      "country": "Central African Republic",
+      "country_code": "CF",
+      "country_population": 4666377,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:35.610802Z",
+      "coordinates": {
+        "latitude": "6.6111",
+        "longitude": "20.9394"
+      },
+      "latest": {
+        "confirmed": 5004,
+        "deaths": 63,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 56,
+      "country": "Chad",
+      "country_code": "TD",
+      "country_population": 15477751,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:35.642809Z",
+      "coordinates": {
+        "latitude": "15.4542",
+        "longitude": "18.7322"
+      },
+      "latest": {
+        "confirmed": 3986,
+        "deaths": 140,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 57,
+      "country": "Chile",
+      "country_code": "CL",
+      "country_population": 18729160,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:35.675590Z",
+      "coordinates": {
+        "latitude": "-35.6751",
+        "longitude": "-71.543"
+      },
+      "latest": {
+        "confirmed": 829770,
+        "deaths": 20660,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 58,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Anhui",
+      "last_updated": "2021-03-02T16:04:35.708294Z",
+      "coordinates": {
+        "latitude": "31.8257",
+        "longitude": "117.2264"
+      },
+      "latest": {
+        "confirmed": 994,
+        "deaths": 6,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 59,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Beijing",
+      "last_updated": "2021-03-02T16:04:35.741199Z",
+      "coordinates": {
+        "latitude": "40.1824",
+        "longitude": "116.4142"
+      },
+      "latest": {
+        "confirmed": 1049,
+        "deaths": 9,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 60,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Chongqing",
+      "last_updated": "2021-03-02T16:04:35.774438Z",
+      "coordinates": {
+        "latitude": "30.0572",
+        "longitude": "107.874"
+      },
+      "latest": {
+        "confirmed": 591,
+        "deaths": 6,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 61,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Fujian",
+      "last_updated": "2021-03-02T16:04:35.808980Z",
+      "coordinates": {
+        "latitude": "26.0789",
+        "longitude": "117.9874"
+      },
+      "latest": {
+        "confirmed": 551,
+        "deaths": 1,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 62,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Gansu",
+      "last_updated": "2021-03-02T16:04:35.841960Z",
+      "coordinates": {
+        "latitude": "35.7518",
+        "longitude": "104.2861"
+      },
+      "latest": {
+        "confirmed": 187,
+        "deaths": 2,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 63,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Guangdong",
+      "last_updated": "2021-03-02T16:04:35.874687Z",
+      "coordinates": {
+        "latitude": "23.3417",
+        "longitude": "113.4244"
+      },
+      "latest": {
+        "confirmed": 2215,
+        "deaths": 8,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 64,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Guangxi",
+      "last_updated": "2021-03-02T16:04:35.908093Z",
+      "coordinates": {
+        "latitude": "23.8298",
+        "longitude": "108.7881"
+      },
+      "latest": {
+        "confirmed": 267,
+        "deaths": 2,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 65,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Guizhou",
+      "last_updated": "2021-03-02T16:04:35.948073Z",
+      "coordinates": {
+        "latitude": "26.8154",
+        "longitude": "106.8748"
+      },
+      "latest": {
+        "confirmed": 147,
+        "deaths": 2,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 66,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Hainan",
+      "last_updated": "2021-03-02T16:04:35.977241Z",
+      "coordinates": {
+        "latitude": "19.1959",
+        "longitude": "109.7453"
+      },
+      "latest": {
+        "confirmed": 171,
+        "deaths": 6,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 67,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Hebei",
+      "last_updated": "2021-03-02T16:04:36.011375Z",
+      "coordinates": {
+        "latitude": "39.549",
+        "longitude": "116.1306"
+      },
+      "latest": {
+        "confirmed": 1317,
+        "deaths": 7,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 68,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Heilongjiang",
+      "last_updated": "2021-03-02T16:04:36.044334Z",
+      "coordinates": {
+        "latitude": "47.862",
+        "longitude": "127.7615"
+      },
+      "latest": {
+        "confirmed": 1610,
+        "deaths": 13,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 69,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Henan",
+      "last_updated": "2021-03-02T16:04:36.077905Z",
+      "coordinates": {
+        "latitude": "37.8957",
+        "longitude": "114.9042"
+      },
+      "latest": {
+        "confirmed": 1305,
+        "deaths": 22,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 70,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Hong Kong",
+      "last_updated": "2021-03-02T16:04:36.110257Z",
+      "coordinates": {
+        "latitude": "22.3",
+        "longitude": "114.2"
+      },
+      "latest": {
+        "confirmed": 11019,
+        "deaths": 200,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 71,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Hubei",
+      "last_updated": "2021-03-02T16:04:36.130693Z",
+      "coordinates": {
+        "latitude": "30.9756",
+        "longitude": "112.2707"
+      },
+      "latest": {
+        "confirmed": 68151,
+        "deaths": 4512,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 72,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Hunan",
+      "last_updated": "2021-03-02T16:04:36.151483Z",
+      "coordinates": {
+        "latitude": "27.6104",
+        "longitude": "111.7088"
+      },
+      "latest": {
+        "confirmed": 1036,
+        "deaths": 4,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 73,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Inner Mongolia",
+      "last_updated": "2021-03-02T16:04:36.171898Z",
+      "coordinates": {
+        "latitude": "44.0935",
+        "longitude": "113.9448"
+      },
+      "latest": {
+        "confirmed": 367,
+        "deaths": 1,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 74,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Jiangsu",
+      "last_updated": "2021-03-02T16:04:36.192294Z",
+      "coordinates": {
+        "latitude": "32.9711",
+        "longitude": "119.455"
+      },
+      "latest": {
+        "confirmed": 704,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 75,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Jiangxi",
+      "last_updated": "2021-03-02T16:04:36.218343Z",
+      "coordinates": {
+        "latitude": "27.614",
+        "longitude": "115.7221"
+      },
+      "latest": {
+        "confirmed": 935,
+        "deaths": 1,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 76,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Jilin",
+      "last_updated": "2021-03-02T16:04:36.244472Z",
+      "coordinates": {
+        "latitude": "43.6661",
+        "longitude": "126.1923"
+      },
+      "latest": {
+        "confirmed": 573,
+        "deaths": 3,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 77,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Liaoning",
+      "last_updated": "2021-03-02T16:04:36.264838Z",
+      "coordinates": {
+        "latitude": "41.2956",
+        "longitude": "122.6085"
+      },
+      "latest": {
+        "confirmed": 406,
+        "deaths": 2,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 78,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Macau",
+      "last_updated": "2021-03-02T16:04:36.285080Z",
+      "coordinates": {
+        "latitude": "22.1667",
+        "longitude": "113.55"
+      },
+      "latest": {
+        "confirmed": 48,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 79,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Ningxia",
+      "last_updated": "2021-03-02T16:04:36.305564Z",
+      "coordinates": {
+        "latitude": "37.2692",
+        "longitude": "106.1655"
+      },
+      "latest": {
+        "confirmed": 75,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 80,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Qinghai",
+      "last_updated": "2021-03-02T16:04:36.325934Z",
+      "coordinates": {
+        "latitude": "35.7452",
+        "longitude": "95.9956"
+      },
+      "latest": {
+        "confirmed": 18,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 81,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Shaanxi",
+      "last_updated": "2021-03-02T16:04:36.348686Z",
+      "coordinates": {
+        "latitude": "35.1917",
+        "longitude": "108.8701"
+      },
+      "latest": {
+        "confirmed": 552,
+        "deaths": 3,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 82,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Shandong",
+      "last_updated": "2021-03-02T16:04:36.370192Z",
+      "coordinates": {
+        "latitude": "36.3427",
+        "longitude": "118.1498"
+      },
+      "latest": {
+        "confirmed": 869,
+        "deaths": 7,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 83,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Shanghai",
+      "last_updated": "2021-03-02T16:04:36.392539Z",
+      "coordinates": {
+        "latitude": "31.202",
+        "longitude": "121.4491"
+      },
+      "latest": {
+        "confirmed": 1797,
+        "deaths": 7,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 84,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Shanxi",
+      "last_updated": "2021-03-02T16:04:36.413341Z",
+      "coordinates": {
+        "latitude": "37.5777",
+        "longitude": "112.2922"
+      },
+      "latest": {
+        "confirmed": 240,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 85,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Sichuan",
+      "last_updated": "2021-03-02T16:04:36.435479Z",
+      "coordinates": {
+        "latitude": "30.6171",
+        "longitude": "102.7103"
+      },
+      "latest": {
+        "confirmed": 904,
+        "deaths": 3,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 86,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Tianjin",
+      "last_updated": "2021-03-02T16:04:36.455893Z",
+      "coordinates": {
+        "latitude": "39.3054",
+        "longitude": "117.323"
+      },
+      "latest": {
+        "confirmed": 357,
+        "deaths": 3,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 87,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Tibet",
+      "last_updated": "2021-03-02T16:04:36.476707Z",
+      "coordinates": {
+        "latitude": "31.6927",
+        "longitude": "88.0924"
+      },
+      "latest": {
+        "confirmed": 1,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 88,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Xinjiang",
+      "last_updated": "2021-03-02T16:04:36.497377Z",
+      "coordinates": {
+        "latitude": "41.1129",
+        "longitude": "85.2401"
+      },
+      "latest": {
+        "confirmed": 980,
+        "deaths": 3,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 89,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Yunnan",
+      "last_updated": "2021-03-02T16:04:36.519511Z",
+      "coordinates": {
+        "latitude": "24.974",
+        "longitude": "101.487"
+      },
+      "latest": {
+        "confirmed": 233,
+        "deaths": 2,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 90,
+      "country": "China",
+      "country_code": "CN",
+      "country_population": 1392730000,
+      "province": "Zhejiang",
+      "last_updated": "2021-03-02T16:04:36.540117Z",
+      "coordinates": {
+        "latitude": "29.1832",
+        "longitude": "120.0934"
+      },
+      "latest": {
+        "confirmed": 1321,
+        "deaths": 1,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 91,
+      "country": "Colombia",
+      "country_code": "CO",
+      "country_population": 49648685,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:36.560261Z",
+      "coordinates": {
+        "latitude": "4.5709",
+        "longitude": "-74.2973"
+      },
+      "latest": {
+        "confirmed": 2255260,
+        "deaths": 59866,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 92,
+      "country": "Comoros",
+      "country_code": "KM",
+      "country_population": 832322,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:36.596683Z",
+      "coordinates": {
+        "latitude": "-11.6455",
+        "longitude": "43.3333"
+      },
+      "latest": {
+        "confirmed": 3578,
+        "deaths": 144,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 93,
+      "country": "Congo (Brazzaville)",
+      "country_code": "CG",
+      "country_population": 5244363,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:36.626783Z",
+      "coordinates": {
+        "latitude": "-0.228",
+        "longitude": "15.8277"
+      },
+      "latest": {
+        "confirmed": 8820,
+        "deaths": 128,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 94,
+      "country": "Congo (Kinshasa)",
+      "country_code": "CD",
+      "country_population": 84068091,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:36.648032Z",
+      "coordinates": {
+        "latitude": "-4.0383",
+        "longitude": "21.7587"
+      },
+      "latest": {
+        "confirmed": 25962,
+        "deaths": 707,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 95,
+      "country": "Costa Rica",
+      "country_code": "CR",
+      "country_population": 4999441,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:36.668301Z",
+      "coordinates": {
+        "latitude": "9.7489",
+        "longitude": "-83.7534"
+      },
+      "latest": {
+        "confirmed": 205086,
+        "deaths": 2812,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 96,
+      "country": "Cote d'Ivoire",
+      "country_code": "CI",
+      "country_population": 25069229,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:36.688795Z",
+      "coordinates": {
+        "latitude": "7.54",
+        "longitude": "-5.5471"
+      },
+      "latest": {
+        "confirmed": 32791,
+        "deaths": 193,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 97,
+      "country": "Croatia",
+      "country_code": "HR",
+      "country_population": 4089400,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:36.709242Z",
+      "coordinates": {
+        "latitude": "45.1",
+        "longitude": "15.2"
+      },
+      "latest": {
+        "confirmed": 243064,
+        "deaths": 5537,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 98,
+      "country": "Cuba",
+      "country_code": "CU",
+      "country_population": 11338138,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:36.729635Z",
+      "coordinates": {
+        "latitude": "21.521757",
+        "longitude": "-77.781167"
+      },
+      "latest": {
+        "confirmed": 50590,
+        "deaths": 324,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 99,
+      "country": "Cyprus",
+      "country_code": "CY",
+      "country_population": 1189265,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:36.749885Z",
+      "coordinates": {
+        "latitude": "35.1264",
+        "longitude": "33.4299"
+      },
+      "latest": {
+        "confirmed": 35009,
+        "deaths": 231,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 100,
+      "country": "Czechia",
+      "country_code": "CZ",
+      "country_population": 10625695,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:36.770032Z",
+      "coordinates": {
+        "latitude": "49.8175",
+        "longitude": "15.473"
+      },
+      "latest": {
+        "confirmed": 1240051,
+        "deaths": 20469,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 101,
+      "country": "Denmark",
+      "country_code": "DK",
+      "country_population": 5797446,
+      "province": "Faroe Islands",
+      "last_updated": "2021-03-02T16:04:36.790338Z",
+      "coordinates": {
+        "latitude": "61.8926",
+        "longitude": "-6.9118"
+      },
+      "latest": {
+        "confirmed": 658,
+        "deaths": 1,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 102,
+      "country": "Denmark",
+      "country_code": "DK",
+      "country_population": 5797446,
+      "province": "Greenland",
+      "last_updated": "2021-03-02T16:04:36.810653Z",
+      "coordinates": {
+        "latitude": "71.7069",
+        "longitude": "-42.6043"
+      },
+      "latest": {
+        "confirmed": 30,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 103,
+      "country": "Denmark",
+      "country_code": "DK",
+      "country_population": 5797446,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:36.831768Z",
+      "coordinates": {
+        "latitude": "56.2639",
+        "longitude": "9.5018"
+      },
+      "latest": {
+        "confirmed": 211692,
+        "deaths": 2365,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 104,
+      "country": "Diamond Princess",
+      "country_code": "XX",
+      "country_population": null,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:36.852740Z",
+      "coordinates": {
+        "latitude": "0.0",
+        "longitude": "0.0"
+      },
+      "latest": {
+        "confirmed": 712,
+        "deaths": 13,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 105,
+      "country": "Djibouti",
+      "country_code": "DJ",
+      "country_population": 958920,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:36.873720Z",
+      "coordinates": {
+        "latitude": "11.8251",
+        "longitude": "42.5903"
+      },
+      "latest": {
+        "confirmed": 6087,
+        "deaths": 63,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 106,
+      "country": "Dominica",
+      "country_code": "DM",
+      "country_population": 71625,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:36.894773Z",
+      "coordinates": {
+        "latitude": "15.415",
+        "longitude": "-61.371"
+      },
+      "latest": {
+        "confirmed": 142,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 107,
+      "country": "Dominican Republic",
+      "country_code": "DO",
+      "country_population": 10627165,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:36.918851Z",
+      "coordinates": {
+        "latitude": "18.7357",
+        "longitude": "-70.1627"
+      },
+      "latest": {
+        "confirmed": 239998,
+        "deaths": 3106,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 108,
+      "country": "Ecuador",
+      "country_code": "EC",
+      "country_population": 17084357,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:36.938785Z",
+      "coordinates": {
+        "latitude": "-1.8312",
+        "longitude": "-78.1834"
+      },
+      "latest": {
+        "confirmed": 286367,
+        "deaths": 15832,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 109,
+      "country": "Egypt",
+      "country_code": "EG",
+      "country_population": 98423595,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:36.958852Z",
+      "coordinates": {
+        "latitude": "26.820553",
+        "longitude": "30.802498"
+      },
+      "latest": {
+        "confirmed": 183010,
+        "deaths": 10736,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 110,
+      "country": "El Salvador",
+      "country_code": "SV",
+      "country_population": 6420744,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:36.978848Z",
+      "coordinates": {
+        "latitude": "13.7942",
+        "longitude": "-88.8965"
+      },
+      "latest": {
+        "confirmed": 59866,
+        "deaths": 1861,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 111,
+      "country": "Equatorial Guinea",
+      "country_code": "GQ",
+      "country_population": 1308974,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:36.998909Z",
+      "coordinates": {
+        "latitude": "1.6508",
+        "longitude": "10.2679"
+      },
+      "latest": {
+        "confirmed": 6095,
+        "deaths": 92,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 112,
+      "country": "Eritrea",
+      "country_code": "ER",
+      "country_population": null,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.019302Z",
+      "coordinates": {
+        "latitude": "15.1794",
+        "longitude": "39.7823"
+      },
+      "latest": {
+        "confirmed": 2866,
+        "deaths": 7,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 113,
+      "country": "Estonia",
+      "country_code": "EE",
+      "country_population": 1320884,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.039521Z",
+      "coordinates": {
+        "latitude": "58.5953",
+        "longitude": "25.0136"
+      },
+      "latest": {
+        "confirmed": 66628,
+        "deaths": 598,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 114,
+      "country": "Eswatini",
+      "country_code": "SZ",
+      "country_population": 1136191,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.059708Z",
+      "coordinates": {
+        "latitude": "-26.5225",
+        "longitude": "31.4659"
+      },
+      "latest": {
+        "confirmed": 17025,
+        "deaths": 652,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 115,
+      "country": "Ethiopia",
+      "country_code": "ET",
+      "country_population": 109224559,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.079850Z",
+      "coordinates": {
+        "latitude": "9.145",
+        "longitude": "40.4897"
+      },
+      "latest": {
+        "confirmed": 159972,
+        "deaths": 2373,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 116,
+      "country": "Fiji",
+      "country_code": "FJ",
+      "country_population": 883483,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.100531Z",
+      "coordinates": {
+        "latitude": "-17.7134",
+        "longitude": "178.065"
+      },
+      "latest": {
+        "confirmed": 59,
+        "deaths": 2,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 117,
+      "country": "Finland",
+      "country_code": "FI",
+      "country_population": 5518050,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.120777Z",
+      "coordinates": {
+        "latitude": "61.92411",
+        "longitude": "25.748151"
+      },
+      "latest": {
+        "confirmed": 58064,
+        "deaths": 750,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 118,
+      "country": "France",
+      "country_code": "FR",
+      "country_population": 66987244,
+      "province": "French Guiana",
+      "last_updated": "2021-03-02T16:04:37.141289Z",
+      "coordinates": {
+        "latitude": "3.9339",
+        "longitude": "-53.1258"
+      },
+      "latest": {
+        "confirmed": 16627,
+        "deaths": 85,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 119,
+      "country": "France",
+      "country_code": "FR",
+      "country_population": 66987244,
+      "province": "French Polynesia",
+      "last_updated": "2021-03-02T16:04:37.161507Z",
+      "coordinates": {
+        "latitude": "-17.6797",
+        "longitude": "149.4068"
+      },
+      "latest": {
+        "confirmed": 18414,
+        "deaths": 139,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 120,
+      "country": "France",
+      "country_code": "FR",
+      "country_population": 66987244,
+      "province": "Guadeloupe",
+      "last_updated": "2021-03-02T16:04:37.181882Z",
+      "coordinates": {
+        "latitude": "16.265",
+        "longitude": "-61.551"
+      },
+      "latest": {
+        "confirmed": 9968,
+        "deaths": 164,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 121,
+      "country": "France",
+      "country_code": "FR",
+      "country_population": 66987244,
+      "province": "Martinique",
+      "last_updated": "2021-03-02T16:04:37.202325Z",
+      "coordinates": {
+        "latitude": "14.6415",
+        "longitude": "-61.0242"
+      },
+      "latest": {
+        "confirmed": 6746,
+        "deaths": 45,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 122,
+      "country": "France",
+      "country_code": "FR",
+      "country_population": 66987244,
+      "province": "Mayotte",
+      "last_updated": "2021-03-02T16:04:37.224979Z",
+      "coordinates": {
+        "latitude": "-12.8275",
+        "longitude": "45.166244"
+      },
+      "latest": {
+        "confirmed": 17600,
+        "deaths": 110,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 123,
+      "country": "France",
+      "country_code": "FR",
+      "country_population": 66987244,
+      "province": "New Caledonia",
+      "last_updated": "2021-03-02T16:04:37.245333Z",
+      "coordinates": {
+        "latitude": "-20.904305",
+        "longitude": "165.618042"
+      },
+      "latest": {
+        "confirmed": 58,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 124,
+      "country": "France",
+      "country_code": "FR",
+      "country_population": 66987244,
+      "province": "Reunion",
+      "last_updated": "2021-03-02T16:04:37.265553Z",
+      "coordinates": {
+        "latitude": "-21.1151",
+        "longitude": "55.5364"
+      },
+      "latest": {
+        "confirmed": 12416,
+        "deaths": 52,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 125,
+      "country": "France",
+      "country_code": "FR",
+      "country_population": 66987244,
+      "province": "Saint Barthelemy",
+      "last_updated": "2021-03-02T16:04:37.285883Z",
+      "coordinates": {
+        "latitude": "17.9",
+        "longitude": "-62.8333"
+      },
+      "latest": {
+        "confirmed": 573,
+        "deaths": 1,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 126,
+      "country": "France",
+      "country_code": "FR",
+      "country_population": 66987244,
+      "province": "Saint Pierre and Miquelon",
+      "last_updated": "2021-03-02T16:04:37.306000Z",
+      "coordinates": {
+        "latitude": "46.8852",
+        "longitude": "-56.3159"
+      },
+      "latest": {
+        "confirmed": 24,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 127,
+      "country": "France",
+      "country_code": "FR",
+      "country_population": 66987244,
+      "province": "St Martin",
+      "last_updated": "2021-03-02T16:04:37.326050Z",
+      "coordinates": {
+        "latitude": "18.0708",
+        "longitude": "-63.0501"
+      },
+      "latest": {
+        "confirmed": 1544,
+        "deaths": 12,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 128,
+      "country": "France",
+      "country_code": "FR",
+      "country_population": 66987244,
+      "province": "Wallis and Futuna",
+      "last_updated": "2021-03-02T16:04:37.346309Z",
+      "coordinates": {
+        "latitude": "-14.2938",
+        "longitude": "-178.1165"
+      },
+      "latest": {
+        "confirmed": 9,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 129,
+      "country": "France",
+      "country_code": "FR",
+      "country_population": 66987244,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.368337Z",
+      "coordinates": {
+        "latitude": "46.2276",
+        "longitude": "2.2137"
+      },
+      "latest": {
+        "confirmed": 3736390,
+        "deaths": 86347,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 130,
+      "country": "Gabon",
+      "country_code": "GA",
+      "country_population": 2119275,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.389868Z",
+      "coordinates": {
+        "latitude": "-0.8037",
+        "longitude": "11.6094"
+      },
+      "latest": {
+        "confirmed": 14849,
+        "deaths": 87,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 131,
+      "country": "Gambia",
+      "country_code": "GM",
+      "country_population": 2280102,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.409770Z",
+      "coordinates": {
+        "latitude": "13.4432",
+        "longitude": "-15.3101"
+      },
+      "latest": {
+        "confirmed": 4712,
+        "deaths": 150,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 132,
+      "country": "Georgia",
+      "country_code": "GE",
+      "country_population": 3731000,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.429973Z",
+      "coordinates": {
+        "latitude": "42.3154",
+        "longitude": "43.3569"
+      },
+      "latest": {
+        "confirmed": 270918,
+        "deaths": 3520,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 133,
+      "country": "Germany",
+      "country_code": "DE",
+      "country_population": 82927922,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.450246Z",
+      "coordinates": {
+        "latitude": "51.165691",
+        "longitude": "10.451526"
+      },
+      "latest": {
+        "confirmed": 2455569,
+        "deaths": 70514,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 134,
+      "country": "Ghana",
+      "country_code": "GH",
+      "country_population": 29767108,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.470463Z",
+      "coordinates": {
+        "latitude": "7.9465",
+        "longitude": "-1.0232"
+      },
+      "latest": {
+        "confirmed": 84023,
+        "deaths": 607,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 135,
+      "country": "Greece",
+      "country_code": "GR",
+      "country_population": 10727668,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.490489Z",
+      "coordinates": {
+        "latitude": "39.0742",
+        "longitude": "21.8243"
+      },
+      "latest": {
+        "confirmed": 192270,
+        "deaths": 6534,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 136,
+      "country": "Grenada",
+      "country_code": "GD",
+      "country_population": 111454,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.523496Z",
+      "coordinates": {
+        "latitude": "12.1165",
+        "longitude": "-61.679"
+      },
+      "latest": {
+        "confirmed": 148,
+        "deaths": 1,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 137,
+      "country": "Guatemala",
+      "country_code": "GT",
+      "country_population": 17247807,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.551346Z",
+      "coordinates": {
+        "latitude": "15.7835",
+        "longitude": "-90.2308"
+      },
+      "latest": {
+        "confirmed": 174653,
+        "deaths": 6402,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 138,
+      "country": "Guinea",
+      "country_code": "GN",
+      "country_population": 12414318,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.571479Z",
+      "coordinates": {
+        "latitude": "9.9456",
+        "longitude": "-9.6966"
+      },
+      "latest": {
+        "confirmed": 16005,
+        "deaths": 89,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 139,
+      "country": "Guinea-Bissau",
+      "country_code": "GW",
+      "country_population": 1874309,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.591649Z",
+      "coordinates": {
+        "latitude": "11.8037",
+        "longitude": "-15.1804"
+      },
+      "latest": {
+        "confirmed": 3262,
+        "deaths": 48,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 140,
+      "country": "Guyana",
+      "country_code": "GY",
+      "country_population": 779004,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.612370Z",
+      "coordinates": {
+        "latitude": "4.860416",
+        "longitude": "-58.93018"
+      },
+      "latest": {
+        "confirmed": 8595,
+        "deaths": 197,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 141,
+      "country": "Haiti",
+      "country_code": "HT",
+      "country_population": 11123176,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.633060Z",
+      "coordinates": {
+        "latitude": "18.9712",
+        "longitude": "-72.2852"
+      },
+      "latest": {
+        "confirmed": 12448,
+        "deaths": 250,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 142,
+      "country": "Holy See",
+      "country_code": "VA",
+      "country_population": 921,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.653265Z",
+      "coordinates": {
+        "latitude": "41.9029",
+        "longitude": "12.4534"
+      },
+      "latest": {
+        "confirmed": 27,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 143,
+      "country": "Honduras",
+      "country_code": "HN",
+      "country_population": 9587522,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.675054Z",
+      "coordinates": {
+        "latitude": "15.2",
+        "longitude": "-86.2419"
+      },
+      "latest": {
+        "confirmed": 170985,
+        "deaths": 4174,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 144,
+      "country": "Hungary",
+      "country_code": "HU",
+      "country_population": 9768785,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.695465Z",
+      "coordinates": {
+        "latitude": "47.1625",
+        "longitude": "19.5033"
+      },
+      "latest": {
+        "confirmed": 432925,
+        "deaths": 15058,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 145,
+      "country": "Iceland",
+      "country_code": "IS",
+      "country_population": 353574,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.715740Z",
+      "coordinates": {
+        "latitude": "64.9631",
+        "longitude": "-19.0208"
+      },
+      "latest": {
+        "confirmed": 6054,
+        "deaths": 29,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 146,
+      "country": "India",
+      "country_code": "IN",
+      "country_population": 1352617328,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.735982Z",
+      "coordinates": {
+        "latitude": "20.593684",
+        "longitude": "78.96288"
+      },
+      "latest": {
+        "confirmed": 11124527,
+        "deaths": 157248,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 147,
+      "country": "Indonesia",
+      "country_code": "ID",
+      "country_population": 267663435,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.756255Z",
+      "coordinates": {
+        "latitude": "-0.7893",
+        "longitude": "113.9213"
+      },
+      "latest": {
+        "confirmed": 1341314,
+        "deaths": 36325,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 148,
+      "country": "Iran",
+      "country_code": "IR",
+      "country_population": 81800269,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.782685Z",
+      "coordinates": {
+        "latitude": "32.427908",
+        "longitude": "53.688046"
+      },
+      "latest": {
+        "confirmed": 1639679,
+        "deaths": 60181,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 149,
+      "country": "Iraq",
+      "country_code": "IQ",
+      "country_population": 38433600,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.805638Z",
+      "coordinates": {
+        "latitude": "33.223191",
+        "longitude": "43.679291"
+      },
+      "latest": {
+        "confirmed": 699088,
+        "deaths": 13428,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 150,
+      "country": "Ireland",
+      "country_code": "IE",
+      "country_population": 4853506,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.825835Z",
+      "coordinates": {
+        "latitude": "53.1424",
+        "longitude": "-7.6921"
+      },
+      "latest": {
+        "confirmed": 220273,
+        "deaths": 4319,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 151,
+      "country": "Israel",
+      "country_code": "IL",
+      "country_population": 8883800,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.846032Z",
+      "coordinates": {
+        "latitude": "31.046051",
+        "longitude": "34.851612"
+      },
+      "latest": {
+        "confirmed": 779958,
+        "deaths": 5760,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 152,
+      "country": "Italy",
+      "country_code": "IT",
+      "country_population": 60431283,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.866231Z",
+      "coordinates": {
+        "latitude": "41.87194",
+        "longitude": "12.56738"
+      },
+      "latest": {
+        "confirmed": 2938371,
+        "deaths": 97945,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 153,
+      "country": "Jamaica",
+      "country_code": "JM",
+      "country_population": 2934855,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.886461Z",
+      "coordinates": {
+        "latitude": "18.1096",
+        "longitude": "-77.2975"
+      },
+      "latest": {
+        "confirmed": 23599,
+        "deaths": 425,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 154,
+      "country": "Japan",
+      "country_code": "JP",
+      "country_population": 126529100,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.906919Z",
+      "coordinates": {
+        "latitude": "36.204824",
+        "longitude": "138.252924"
+      },
+      "latest": {
+        "confirmed": 432778,
+        "deaths": 7940,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 155,
+      "country": "Jordan",
+      "country_code": "JO",
+      "country_population": 9956011,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.927092Z",
+      "coordinates": {
+        "latitude": "31.24",
+        "longitude": "36.51"
+      },
+      "latest": {
+        "confirmed": 397158,
+        "deaths": 4727,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 156,
+      "country": "Kazakhstan",
+      "country_code": "KZ",
+      "country_population": 18276499,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.947603Z",
+      "coordinates": {
+        "latitude": "48.0196",
+        "longitude": "66.9237"
+      },
+      "latest": {
+        "confirmed": 263396,
+        "deaths": 3168,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 157,
+      "country": "Kenya",
+      "country_code": "KE",
+      "country_population": 51393010,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.967779Z",
+      "coordinates": {
+        "latitude": "-0.0236",
+        "longitude": "37.9062"
+      },
+      "latest": {
+        "confirmed": 106125,
+        "deaths": 1859,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 158,
+      "country": "Korea, South",
+      "country_code": "KR",
+      "country_population": 51635256,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:37.987954Z",
+      "coordinates": {
+        "latitude": "35.907757",
+        "longitude": "127.766922"
+      },
+      "latest": {
+        "confirmed": 90372,
+        "deaths": 1606,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 159,
+      "country": "Kosovo",
+      "country_code": "XK",
+      "country_population": 1845300,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.008565Z",
+      "coordinates": {
+        "latitude": "42.602636",
+        "longitude": "20.902977"
+      },
+      "latest": {
+        "confirmed": 68451,
+        "deaths": 1592,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 160,
+      "country": "Kuwait",
+      "country_code": "KW",
+      "country_population": 4137309,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.028763Z",
+      "coordinates": {
+        "latitude": "29.31166",
+        "longitude": "47.481766"
+      },
+      "latest": {
+        "confirmed": 192031,
+        "deaths": 1085,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 161,
+      "country": "Kyrgyzstan",
+      "country_code": "KG",
+      "country_population": 6315800,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.049058Z",
+      "coordinates": {
+        "latitude": "41.20438",
+        "longitude": "74.766098"
+      },
+      "latest": {
+        "confirmed": 86308,
+        "deaths": 1467,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 162,
+      "country": "Laos",
+      "country_code": "LA",
+      "country_population": 7061507,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.070249Z",
+      "coordinates": {
+        "latitude": "19.85627",
+        "longitude": "102.495496"
+      },
+      "latest": {
+        "confirmed": 45,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 163,
+      "country": "Latvia",
+      "country_code": "LV",
+      "country_population": 1926542,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.090480Z",
+      "coordinates": {
+        "latitude": "56.8796",
+        "longitude": "24.6032"
+      },
+      "latest": {
+        "confirmed": 86458,
+        "deaths": 1621,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 164,
+      "country": "Lebanon",
+      "country_code": "LB",
+      "country_population": 6848925,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.110818Z",
+      "coordinates": {
+        "latitude": "33.8547",
+        "longitude": "35.8623"
+      },
+      "latest": {
+        "confirmed": 376938,
+        "deaths": 4743,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 165,
+      "country": "Lesotho",
+      "country_code": "LS",
+      "country_population": 2108132,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.131060Z",
+      "coordinates": {
+        "latitude": "-29.61",
+        "longitude": "28.2336"
+      },
+      "latest": {
+        "confirmed": 10495,
+        "deaths": 295,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 166,
+      "country": "Liberia",
+      "country_code": "LR",
+      "country_population": 4818977,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.151171Z",
+      "coordinates": {
+        "latitude": "6.428055",
+        "longitude": "-9.429499"
+      },
+      "latest": {
+        "confirmed": 2014,
+        "deaths": 85,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 167,
+      "country": "Libya",
+      "country_code": "LY",
+      "country_population": 6678567,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.171390Z",
+      "coordinates": {
+        "latitude": "26.3351",
+        "longitude": "17.228331"
+      },
+      "latest": {
+        "confirmed": 134127,
+        "deaths": 2210,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 168,
+      "country": "Liechtenstein",
+      "country_code": "LI",
+      "country_population": 37910,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.191577Z",
+      "coordinates": {
+        "latitude": "47.14",
+        "longitude": "9.55"
+      },
+      "latest": {
+        "confirmed": 2575,
+        "deaths": 54,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 169,
+      "country": "Lithuania",
+      "country_code": "LT",
+      "country_population": 2789533,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.214005Z",
+      "coordinates": {
+        "latitude": "55.1694",
+        "longitude": "23.8813"
+      },
+      "latest": {
+        "confirmed": 199398,
+        "deaths": 3253,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 170,
+      "country": "Luxembourg",
+      "country_code": "LU",
+      "country_population": 607728,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.235144Z",
+      "coordinates": {
+        "latitude": "49.8153",
+        "longitude": "6.1296"
+      },
+      "latest": {
+        "confirmed": 55480,
+        "deaths": 639,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 171,
+      "country": "MS Zaandam",
+      "country_code": "XX",
+      "country_population": null,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.255553Z",
+      "coordinates": {
+        "latitude": "0.0",
+        "longitude": "0.0"
+      },
+      "latest": {
+        "confirmed": 9,
+        "deaths": 2,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 172,
+      "country": "Madagascar",
+      "country_code": "MG",
+      "country_population": 26262368,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.276076Z",
+      "coordinates": {
+        "latitude": "-18.766947",
+        "longitude": "46.869107"
+      },
+      "latest": {
+        "confirmed": 19831,
+        "deaths": 297,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 173,
+      "country": "Malawi",
+      "country_code": "MW",
+      "country_population": 17563749,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.296290Z",
+      "coordinates": {
+        "latitude": "-13.2543",
+        "longitude": "34.3015"
+      },
+      "latest": {
+        "confirmed": 32008,
+        "deaths": 1048,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 174,
+      "country": "Malaysia",
+      "country_code": "MY",
+      "country_population": 31528585,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.323373Z",
+      "coordinates": {
+        "latitude": "4.210484",
+        "longitude": "101.975766"
+      },
+      "latest": {
+        "confirmed": 302580,
+        "deaths": 1135,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 175,
+      "country": "Maldives",
+      "country_code": "MV",
+      "country_population": 515696,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.352306Z",
+      "coordinates": {
+        "latitude": "3.2028",
+        "longitude": "73.2207"
+      },
+      "latest": {
+        "confirmed": 19979,
+        "deaths": 62,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 176,
+      "country": "Mali",
+      "country_code": "ML",
+      "country_population": 19077690,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.381343Z",
+      "coordinates": {
+        "latitude": "17.570692",
+        "longitude": "-3.996166"
+      },
+      "latest": {
+        "confirmed": 8390,
+        "deaths": 355,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 177,
+      "country": "Malta",
+      "country_code": "MT",
+      "country_population": 483530,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.401598Z",
+      "coordinates": {
+        "latitude": "35.9375",
+        "longitude": "14.3754"
+      },
+      "latest": {
+        "confirmed": 22657,
+        "deaths": 316,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 178,
+      "country": "Marshall Islands",
+      "country_code": "MH",
+      "country_population": 58413,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.421807Z",
+      "coordinates": {
+        "latitude": "7.1315",
+        "longitude": "171.1845"
+      },
+      "latest": {
+        "confirmed": 4,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 179,
+      "country": "Mauritania",
+      "country_code": "MR",
+      "country_population": 4403319,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.443864Z",
+      "coordinates": {
+        "latitude": "21.0079",
+        "longitude": "-10.9408"
+      },
+      "latest": {
+        "confirmed": 17217,
+        "deaths": 441,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 180,
+      "country": "Mauritius",
+      "country_code": "MU",
+      "country_population": 1265303,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.464315Z",
+      "coordinates": {
+        "latitude": "-20.348404",
+        "longitude": "57.552152"
+      },
+      "latest": {
+        "confirmed": 619,
+        "deaths": 10,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 181,
+      "country": "Mexico",
+      "country_code": "MX",
+      "country_population": 126190788,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.484451Z",
+      "coordinates": {
+        "latitude": "23.6345",
+        "longitude": "-102.5528"
+      },
+      "latest": {
+        "confirmed": 2089281,
+        "deaths": 186152,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 182,
+      "country": "Micronesia",
+      "country_code": "FM",
+      "country_population": 112640,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.504656Z",
+      "coordinates": {
+        "latitude": "7.4256",
+        "longitude": "150.5508"
+      },
+      "latest": {
+        "confirmed": 1,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 183,
+      "country": "Moldova",
+      "country_code": "MD",
+      "country_population": 3545883,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.525083Z",
+      "coordinates": {
+        "latitude": "47.4116",
+        "longitude": "28.3699"
+      },
+      "latest": {
+        "confirmed": 186447,
+        "deaths": 3975,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 184,
+      "country": "Monaco",
+      "country_code": "MC",
+      "country_population": 38682,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.545373Z",
+      "coordinates": {
+        "latitude": "43.7333",
+        "longitude": "7.4167"
+      },
+      "latest": {
+        "confirmed": 1965,
+        "deaths": 24,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 185,
+      "country": "Mongolia",
+      "country_code": "MN",
+      "country_population": 3170208,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.565468Z",
+      "coordinates": {
+        "latitude": "46.8625",
+        "longitude": "103.8467"
+      },
+      "latest": {
+        "confirmed": 3000,
+        "deaths": 2,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 186,
+      "country": "Montenegro",
+      "country_code": "ME",
+      "country_population": 622345,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.587784Z",
+      "coordinates": {
+        "latitude": "42.708678",
+        "longitude": "19.37439"
+      },
+      "latest": {
+        "confirmed": 76283,
+        "deaths": 1015,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 187,
+      "country": "Morocco",
+      "country_code": "MA",
+      "country_population": 36029138,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.608065Z",
+      "coordinates": {
+        "latitude": "31.7917",
+        "longitude": "-7.0926"
+      },
+      "latest": {
+        "confirmed": 483766,
+        "deaths": 8637,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 188,
+      "country": "Mozambique",
+      "country_code": "MZ",
+      "country_population": 29495962,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.628381Z",
+      "coordinates": {
+        "latitude": "-18.665695",
+        "longitude": "35.529562"
+      },
+      "latest": {
+        "confirmed": 59607,
+        "deaths": 653,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 189,
+      "country": "Namibia",
+      "country_code": "NA",
+      "country_population": 2448255,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.648568Z",
+      "coordinates": {
+        "latitude": "-22.9576",
+        "longitude": "18.4904"
+      },
+      "latest": {
+        "confirmed": 39033,
+        "deaths": 428,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 190,
+      "country": "Nepal",
+      "country_code": "NP",
+      "country_population": 28087871,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.668729Z",
+      "coordinates": {
+        "latitude": "28.1667",
+        "longitude": "84.25"
+      },
+      "latest": {
+        "confirmed": 274216,
+        "deaths": 2777,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 191,
+      "country": "Netherlands",
+      "country_code": "NL",
+      "country_population": 17231017,
+      "province": "Aruba",
+      "last_updated": "2021-03-02T16:04:38.688974Z",
+      "coordinates": {
+        "latitude": "12.5211",
+        "longitude": "-69.9683"
+      },
+      "latest": {
+        "confirmed": 7908,
+        "deaths": 74,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 192,
+      "country": "Netherlands",
+      "country_code": "NL",
+      "country_population": 17231017,
+      "province": "Bonaire, Sint Eustatius and Saba",
+      "last_updated": "2021-03-02T16:04:38.709281Z",
+      "coordinates": {
+        "latitude": "12.1784",
+        "longitude": "-68.2385"
+      },
+      "latest": {
+        "confirmed": 196,
+        "deaths": 3,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 193,
+      "country": "Netherlands",
+      "country_code": "NL",
+      "country_population": 17231017,
+      "province": "Curacao",
+      "last_updated": "2021-03-02T16:04:38.729166Z",
+      "coordinates": {
+        "latitude": "12.1696",
+        "longitude": "-68.99"
+      },
+      "latest": {
+        "confirmed": 4731,
+        "deaths": 22,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 194,
+      "country": "Netherlands",
+      "country_code": "NL",
+      "country_population": 17231017,
+      "province": "Sint Maarten",
+      "last_updated": "2021-03-02T16:04:38.749256Z",
+      "coordinates": {
+        "latitude": "18.0425",
+        "longitude": "-63.0548"
+      },
+      "latest": {
+        "confirmed": 2060,
+        "deaths": 27,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 195,
+      "country": "Netherlands",
+      "country_code": "NL",
+      "country_population": 17231017,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.769655Z",
+      "coordinates": {
+        "latitude": "52.1326",
+        "longitude": "5.2913"
+      },
+      "latest": {
+        "confirmed": 1092452,
+        "deaths": 15584,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 196,
+      "country": "New Zealand",
+      "country_code": "NZ",
+      "country_population": 4885500,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.789618Z",
+      "coordinates": {
+        "latitude": "-40.9006",
+        "longitude": "174.886"
+      },
+      "latest": {
+        "confirmed": 2382,
+        "deaths": 26,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 197,
+      "country": "Nicaragua",
+      "country_code": "NI",
+      "country_population": 6465513,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.809774Z",
+      "coordinates": {
+        "latitude": "12.865416",
+        "longitude": "-85.207229"
+      },
+      "latest": {
+        "confirmed": 6445,
+        "deaths": 173,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 198,
+      "country": "Niger",
+      "country_code": "NE",
+      "country_population": 22442948,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.830200Z",
+      "coordinates": {
+        "latitude": "17.607789",
+        "longitude": "8.081666"
+      },
+      "latest": {
+        "confirmed": 4740,
+        "deaths": 172,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 199,
+      "country": "Nigeria",
+      "country_code": "NG",
+      "country_population": 195874740,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.850103Z",
+      "coordinates": {
+        "latitude": "9.082",
+        "longitude": "8.6753"
+      },
+      "latest": {
+        "confirmed": 156017,
+        "deaths": 1915,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 200,
+      "country": "North Macedonia",
+      "country_code": "MK",
+      "country_population": 2082958,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.870309Z",
+      "coordinates": {
+        "latitude": "41.6086",
+        "longitude": "21.7453"
+      },
+      "latest": {
+        "confirmed": 103020,
+        "deaths": 3144,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 201,
+      "country": "Norway",
+      "country_code": "NO",
+      "country_population": 5314336,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.890432Z",
+      "coordinates": {
+        "latitude": "60.472",
+        "longitude": "8.4689"
+      },
+      "latest": {
+        "confirmed": 71735,
+        "deaths": 623,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 202,
+      "country": "Oman",
+      "country_code": "OM",
+      "country_population": 4829483,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.910544Z",
+      "coordinates": {
+        "latitude": "21.512583",
+        "longitude": "55.923255"
+      },
+      "latest": {
+        "confirmed": 141808,
+        "deaths": 1577,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 203,
+      "country": "Pakistan",
+      "country_code": "PK",
+      "country_population": 212215030,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.930750Z",
+      "coordinates": {
+        "latitude": "30.3753",
+        "longitude": "69.3451"
+      },
+      "latest": {
+        "confirmed": 582528,
+        "deaths": 12938,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 204,
+      "country": "Panama",
+      "country_code": "PA",
+      "country_population": 4176873,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.950982Z",
+      "coordinates": {
+        "latitude": "8.538",
+        "longitude": "-80.7821"
+      },
+      "latest": {
+        "confirmed": 341420,
+        "deaths": 5858,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 205,
+      "country": "Papua New Guinea",
+      "country_code": "PG",
+      "country_population": 8606316,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.971150Z",
+      "coordinates": {
+        "latitude": "-6.314993",
+        "longitude": "143.95555"
+      },
+      "latest": {
+        "confirmed": 1365,
+        "deaths": 14,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 206,
+      "country": "Paraguay",
+      "country_code": "PY",
+      "country_population": 6956071,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:38.991103Z",
+      "coordinates": {
+        "latitude": "-23.4425",
+        "longitude": "-58.4438"
+      },
+      "latest": {
+        "confirmed": 160448,
+        "deaths": 3198,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 207,
+      "country": "Peru",
+      "country_code": "PE",
+      "country_population": 31989256,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.011029Z",
+      "coordinates": {
+        "latitude": "-9.19",
+        "longitude": "-75.0152"
+      },
+      "latest": {
+        "confirmed": 1329805,
+        "deaths": 46494,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 208,
+      "country": "Philippines",
+      "country_code": "PH",
+      "country_population": 106651922,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.031334Z",
+      "coordinates": {
+        "latitude": "12.879721",
+        "longitude": "121.774017"
+      },
+      "latest": {
+        "confirmed": 578381,
+        "deaths": 12322,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 209,
+      "country": "Poland",
+      "country_code": "PL",
+      "country_population": 37978548,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.051470Z",
+      "coordinates": {
+        "latitude": "51.9194",
+        "longitude": "19.1451"
+      },
+      "latest": {
+        "confirmed": 1711772,
+        "deaths": 43793,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 210,
+      "country": "Portugal",
+      "country_code": "PT",
+      "country_population": 10281762,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.071475Z",
+      "coordinates": {
+        "latitude": "39.3999",
+        "longitude": "-8.2245"
+      },
+      "latest": {
+        "confirmed": 804956,
+        "deaths": 16351,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 211,
+      "country": "Qatar",
+      "country_code": "QA",
+      "country_population": 2781677,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.091871Z",
+      "coordinates": {
+        "latitude": "25.3548",
+        "longitude": "51.1839"
+      },
+      "latest": {
+        "confirmed": 164137,
+        "deaths": 259,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 212,
+      "country": "Romania",
+      "country_code": "RO",
+      "country_population": 19473936,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.112115Z",
+      "coordinates": {
+        "latitude": "45.9432",
+        "longitude": "24.9668"
+      },
+      "latest": {
+        "confirmed": 804090,
+        "deaths": 20403,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 213,
+      "country": "Russia",
+      "country_code": "RU",
+      "country_population": 144478050,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.132236Z",
+      "coordinates": {
+        "latitude": "61.52401",
+        "longitude": "105.318756"
+      },
+      "latest": {
+        "confirmed": 4209850,
+        "deaths": 85025,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 214,
+      "country": "Rwanda",
+      "country_code": "RW",
+      "country_population": 12301939,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.152273Z",
+      "coordinates": {
+        "latitude": "-1.9403",
+        "longitude": "29.8739"
+      },
+      "latest": {
+        "confirmed": 18986,
+        "deaths": 264,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 215,
+      "country": "Saint Kitts and Nevis",
+      "country_code": "KN",
+      "country_population": 52441,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.172409Z",
+      "coordinates": {
+        "latitude": "17.357822",
+        "longitude": "-62.782998"
+      },
+      "latest": {
+        "confirmed": 41,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 216,
+      "country": "Saint Lucia",
+      "country_code": "LC",
+      "country_population": 181889,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.192882Z",
+      "coordinates": {
+        "latitude": "13.9094",
+        "longitude": "-60.9789"
+      },
+      "latest": {
+        "confirmed": 3390,
+        "deaths": 36,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 217,
+      "country": "Saint Vincent and the Grenadines",
+      "country_code": "VC",
+      "country_population": 110211,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.213315Z",
+      "coordinates": {
+        "latitude": "12.9843",
+        "longitude": "-61.2872"
+      },
+      "latest": {
+        "confirmed": 1628,
+        "deaths": 8,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 218,
+      "country": "Samoa",
+      "country_code": "WS",
+      "country_population": 196130,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.233387Z",
+      "coordinates": {
+        "latitude": "-13.759",
+        "longitude": "-172.1046"
+      },
+      "latest": {
+        "confirmed": 3,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 219,
+      "country": "San Marino",
+      "country_code": "SM",
+      "country_population": 33785,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.253696Z",
+      "coordinates": {
+        "latitude": "43.9424",
+        "longitude": "12.4578"
+      },
+      "latest": {
+        "confirmed": 3746,
+        "deaths": 74,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 220,
+      "country": "Sao Tome and Principe",
+      "country_code": "ST",
+      "country_population": 197700,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.274106Z",
+      "coordinates": {
+        "latitude": "0.1864",
+        "longitude": "6.6131"
+      },
+      "latest": {
+        "confirmed": 1828,
+        "deaths": 30,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 221,
+      "country": "Saudi Arabia",
+      "country_code": "SA",
+      "country_population": 33699947,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.294421Z",
+      "coordinates": {
+        "latitude": "23.885942",
+        "longitude": "45.079162"
+      },
+      "latest": {
+        "confirmed": 377700,
+        "deaths": 6500,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 222,
+      "country": "Senegal",
+      "country_code": "SN",
+      "country_population": 15854360,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.314681Z",
+      "coordinates": {
+        "latitude": "14.4974",
+        "longitude": "-14.4524"
+      },
+      "latest": {
+        "confirmed": 34732,
+        "deaths": 880,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 223,
+      "country": "Serbia",
+      "country_code": "RS",
+      "country_population": 6982084,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.335164Z",
+      "coordinates": {
+        "latitude": "44.0165",
+        "longitude": "21.0059"
+      },
+      "latest": {
+        "confirmed": 462728,
+        "deaths": 4459,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 224,
+      "country": "Seychelles",
+      "country_code": "SC",
+      "country_population": 96762,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.355740Z",
+      "coordinates": {
+        "latitude": "-4.6796",
+        "longitude": "55.492"
+      },
+      "latest": {
+        "confirmed": 2688,
+        "deaths": 11,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 225,
+      "country": "Sierra Leone",
+      "country_code": "SL",
+      "country_population": 7650154,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.375979Z",
+      "coordinates": {
+        "latitude": "8.460555",
+        "longitude": "-11.779889"
+      },
+      "latest": {
+        "confirmed": 3887,
+        "deaths": 79,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 226,
+      "country": "Singapore",
+      "country_code": "SG",
+      "country_population": 5638676,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.407016Z",
+      "coordinates": {
+        "latitude": "1.2833",
+        "longitude": "103.8333"
+      },
+      "latest": {
+        "confirmed": 59948,
+        "deaths": 29,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 227,
+      "country": "Slovakia",
+      "country_code": "SK",
+      "country_population": 5447011,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.428995Z",
+      "coordinates": {
+        "latitude": "48.669",
+        "longitude": "19.699"
+      },
+      "latest": {
+        "confirmed": 308925,
+        "deaths": 7270,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 228,
+      "country": "Slovenia",
+      "country_code": "SI",
+      "country_population": 2067372,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.449592Z",
+      "coordinates": {
+        "latitude": "46.1512",
+        "longitude": "14.9955"
+      },
+      "latest": {
+        "confirmed": 190324,
+        "deaths": 3854,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 229,
+      "country": "Solomon Islands",
+      "country_code": "SB",
+      "country_population": 652858,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.469722Z",
+      "coordinates": {
+        "latitude": "-9.6457",
+        "longitude": "160.1562"
+      },
+      "latest": {
+        "confirmed": 18,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 230,
+      "country": "Somalia",
+      "country_code": "SO",
+      "country_population": 15008154,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.489799Z",
+      "coordinates": {
+        "latitude": "5.152149",
+        "longitude": "46.199616"
+      },
+      "latest": {
+        "confirmed": 7392,
+        "deaths": 243,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 231,
+      "country": "South Africa",
+      "country_code": "ZA",
+      "country_population": 57779622,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.513681Z",
+      "coordinates": {
+        "latitude": "-30.5595",
+        "longitude": "22.9375"
+      },
+      "latest": {
+        "confirmed": 1513959,
+        "deaths": 50077,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 232,
+      "country": "South Sudan",
+      "country_code": "SS",
+      "country_population": 8260490,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.537160Z",
+      "coordinates": {
+        "latitude": "6.877",
+        "longitude": "31.307"
+      },
+      "latest": {
+        "confirmed": 8010,
+        "deaths": 94,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 233,
+      "country": "Spain",
+      "country_code": "ES",
+      "country_population": 46723749,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.557373Z",
+      "coordinates": {
+        "latitude": "40.463667",
+        "longitude": "-3.74922"
+      },
+      "latest": {
+        "confirmed": 3204531,
+        "deaths": 69609,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 234,
+      "country": "Sri Lanka",
+      "country_code": "LK",
+      "country_population": 21670000,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.577767Z",
+      "coordinates": {
+        "latitude": "7.873054",
+        "longitude": "80.771797"
+      },
+      "latest": {
+        "confirmed": 83552,
+        "deaths": 476,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 235,
+      "country": "Sudan",
+      "country_code": "SD",
+      "country_population": 41801533,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.597940Z",
+      "coordinates": {
+        "latitude": "12.8628",
+        "longitude": "30.2176"
+      },
+      "latest": {
+        "confirmed": 30364,
+        "deaths": 1890,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 236,
+      "country": "Suriname",
+      "country_code": "SR",
+      "country_population": 575991,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.618491Z",
+      "coordinates": {
+        "latitude": "3.9193",
+        "longitude": "-56.0278"
+      },
+      "latest": {
+        "confirmed": 8933,
+        "deaths": 173,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 237,
+      "country": "Sweden",
+      "country_code": "SE",
+      "country_population": 10183175,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.640256Z",
+      "coordinates": {
+        "latitude": "60.128161",
+        "longitude": "18.643501"
+      },
+      "latest": {
+        "confirmed": 657309,
+        "deaths": 12826,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 238,
+      "country": "Switzerland",
+      "country_code": "CH",
+      "country_population": 8516543,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.662661Z",
+      "coordinates": {
+        "latitude": "46.8182",
+        "longitude": "8.2275"
+      },
+      "latest": {
+        "confirmed": 557492,
+        "deaths": 9988,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 239,
+      "country": "Syria",
+      "country_code": "SY",
+      "country_population": 16906283,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.686128Z",
+      "coordinates": {
+        "latitude": "34.802075",
+        "longitude": "38.996815"
+      },
+      "latest": {
+        "confirmed": 15642,
+        "deaths": 1032,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 240,
+      "country": "Taiwan*",
+      "country_code": "TW",
+      "country_population": 22894384,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.710384Z",
+      "coordinates": {
+        "latitude": "23.7",
+        "longitude": "121.0"
+      },
+      "latest": {
+        "confirmed": 955,
+        "deaths": 9,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 241,
+      "country": "Tajikistan",
+      "country_code": "TJ",
+      "country_population": 9100837,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.731110Z",
+      "coordinates": {
+        "latitude": "38.861",
+        "longitude": "71.2761"
+      },
+      "latest": {
+        "confirmed": 13308,
+        "deaths": 90,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 242,
+      "country": "Tanzania",
+      "country_code": "TZ",
+      "country_population": 56318348,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.751849Z",
+      "coordinates": {
+        "latitude": "-6.369028",
+        "longitude": "34.888822"
+      },
+      "latest": {
+        "confirmed": 509,
+        "deaths": 21,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 243,
+      "country": "Thailand",
+      "country_code": "TH",
+      "country_population": 69428524,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.775139Z",
+      "coordinates": {
+        "latitude": "15.870032",
+        "longitude": "100.992541"
+      },
+      "latest": {
+        "confirmed": 26031,
+        "deaths": 83,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 244,
+      "country": "Timor-Leste",
+      "country_code": "TL",
+      "country_population": 1267972,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.795725Z",
+      "coordinates": {
+        "latitude": "-8.874217",
+        "longitude": "125.727539"
+      },
+      "latest": {
+        "confirmed": 113,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 245,
+      "country": "Togo",
+      "country_code": "TG",
+      "country_population": 7889094,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.815866Z",
+      "coordinates": {
+        "latitude": "8.6195",
+        "longitude": "0.8248"
+      },
+      "latest": {
+        "confirmed": 6933,
+        "deaths": 85,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 246,
+      "country": "Trinidad and Tobago",
+      "country_code": "TT",
+      "country_population": 1389858,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.836037Z",
+      "coordinates": {
+        "latitude": "10.6918",
+        "longitude": "-61.2225"
+      },
+      "latest": {
+        "confirmed": 7716,
+        "deaths": 139,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 247,
+      "country": "Tunisia",
+      "country_code": "TN",
+      "country_population": 11565204,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.856283Z",
+      "coordinates": {
+        "latitude": "33.886917",
+        "longitude": "9.537499"
+      },
+      "latest": {
+        "confirmed": 233669,
+        "deaths": 8022,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 248,
+      "country": "Turkey",
+      "country_code": "TR",
+      "country_population": 82319724,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.883195Z",
+      "coordinates": {
+        "latitude": "38.9637",
+        "longitude": "35.2433"
+      },
+      "latest": {
+        "confirmed": 2711479,
+        "deaths": 28638,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 249,
+      "country": "US",
+      "country_code": "US",
+      "country_population": 327167434,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.905212Z",
+      "coordinates": {
+        "latitude": "40.0",
+        "longitude": "-100.0"
+      },
+      "latest": {
+        "confirmed": 28664481,
+        "deaths": 514657,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 250,
+      "country": "Uganda",
+      "country_code": "UG",
+      "country_population": 42723139,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.925419Z",
+      "coordinates": {
+        "latitude": "1.373333",
+        "longitude": "32.290275"
+      },
+      "latest": {
+        "confirmed": 40367,
+        "deaths": 334,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 251,
+      "country": "Ukraine",
+      "country_code": "UA",
+      "country_population": 44622516,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.945866Z",
+      "coordinates": {
+        "latitude": "48.3794",
+        "longitude": "31.1656"
+      },
+      "latest": {
+        "confirmed": 1399934,
+        "deaths": 27480,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 252,
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "country_population": 9630959,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:39.965826Z",
+      "coordinates": {
+        "latitude": "23.424076",
+        "longitude": "53.847818"
+      },
+      "latest": {
+        "confirmed": 394050,
+        "deaths": 1238,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 253,
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "country_population": 66488991,
+      "province": "Anguilla",
+      "last_updated": "2021-03-02T16:04:39.985885Z",
+      "coordinates": {
+        "latitude": "18.2206",
+        "longitude": "-63.0686"
+      },
+      "latest": {
+        "confirmed": 18,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 254,
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "country_population": 66488991,
+      "province": "Bermuda",
+      "last_updated": "2021-03-02T16:04:40.006027Z",
+      "coordinates": {
+        "latitude": "32.3078",
+        "longitude": "-64.7505"
+      },
+      "latest": {
+        "confirmed": 707,
+        "deaths": 12,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 255,
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "country_population": 66488991,
+      "province": "British Virgin Islands",
+      "last_updated": "2021-03-02T16:04:40.026324Z",
+      "coordinates": {
+        "latitude": "18.4207",
+        "longitude": "-64.64"
+      },
+      "latest": {
+        "confirmed": 153,
+        "deaths": 1,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 256,
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "country_population": 66488991,
+      "province": "Cayman Islands",
+      "last_updated": "2021-03-02T16:04:40.046741Z",
+      "coordinates": {
+        "latitude": "19.3133",
+        "longitude": "-81.2546"
+      },
+      "latest": {
+        "confirmed": 447,
+        "deaths": 2,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 257,
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "country_population": 66488991,
+      "province": "Channel Islands",
+      "last_updated": "2021-03-02T16:04:40.066844Z",
+      "coordinates": {
+        "latitude": "49.3723",
+        "longitude": "-2.3644"
+      },
+      "latest": {
+        "confirmed": 4038,
+        "deaths": 86,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 258,
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "country_population": 66488991,
+      "province": "Falkland Islands (Malvinas)",
+      "last_updated": "2021-03-02T16:04:40.087049Z",
+      "coordinates": {
+        "latitude": "-51.7963",
+        "longitude": "-59.5236"
+      },
+      "latest": {
+        "confirmed": 54,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 259,
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "country_population": 66488991,
+      "province": "Gibraltar",
+      "last_updated": "2021-03-02T16:04:40.111223Z",
+      "coordinates": {
+        "latitude": "36.1408",
+        "longitude": "-5.3536"
+      },
+      "latest": {
+        "confirmed": 4239,
+        "deaths": 93,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 260,
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "country_population": 66488991,
+      "province": "Isle of Man",
+      "last_updated": "2021-03-02T16:04:40.133661Z",
+      "coordinates": {
+        "latitude": "54.2361",
+        "longitude": "-4.5481"
+      },
+      "latest": {
+        "confirmed": 486,
+        "deaths": 25,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 261,
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "country_population": 66488991,
+      "province": "Montserrat",
+      "last_updated": "2021-03-02T16:04:40.156628Z",
+      "coordinates": {
+        "latitude": "16.742498",
+        "longitude": "-62.187366"
+      },
+      "latest": {
+        "confirmed": 20,
+        "deaths": 1,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 262,
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "country_population": 66488991,
+      "province": "Saint Helena, Ascension and Tristan da Cunha",
+      "last_updated": "2021-03-02T16:04:40.177067Z",
+      "coordinates": {
+        "latitude": "-7.9467",
+        "longitude": "-14.3559"
+      },
+      "latest": {
+        "confirmed": 4,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 263,
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "country_population": 66488991,
+      "province": "Turks and Caicos Islands",
+      "last_updated": "2021-03-02T16:04:40.204030Z",
+      "coordinates": {
+        "latitude": "21.694",
+        "longitude": "-71.7979"
+      },
+      "latest": {
+        "confirmed": 2114,
+        "deaths": 14,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 264,
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "country_population": 66488991,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:40.224324Z",
+      "coordinates": {
+        "latitude": "55.3781",
+        "longitude": "-3.436"
+      },
+      "latest": {
+        "confirmed": 4182009,
+        "deaths": 122953,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 265,
+      "country": "Uruguay",
+      "country_code": "UY",
+      "country_population": 3449299,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:40.245641Z",
+      "coordinates": {
+        "latitude": "-32.5228",
+        "longitude": "-55.7658"
+      },
+      "latest": {
+        "confirmed": 58589,
+        "deaths": 611,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 266,
+      "country": "Uzbekistan",
+      "country_code": "UZ",
+      "country_population": 32955400,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:40.267306Z",
+      "coordinates": {
+        "latitude": "41.377491",
+        "longitude": "64.585262"
+      },
+      "latest": {
+        "confirmed": 79926,
+        "deaths": 622,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 267,
+      "country": "Vanuatu",
+      "country_code": "VU",
+      "country_population": 292680,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:40.291520Z",
+      "coordinates": {
+        "latitude": "-15.3767",
+        "longitude": "166.9592"
+      },
+      "latest": {
+        "confirmed": 1,
+        "deaths": 0,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 268,
+      "country": "Venezuela",
+      "country_code": "VE",
+      "country_population": 28870195,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:40.312030Z",
+      "coordinates": {
+        "latitude": "6.4238",
+        "longitude": "-66.5897"
+      },
+      "latest": {
+        "confirmed": 139545,
+        "deaths": 1348,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 269,
+      "country": "Vietnam",
+      "country_code": "VN",
+      "country_population": 95540395,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:40.332406Z",
+      "coordinates": {
+        "latitude": "14.058324",
+        "longitude": "108.277199"
+      },
+      "latest": {
+        "confirmed": 2448,
+        "deaths": 35,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 270,
+      "country": "West Bank and Gaza",
+      "country_code": "PS",
+      "country_population": 4569087,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:40.353595Z",
+      "coordinates": {
+        "latitude": "31.9522",
+        "longitude": "35.2332"
+      },
+      "latest": {
+        "confirmed": 185336,
+        "deaths": 2058,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 271,
+      "country": "Yemen",
+      "country_code": "YE",
+      "country_population": 28498687,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:40.374754Z",
+      "coordinates": {
+        "latitude": "15.552727",
+        "longitude": "48.516388"
+      },
+      "latest": {
+        "confirmed": 2310,
+        "deaths": 634,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 272,
+      "country": "Zambia",
+      "country_code": "ZM",
+      "country_population": 17351822,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:40.395665Z",
+      "coordinates": {
+        "latitude": "-13.133897",
+        "longitude": "27.849332"
+      },
+      "latest": {
+        "confirmed": 79002,
+        "deaths": 1098,
+        "recovered": 0
+      }
+    },
+    {
+      "id": 273,
+      "country": "Zimbabwe",
+      "country_code": "ZW",
+      "country_population": 14439018,
+      "province": "",
+      "last_updated": "2021-03-02T16:04:40.416631Z",
+      "coordinates": {
+        "latitude": "-19.015438",
+        "longitude": "29.154857"
+      },
+      "latest": {
+        "confirmed": 36115,
+        "deaths": 1468,
+        "recovered": 0
+      }
+    }
+  ]
+}
