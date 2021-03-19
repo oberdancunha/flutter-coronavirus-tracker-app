@@ -353,7 +353,7 @@ packages:
     source: hosted
     version: "0.14.0-nullsafety.0"
   freezed_annotation:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: freezed_annotation
       url: "https://pub.dartlang.org"
