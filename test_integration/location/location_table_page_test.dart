@@ -16,6 +16,7 @@ import 'package:coronavirus_tracker_app/domain/tracker/location.dart';
 import 'package:coronavirus_tracker_app/domain/tracker/tracker.dart';
 import 'package:coronavirus_tracker_app/presentation/core/app_page.dart';
 import 'package:coronavirus_tracker_app/presentation/core/app_widget.dart';
+import 'package:coronavirus_tracker_app/presentation/core/header_widget.dart';
 import 'package:coronavirus_tracker_app/presentation/core/main_page.dart';
 import 'package:coronavirus_tracker_app/presentation/splash/splash_page.dart';
 import 'package:coronavirus_tracker_app/presentation/tracker/location_table/location_table_page.dart';
@@ -107,6 +108,7 @@ void main() {
       await tester.tap(find.byKey(const Key('locations_table_bar')));
       await tester.pump(const Duration(seconds: 5));
       await expectLater(find.byType(LocationTablePage), findsOneWidget);
+      await expectLater(find.byType(HeaderWidget), findsOneWidget);
       await expectLater(find.byType(LocationTableHader), findsOneWidget);
       await expectLater(find.byType(LocationTableTextSearch), findsOneWidget);
       await tester.enterText(

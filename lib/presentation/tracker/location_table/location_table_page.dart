@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:kt_dart/collection.dart';
 
 import '../../../domain/tracker/location.dart';
+import '../../core/header_widget.dart';
 import '../misc/tracker_presentation_classes.dart';
 import 'misc/location_table_data_souce.dart';
 import 'widgets/location_table_header.dart';
@@ -40,13 +41,12 @@ class _LocationTablePageState extends State<LocationTablePage> {
   }
 
   @override
-  Widget build(BuildContext context) => SafeArea(
-        child: Column(
-          children: [
-            _buildHeader(),
-            _buildDataTable(),
-          ],
-        ),
+  Widget build(BuildContext context) => Column(
+        children: [
+          HeaderWidget(),
+          _buildHeader(),
+          _buildDataTable(),
+        ],
       );
 
   Widget _buildHeader() => LocationTableHader(

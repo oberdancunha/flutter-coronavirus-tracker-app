@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+String mainLogo = 'assets/images/coronavirus.png';
 String mainUrl = 'coronavirus-tracker-api.herokuapp.com';
 String locationUrl = '/v2/locations';
 String source = 'jhu';

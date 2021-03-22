@@ -33,7 +33,7 @@ class ContaminationHeader extends StatelessWidget {
               child: Row(
                 children: [
                   SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.65,
+                    width: MediaQuery.of(context).size.width * 0.6,
                     child: ContaminationHeaderData(
                       contamination: contamination,
                     ),
