@@ -8,6 +8,7 @@ import 'package:kt_dart/collection.dart';
 import 'package:latlong/latlong.dart';
 
 import '../../../domain/tracker/location.dart';
+import '../../core/header_widget.dart';
 import 'widgets/location_popup.dart';
 
 class LocationPage extends StatefulWidget {
@@ -60,35 +61,42 @@ class _LocationPageState extends State<LocationPage> {
   }
 
   @override
-  Widget build(BuildContext context) => FlutterMap(
-        mapController: _mapController,
-        options: MapOptions(
-          zoom: _zoom,
-          center: _mapCenter,
-          plugins: [PopupMarkerPlugin()],
-          onTap: (_) => _popupLayerController.hidePopup(),
-          onPositionChanged: (position, hasGesture) {
-            if (hasGesture) {
-              _popupLayerController.hidePopup();
-            }
-          },
-        ),
-        layers: [
-          TileLayerOptions(
-            urlTemplate: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-            subdomains: ['a', 'b', 'c'],
-          ),
-          PopupMarkerLayerOptions(
-            markers: _markers,
-            popupController: _popupLayerController,
-            popupBuilder: (_, marker) {
-              _mapController.move(marker.point, _zoom);
+  Widget build(BuildContext context) => Column(
+        children: [
+          HeaderWidget(),
+          Expanded(
+            child: FlutterMap(
+              mapController: _mapController,
+              options: MapOptions(
+                zoom: _zoom,
+                center: _mapCenter,
+                plugins: [PopupMarkerPlugin()],
+                onTap: (_) => _popupLayerController.hidePopup(),
+                onPositionChanged: (position, hasGesture) {
+                  if (hasGesture) {
+                    _popupLayerController.hidePopup();
+                  }
+                },
+              ),
+              layers: [
+                TileLayerOptions(
+                  urlTemplate: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                  subdomains: ['a', 'b', 'c'],
+                ),
+                PopupMarkerLayerOptions(
+                  markers: _markers,
+                  popupController: _popupLayerController,
+                  popupBuilder: (_, marker) {
+                    _mapController.move(marker.point, _zoom);
 
-              return LocationPopup(
-                locations: widget.locations,
-                marker: marker,
-              );
-            },
+                    return LocationPopup(
+                      locations: widget.locations,
+                      marker: marker,
+                    );
+                  },
+                ),
+              ],
+            ),
           ),
         ],
       );

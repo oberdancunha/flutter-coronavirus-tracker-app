@@ -27,14 +27,16 @@ dependencies:
   connectivity: ^3.0.2
   cupertino_icons: ^1.0.0
   dartz: ^0.10.0-nullsafety.1
+  data_tables: ^1.1.1-nullsafety.0
   ff_navigation_bar: ^0.1.5
   fl_chart: ^0.20.1
-  flutter_map: ^0.11.0
+  flutter_map: ^0.12.0
   flutter_map_marker_popup: ^0.2.1
   flutter_riverpod: ^0.13.1
   http: ^0.13.0
   intl: ^0.17.0
   kt_dart: ^0.9.0-nullsafety.0
+  marquee: ^1.7.0
   responsive_framework: ^0.1.0
 
 dev_dependencies:
@@ -72,6 +74,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
+    - family: Alegreya
+      fonts:
+        - asset: assets/fonts/Alegreya-ExtraBold.ttf
     - family: PTSans
       fonts:
         - asset: assets/fonts/PTSans-Bold.ttf
@@ -89,7 +94,6 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
-
 flutter_icons:
   image_path: "assets/icons/app_icon.png"
   android: true
