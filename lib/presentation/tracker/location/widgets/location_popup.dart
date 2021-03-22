@@ -62,7 +62,7 @@ class _LocationPopupState extends State<LocationPopup> {
                 _location.country,
                 style: TextStyle(
                   fontSize: 35,
-                  color: countryNameColor,
+                  color: countryColor,
                 ),
                 maxLines: 1,
               ),
