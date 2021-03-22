@@ -5,7 +5,7 @@ import 'package:kt_dart/collection.dart';
 import '../../../domain/tracker/location.dart';
 import '../misc/tracker_presentation_classes.dart';
 import 'misc/location_table_data_souce.dart';
-import 'widgets/location_table_text_search.dart';
+import 'widgets/location_table_header.dart';
 
 class LocationTablePage extends StatefulWidget {
   final KtList<Location> locations;
@@ -41,83 +41,86 @@ class _LocationTablePageState extends State<LocationTablePage> {
 
   @override
   Widget build(BuildContext context) => SafeArea(
-        child: PaginatedDataTable(
+        child: Column(
+          children: [
+            _buildHeader(),
+            _buildDataTable(),
+          ],
+        ),
+      );
+
+  Widget _buildHeader() => LocationTableHader(
+        searchAvailable: searchAvailable,
+        onChanged: _changeTextSearch,
+        onClearPressed: () {
+          setState(
+            () {
+              _locationsPrimitive = _locationsPrimitiveImmutable;
+              _rowsPerPage = _maxRowsPerPage;
+              _setRowsPerPage();
+            },
+          );
+        },
+      );
+
+  Widget _buildDataTable() => _locationsPrimitive.isNotEmpty
+      ? PaginatedDataTable(
           key: const Key('location_table'),
           columnSpacing: 14,
           sortColumnIndex: _sortColumnIndex,
           sortAscending: _sortAscending,
           rowsPerPage: _rowsPerPage,
-          header: searchAvailable
-              ? LocationTableTextSearch(
-                  onChanged: (textSearch) {
-                    setState(
-                      () {
-                        _locationsPrimitive = _locationsPrimitiveImmutable
-                            .where(
-                              (location) =>
-                                  location.country.toLowerCase().contains(textSearch.toLowerCase()),
-                            )
-                            .toList();
-                        _setRowsPerPage();
-                      },
-                    );
-                  },
-                  onClearPressed: () {
-                    setState(() {
-                      _locationsPrimitive = _locationsPrimitiveImmutable;
-                      _rowsPerPage = _maxRowsPerPage;
-                      _setRowsPerPage();
-                    });
-                  },
-                )
-              : Center(
-                  child: Text(
-                    'Search available only in first page',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.blue[800],
-                    ),
-                  ),
-                ),
-          columns: [
-            _buildColumn<String>(
-              label: 'Country',
-              isNumeric: false,
-              getField: (location) => location.country,
-            ),
-            _buildColumn<num>(
-              label: 'Confirmed',
-              isNumeric: true,
-              getField: (location) => location.contaminations.first.confirmed,
-            ),
-            _buildColumn<num>(
-              label: 'Recovered',
-              isNumeric: true,
-              getField: (location) => location.contaminations.first.recovered,
-            ),
-            _buildColumn<num>(
-              label: 'Deaths',
-              isNumeric: true,
-              getField: (location) => location.contaminations.first.deaths,
-            ),
-          ],
+          columns: _buildColumns(),
           source: LocationTableDataSource(_locationsPrimitive),
           onPageChanged: (value) {
             setState(() {
               searchAvailable = value == 0;
             });
           },
+        )
+      : Expanded(
+          child: Center(
+            child: Text(
+              'Table is empty',
+              style: TextStyle(
+                fontSize: 40,
+                color: Colors.blue.shade800,
+              ),
+            ),
+          ),
+        );
+
+  List<DataColumn> _buildColumns() => [
+        _buildColumn<String>(
+          label: 'Country',
+          isNumeric: false,
+          getField: (location) => location.country,
         ),
-      );
+        _buildColumn<num>(
+          label: 'Confirmed',
+          isNumeric: true,
+          getField: (location) => location.contaminations.first.confirmed,
+        ),
+        _buildColumn<num>(
+          label: 'Recovered',
+          isNumeric: true,
+          getField: (location) => location.contaminations.first.recovered,
+        ),
+        _buildColumn<num>(
+          label: 'Deaths',
+          isNumeric: true,
+          getField: (location) => location.contaminations.first.deaths,
+        ),
+      ];
 
   DataColumn _buildColumn<T>({
-    required label,
+    required String label,
     required bool isNumeric,
     required Comparable<T> Function(LocationPrimitive) getField,
   }) =>
       DataColumn(
         label: Text(
-          label.toString(),
+          label,
           style: const TextStyle(
             fontSize: 20,
           ),
@@ -160,5 +163,20 @@ class _LocationTablePageState extends State<LocationTablePage> {
             ? _locationsPrimitive.length
             : _maxRowsPerPage
         : 1;
+  }
+
+  void _changeTextSearch(String textSearch) {
+    final textSearchTrimmed = textSearch.trim().replaceAll(RegExp(' +'), ' ');
+    setState(
+      () {
+        _locationsPrimitive = _locationsPrimitiveImmutable
+            .where(
+              (location) =>
+                  location.country.toLowerCase().contains(textSearchTrimmed.toLowerCase()),
+            )
+            .toList();
+        _setRowsPerPage();
+      },
+    );
   }
 }

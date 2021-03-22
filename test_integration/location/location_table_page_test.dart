@@ -1,6 +1,5 @@
 //@dart=2.8
 
-import 'package:coronavirus_tracker_app/presentation/tracker/location_table/widgets/location_table_text_search.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -20,6 +19,8 @@ import 'package:coronavirus_tracker_app/presentation/core/app_widget.dart';
 import 'package:coronavirus_tracker_app/presentation/core/main_page.dart';
 import 'package:coronavirus_tracker_app/presentation/splash/splash_page.dart';
 import 'package:coronavirus_tracker_app/presentation/tracker/location_table/location_table_page.dart';
+import 'package:coronavirus_tracker_app/presentation/tracker/location_table/widgets/location_table_header.dart';
+import 'package:coronavirus_tracker_app/presentation/tracker/location_table/widgets/location_table_text_search.dart';
 
 class MockTrackerRepository extends Mock implements ITrackerRepository {}
 
@@ -106,6 +107,7 @@ void main() {
       await tester.tap(find.byKey(const Key('locations_table_bar')));
       await tester.pump(const Duration(seconds: 5));
       await expectLater(find.byType(LocationTablePage), findsOneWidget);
+      await expectLater(find.byType(LocationTableHader), findsOneWidget);
       await expectLater(find.byType(LocationTableTextSearch), findsOneWidget);
       await tester.enterText(
         find.byKey(const Key('location_table_text_search')),
@@ -120,7 +122,7 @@ void main() {
       );
       await tester.pumpAndSettle(const Duration(seconds: 1));
       await tester.tap(find.byKey(const Key('clear_text_search_button')));
-      await tester.pump(const Duration(seconds: 1));
+      await tester.pump(const Duration(milliseconds: 500));
     },
   );
 }

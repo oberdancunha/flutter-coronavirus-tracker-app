@@ -12,8 +12,7 @@ class LocationTableDataSource extends DataTableSource {
 
   @override
   DataRow? getRow(int index) {
-    final location =
-        index >= locations.length ? LocationPrimitive.empty() : locations.elementAt(index);
+    final location = locations.elementAt(index);
 
     return DataRow.byIndex(
       index: index,
@@ -39,7 +38,7 @@ class LocationTableDataSource extends DataTableSource {
   bool get isRowCountApproximate => false;
 
   @override
-  int get rowCount => locations.isNotEmpty ? locations.length : 1;
+  int get rowCount => locations.length;
 
   @override
   int get selectedRowCount => 0;

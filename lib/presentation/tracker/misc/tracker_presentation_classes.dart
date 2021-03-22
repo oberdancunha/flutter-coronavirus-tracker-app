@@ -49,21 +49,4 @@ class LocationPrimitive with _$LocationPrimitive {
             )
             .toList(),
       );
-
-  factory LocationPrimitive.empty() => LocationPrimitive(
-        id: 0,
-        country: 'No contry found',
-        countryCode: '',
-        countryPopulation: 0,
-        latitude: 0,
-        longitude: 0,
-        contaminations: [
-          ContaminationPrimitive(
-            confirmed: 0,
-            deaths: 0,
-            recovered: 0,
-            lastUpdated: DateTime.now(),
-          ),
-        ],
-      );
 }
