@@ -8,7 +8,8 @@ import 'failure_page.dart';
 import 'main_page.dart';
 
 class AppPage extends StatelessWidget {
-  final time = DateTime.now();
+  // final time = DateTime.now();
+  final time = DateTime.parse('2021-03-02T16:04:34.882427Z');
 
   @override
   Widget build(BuildContext context) => Scaffold(
