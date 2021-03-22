@@ -19,6 +19,10 @@ class LocationTableDataSource extends DataTableSource {
       cells: <DataCell>[
         _printRow(value: location.country, foregroundColor: countryNameColor),
         _printRow(
+          value: location.countryPopulation.toString(),
+          foregroundColor: countryNameColor,
+        ),
+        _printRow(
           value: location.contaminations.first.confirmed.toString(),
           foregroundColor: confirmedColor,
         ),
@@ -47,7 +51,7 @@ class LocationTableDataSource extends DataTableSource {
     required String value,
     required Color foregroundColor,
   }) {
-    const double fontSize = 20;
+    const double fontSize = 18;
 
     return DataCell(
       value.length < 10

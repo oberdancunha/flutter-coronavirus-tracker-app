@@ -66,10 +66,11 @@ class _LocationTablePageState extends State<LocationTablePage> {
   Widget _buildDataTable() => _locationsPrimitive.isNotEmpty
       ? PaginatedDataTable(
           key: const Key('location_table'),
-          columnSpacing: 14,
+          columnSpacing: 0,
           sortColumnIndex: _sortColumnIndex,
           sortAscending: _sortAscending,
           rowsPerPage: _rowsPerPage,
+          horizontalMargin: 5,
           columns: _buildColumns(),
           source: LocationTableDataSource(_locationsPrimitive),
           onPageChanged: (value) {
@@ -97,6 +98,11 @@ class _LocationTablePageState extends State<LocationTablePage> {
           getField: (location) => location.country,
         ),
         _buildColumn<num>(
+          label: 'Population',
+          isNumeric: true,
+          getField: (location) => location.countryPopulation,
+        ),
+        _buildColumn<num>(
           label: 'Confirmed',
           isNumeric: true,
           getField: (location) => location.contaminations.first.confirmed,
@@ -122,7 +128,7 @@ class _LocationTablePageState extends State<LocationTablePage> {
         label: Text(
           label,
           style: const TextStyle(
-            fontSize: 20,
+            fontSize: 18,
           ),
         ),
         numeric: isNumeric,
