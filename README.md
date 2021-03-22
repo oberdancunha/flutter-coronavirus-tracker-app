@@ -44,6 +44,12 @@ Dados de contaminação de cada país. Nesse caso é um mapa com um marcador par
 
 ![Alt Text](images/location_data.gif)
 
+### Tabela dos dados de localidades (Locations table tab)
+
+O relatório de dados por localidade, por ser uma consulta individual, não permite uma visão abrangente sobre as contaminações do coronavirus ao redor do mundo, como, por exemplo, quais os países com o maior e menor números de confirmados, recuperados e mortos.
+
+![Alt Text](images/location_table_data.gif)
+
 ## Erros
 
 A aplicação pode apresentar os seguintes erros:
