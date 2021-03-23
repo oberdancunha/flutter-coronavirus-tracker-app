@@ -7,10 +7,8 @@ class HeaderWidget extends StatelessWidget {
   Widget build(BuildContext context) => Container(
         color: Colors.black,
         width: MediaQuery.of(context).size.width,
-        height: 130,
         child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.only(bottom: 15),
+          child: Center(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
