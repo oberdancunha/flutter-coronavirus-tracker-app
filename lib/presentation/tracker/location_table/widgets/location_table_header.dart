@@ -16,26 +16,26 @@ class LocationTableHader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Padding(
-        padding: const EdgeInsets.symmetric(
-          horizontal: 20,
-          vertical: 10,
-        ),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         child: SizedBox(
           height: 60,
-          child: searchAvailable
-              ? LocationTableTextSearch(
-                  onChanged: onChanged,
-                  onClearPressed: onClearPressed,
-                )
-              : Center(
-                  child: Text(
-                    'Search available only in first page',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.blue[800],
+          child: Center(
+            child: searchAvailable
+                ? LocationTableTextSearch(
+                    onChanged: onChanged,
+                    onClearPressed: onClearPressed,
+                  )
+                : Padding(
+                    padding: const EdgeInsets.only(top: 10),
+                    child: Text(
+                      'Search available only in first page',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.blue[800],
+                      ),
                     ),
                   ),
-                ),
+          ),
         ),
       );
 }

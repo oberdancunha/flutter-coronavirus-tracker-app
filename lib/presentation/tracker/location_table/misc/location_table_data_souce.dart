@@ -17,10 +17,10 @@ class LocationTableDataSource extends DataTableSource {
     return DataRow.byIndex(
       index: index,
       cells: <DataCell>[
-        _printRow(value: location.country, foregroundColor: countryNameColor),
+        _printRow(value: location.country, foregroundColor: countryColor),
         _printRow(
           value: location.countryPopulation.toString(),
-          foregroundColor: countryNameColor,
+          foregroundColor: countryColor,
         ),
         _printRow(
           value: location.contaminations.first.confirmed.toString(),

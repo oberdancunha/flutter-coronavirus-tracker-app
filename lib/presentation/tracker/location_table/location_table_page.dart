@@ -45,7 +45,9 @@ class _LocationTablePageState extends State<LocationTablePage> {
         children: [
           HeaderWidget(),
           _buildHeader(),
-          _buildDataTable(),
+          Expanded(
+            child: _locationsPrimitive.isNotEmpty ? _showDataTable() : _showTableEmpty(),
+          ),
         ],
       );
 
@@ -63,14 +65,15 @@ class _LocationTablePageState extends State<LocationTablePage> {
         },
       );
 
-  Widget _buildDataTable() => _locationsPrimitive.isNotEmpty
-      ? PaginatedDataTable(
+  Widget _showDataTable() => SingleChildScrollView(
+        child: PaginatedDataTable(
           key: const Key('location_table'),
           columnSpacing: 0,
           sortColumnIndex: _sortColumnIndex,
           sortAscending: _sortAscending,
           rowsPerPage: _rowsPerPage,
           horizontalMargin: 5,
+          dataRowHeight: (MediaQuery.of(context).size.height / 2) / _maxRowsPerPage,
           columns: _buildColumns(),
           source: LocationTableDataSource(_locationsPrimitive),
           onPageChanged: (value) {
@@ -78,18 +81,18 @@ class _LocationTablePageState extends State<LocationTablePage> {
               searchAvailable = value == 0;
             });
           },
-        )
-      : Expanded(
-          child: Center(
-            child: Text(
-              'Table is empty',
-              style: TextStyle(
-                fontSize: 40,
-                color: Colors.blue.shade800,
-              ),
-            ),
+        ),
+      );
+
+  Widget _showTableEmpty() => Center(
+        child: Text(
+          'Table is empty',
+          style: TextStyle(
+            fontSize: 40,
+            color: Colors.blue.shade800,
           ),
-        );
+        ),
+      );
 
   List<DataColumn> _buildColumns() => [
         _buildColumn<String>(

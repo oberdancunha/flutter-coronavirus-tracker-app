@@ -13,16 +13,19 @@ class ContaminationPage extends StatelessWidget {
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) => Column(
-        children: [
-          Container(
-            color: Colors.black,
-            height: MediaQuery.of(context).size.height / 3.5,
-            child: ContaminationHeader(contamination: contamination),
-          ),
-          ContaminationBody(
-            contamination: contamination,
-          ),
-        ],
+  Widget build(BuildContext context) => SingleChildScrollView(
+        physics: const NeverScrollableScrollPhysics(),
+        child: Column(
+          children: [
+            Container(
+              color: Colors.black,
+              height: MediaQuery.of(context).size.height / 3.5,
+              child: ContaminationHeader(contamination: contamination),
+            ),
+            ContaminationBody(
+              contamination: contamination,
+            ),
+          ],
+        ),
       );
 }
