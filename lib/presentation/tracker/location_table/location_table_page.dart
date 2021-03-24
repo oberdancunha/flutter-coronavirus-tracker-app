@@ -23,7 +23,7 @@ class LocationTablePage extends StatefulWidget {
 class _LocationTablePageState extends State<LocationTablePage> {
   int _sortColumnIndex = 0;
   bool _sortAscending = true;
-  bool searchAvailable = true;
+  bool _searchAvailable = true;
   static const _maxRowsPerPage = 12;
   late List<LocationPrimitive> _locationsPrimitive;
   late List<LocationPrimitive> _locationsPrimitiveImmutable;
@@ -52,7 +52,7 @@ class _LocationTablePageState extends State<LocationTablePage> {
       );
 
   Widget _buildHeader() => LocationTableHader(
-        searchAvailable: searchAvailable,
+        searchAvailable: _searchAvailable,
         onChanged: _changeTextSearch,
         onClearPressed: () {
           setState(
@@ -78,7 +78,7 @@ class _LocationTablePageState extends State<LocationTablePage> {
           source: LocationTableDataSource(_locationsPrimitive),
           onPageChanged: (value) {
             setState(() {
-              searchAvailable = value == 0;
+              _searchAvailable = value == 0;
             });
           },
         ),
