@@ -109,7 +109,7 @@ void main() {
       await tester.pump(const Duration(seconds: 5));
       await expectLater(find.byType(LocationTablePage), findsOneWidget);
       await expectLater(find.byType(HeaderWidget), findsOneWidget);
-      await expectLater(find.byType(LocationTableHader), findsOneWidget);
+      await expectLater(find.byType(LocationTableHeader), findsOneWidget);
       await expectLater(find.byType(LocationTableTextSearch), findsOneWidget);
       await tester.enterText(
         find.byKey(const Key('location_table_text_search')),

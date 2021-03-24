@@ -44,14 +44,14 @@ class _LocationTablePageState extends State<LocationTablePage> {
   Widget build(BuildContext context) => Column(
         children: [
           HeaderWidget(),
-          _buildHeader(),
+          _buildTableHeader(),
           Expanded(
             child: _locationsPrimitive.isNotEmpty ? _showDataTable() : _showTableEmpty(),
           ),
         ],
       );
 
-  Widget _buildHeader() => LocationTableHader(
+  Widget _buildTableHeader() => LocationTableHeader(
         searchAvailable: _searchAvailable,
         onChanged: _changeTextSearch,
         onClearPressed: () {
