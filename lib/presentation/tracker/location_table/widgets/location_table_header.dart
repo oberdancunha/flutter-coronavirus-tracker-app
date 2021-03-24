@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 import 'location_table_text_search.dart';
 
-class LocationTableHader extends StatelessWidget {
+class LocationTableHeader extends StatelessWidget {
   final bool searchAvailable;
   final Function(String) onChanged;
   final Function() onClearPressed;
 
-  const LocationTableHader({
+  const LocationTableHeader({
     required this.searchAvailable,
     required this.onChanged,
     required this.onClearPressed,
