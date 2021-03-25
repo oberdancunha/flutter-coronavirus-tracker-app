@@ -26,7 +26,7 @@ class _LocationTablePageState extends State<LocationTablePage> {
   bool _searchAvailable = true;
   static const _maxRowsPerPage = 12;
   late List<LocationPrimitive> _locationsPrimitive;
-  late List<LocationPrimitive> _locationsPrimitiveImmutable;
+  late KtList<LocationPrimitive> _locationsPrimitiveImmutable;
   late int _rowsPerPage;
 
   @override
@@ -35,7 +35,7 @@ class _LocationTablePageState extends State<LocationTablePage> {
         .asList()
         .map((location) => LocationPrimitive.fromDomain(location))
         .toList();
-    _locationsPrimitiveImmutable = _locationsPrimitive;
+    _locationsPrimitiveImmutable = _locationsPrimitive.toImmutableList();
     _setRowsPerPage();
     super.initState();
   }
@@ -57,7 +57,7 @@ class _LocationTablePageState extends State<LocationTablePage> {
         onClearPressed: () {
           setState(
             () {
-              _locationsPrimitive = _locationsPrimitiveImmutable;
+              _locationsPrimitive = _locationsPrimitiveImmutable.asList();
               _rowsPerPage = _maxRowsPerPage;
               _setRowsPerPage();
             },
@@ -179,6 +179,7 @@ class _LocationTablePageState extends State<LocationTablePage> {
     setState(
       () {
         _locationsPrimitive = _locationsPrimitiveImmutable
+            .asList()
             .where(
               (location) =>
                   location.country.toLowerCase().contains(textSearchTrimmed.toLowerCase()),
