@@ -15,19 +15,25 @@ class LocationTableTextSearch extends StatefulWidget {
 }
 
 class _LocationTableTextSearchState extends State<LocationTableTextSearch> {
-  late TextEditingController textController;
+  late TextEditingController _textController;
 
   @override
   void initState() {
-    textController = TextEditingController();
+    _textController = TextEditingController();
     super.initState();
+  }
+
+  @override
+  void dispose() {
+    _textController.dispose();
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) => Center(
         child: TextField(
           key: const Key('location_table_text_search'),
-          controller: textController,
+          controller: _textController,
           autofocus: true,
           showCursor: true,
           decoration: InputDecoration(
@@ -39,7 +45,7 @@ class _LocationTableTextSearchState extends State<LocationTableTextSearch> {
               key: const Key('clear_text_search_button'),
               icon: const Icon(Icons.clear),
               onPressed: () {
-                textController.clear();
+                _textController.clear();
                 widget.onClearPressed();
               },
             ),
