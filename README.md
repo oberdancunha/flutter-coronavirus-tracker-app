@@ -6,7 +6,7 @@ Aplicação para consulta dos dados de covid.
 
 Algumas das tecnologias/bibliotecas utilizadas na construção desse aplicativo foram:
 
-- **Framework:** Flutter 2.0.2 (null safety) e dart 2.12.1
+- **Flutter toolkit** 2.0.2 (null safety) e dart 2.12.1
 - **Provider:** flutter_riverpod, incluindo injeção de dependência
 - **Acesso à API:** Pacote http
 - **Verificação de conexão:** pacote connectivity
