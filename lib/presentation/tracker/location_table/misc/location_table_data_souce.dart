@@ -19,19 +19,19 @@ class LocationTableDataSource extends DataTableSource {
       cells: <DataCell>[
         _printRow(value: location.country, foregroundColor: countryColor),
         _printRow(
-          value: location.countryPopulation.toString(),
+          value: location.countryPopulation,
           foregroundColor: countryColor,
         ),
         _printRow(
-          value: location.contaminations.first.confirmed.toString(),
+          value: location.contaminations.first.confirmed,
           foregroundColor: confirmedColor,
         ),
         _printRow(
-          value: location.contaminations.first.recovered.toString(),
+          value: location.contaminations.first.recovered,
           foregroundColor: recoveredColorDark,
         ),
         _printRow(
-          value: location.contaminations.first.deaths.toString(),
+          value: location.contaminations.first.deaths,
           foregroundColor: deathsColorDark,
         ),
       ],
@@ -51,7 +51,7 @@ class LocationTableDataSource extends DataTableSource {
     required String value,
     required Color foregroundColor,
   }) {
-    const double fontSize = 18;
+    const double fontSize = 17;
 
     return DataCell(
       value.length < 10
@@ -71,6 +71,7 @@ class LocationTableDataSource extends DataTableSource {
                   fontSize: fontSize,
                   color: foregroundColor,
                 ),
+                pauseAfterRound: const Duration(milliseconds: 1),
               ),
             ),
     );

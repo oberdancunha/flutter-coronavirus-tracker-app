@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:kt_dart/collection.dart';
 
+import '../../../domain/core/value_transformers.dart';
 import '../../../domain/tracker/location.dart';
 import '../../core/header_widget.dart';
 import '../misc/tracker_presentation_classes.dart';
@@ -72,7 +73,7 @@ class _LocationTablePageState extends State<LocationTablePage> {
           sortColumnIndex: _sortColumnIndex,
           sortAscending: _sortAscending,
           rowsPerPage: _rowsPerPage,
-          horizontalMargin: 5,
+          horizontalMargin: 3,
           dataRowHeight: (MediaQuery.of(context).size.height / 2) / _maxRowsPerPage,
           columns: _buildColumns(),
           source: LocationTableDataSource(_locationsPrimitive),
@@ -103,22 +104,23 @@ class _LocationTablePageState extends State<LocationTablePage> {
         _buildColumn<num>(
           label: 'Population',
           isNumeric: true,
-          getField: (location) => location.countryPopulation,
+          getField: (location) => formatPopulationToInt(location.countryPopulation),
         ),
         _buildColumn<num>(
           label: 'Confirmed',
           isNumeric: true,
-          getField: (location) => location.contaminations.first.confirmed,
+          getField: (location) => formatPopulationToInt(location.contaminations.first.confirmed),
         ),
         _buildColumn<num>(
           label: 'Recovered',
           isNumeric: true,
-          getField: (location) => location.contaminations.first.recovered,
+          getField: (location) => formatPopulationToInt(location.contaminations.first.recovered),
         ),
         _buildColumn<num>(
           label: 'Deaths',
           isNumeric: true,
-          getField: (location) => location.contaminations.first.deaths,
+          getField: (location) =>
+              int.tryParse(location.contaminations.first.deaths.replaceAll(',', ''))!,
         ),
       ];
 

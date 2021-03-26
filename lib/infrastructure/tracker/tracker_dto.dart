@@ -4,6 +4,7 @@ import 'package:kt_dart/kt.dart';
 import '../../domain/tracker/contamination.dart';
 import '../../domain/tracker/location.dart';
 import '../../domain/tracker/tracker.dart';
+import '../../domain/tracker/tracker_value_objects.dart';
 
 part 'tracker_dto.freezed.dart';
 
@@ -96,9 +97,9 @@ class ContaminationDto with _$ContaminationDto {
   }) = _ContaminationDto;
 
   Contamination toDomain() => Contamination(
-        confirmed: confirmed,
-        deaths: deaths,
-        recovered: recovered,
+        confirmed: PopulationValue(confirmed),
+        deaths: PopulationValue(deaths),
+        recovered: PopulationValue(recovered),
         lastUpdated: DateTime.tryParse(lastUpdated)!,
       );
 
@@ -132,7 +133,7 @@ class LocationDto with _$LocationDto {
         id: id,
         country: country,
         countryCode: countryCode,
-        countryPopulation: countryPopulation,
+        countryPopulation: PopulationValue(countryPopulation),
         latitude: latitude,
         longitude: longitude,
         contaminations: contaminations

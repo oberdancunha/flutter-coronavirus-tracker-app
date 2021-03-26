@@ -2,7 +2,6 @@ import 'package:auto_size_text_pk/auto_size_text_pk.dart';
 import 'package:flutter/material.dart';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:flutter_map/plugin_api.dart';
-import 'package:intl/intl.dart';
 import 'package:kt_dart/collection.dart';
 
 import '../../../../core/constants.dart';
@@ -74,19 +73,19 @@ class _LocationPopupState extends State<LocationPopup> {
               const SizedBox(height: 7),
               _printContamination(
                 foregroundColor: confirmedColor,
-                value: _location.contaminations.first().confirmed,
+                value: _location.contaminations.first().confirmed.getOrCrash(),
                 label: 'Confirmed',
               ),
               const SizedBox(height: 5),
               _printContamination(
                 foregroundColor: recoveredColorDark,
-                value: _location.contaminations.first().recovered,
+                value: _location.contaminations.first().recovered.getOrCrash(),
                 label: 'Recovered',
               ),
               const SizedBox(height: 5),
               _printContamination(
                 foregroundColor: deathsColorDark,
-                value: _location.contaminations.first().deaths,
+                value: _location.contaminations.first().deaths.getOrCrash(),
                 label: 'Deaths',
               ),
             ],
@@ -96,7 +95,7 @@ class _LocationPopupState extends State<LocationPopup> {
 
   Widget _printContamination({
     required Color foregroundColor,
-    required int value,
+    required String value,
     required String label,
   }) {
     const fontSize = 22.0;
@@ -111,7 +110,7 @@ class _LocationPopupState extends State<LocationPopup> {
           ),
         ),
         Text(
-          NumberFormat.decimalPattern('en-US').format(value),
+          value,
           style: TextStyle(
             fontSize: fontSize,
             color: foregroundColor,

@@ -20,7 +20,7 @@ class _$LocationTearOff {
       {required int id,
       required String country,
       required String countryCode,
-      required int countryPopulation,
+      required PopulationValue countryPopulation,
       required double latitude,
       required double longitude,
       required KtList<Contamination> contaminations}) {
@@ -44,7 +44,7 @@ mixin _$Location {
   int get id => throw _privateConstructorUsedError;
   String get country => throw _privateConstructorUsedError;
   String get countryCode => throw _privateConstructorUsedError;
-  int get countryPopulation => throw _privateConstructorUsedError;
+  PopulationValue get countryPopulation => throw _privateConstructorUsedError;
   double get latitude => throw _privateConstructorUsedError;
   double get longitude => throw _privateConstructorUsedError;
   KtList<Contamination> get contaminations =>
@@ -63,7 +63,7 @@ abstract class $LocationCopyWith<$Res> {
       {int id,
       String country,
       String countryCode,
-      int countryPopulation,
+      PopulationValue countryPopulation,
       double latitude,
       double longitude,
       KtList<Contamination> contaminations});
@@ -94,7 +94,7 @@ class _$LocationCopyWithImpl<$Res> implements $LocationCopyWith<$Res> {
           countryCode == freezed ? _value.countryCode : countryCode as String,
       countryPopulation: countryPopulation == freezed
           ? _value.countryPopulation
-          : countryPopulation as int,
+          : countryPopulation as PopulationValue,
       latitude: latitude == freezed ? _value.latitude : latitude as double,
       longitude: longitude == freezed ? _value.longitude : longitude as double,
       contaminations: contaminations == freezed
@@ -113,7 +113,7 @@ abstract class _$LocationCopyWith<$Res> implements $LocationCopyWith<$Res> {
       {int id,
       String country,
       String countryCode,
-      int countryPopulation,
+      PopulationValue countryPopulation,
       double latitude,
       double longitude,
       KtList<Contamination> contaminations});
@@ -145,7 +145,7 @@ class __$LocationCopyWithImpl<$Res> extends _$LocationCopyWithImpl<$Res>
           countryCode == freezed ? _value.countryCode : countryCode as String,
       countryPopulation: countryPopulation == freezed
           ? _value.countryPopulation
-          : countryPopulation as int,
+          : countryPopulation as PopulationValue,
       latitude: latitude == freezed ? _value.latitude : latitude as double,
       longitude: longitude == freezed ? _value.longitude : longitude as double,
       contaminations: contaminations == freezed
@@ -174,7 +174,7 @@ class _$_Location extends _Location {
   @override
   final String countryCode;
   @override
-  final int countryPopulation;
+  final PopulationValue countryPopulation;
   @override
   final double latitude;
   @override
@@ -236,7 +236,7 @@ abstract class _Location extends Location {
       {required int id,
       required String country,
       required String countryCode,
-      required int countryPopulation,
+      required PopulationValue countryPopulation,
       required double latitude,
       required double longitude,
       required KtList<Contamination> contaminations}) = _$_Location;
@@ -248,7 +248,7 @@ abstract class _Location extends Location {
   @override
   String get countryCode => throw _privateConstructorUsedError;
   @override
-  int get countryPopulation => throw _privateConstructorUsedError;
+  PopulationValue get countryPopulation => throw _privateConstructorUsedError;
   @override
   double get latitude => throw _privateConstructorUsedError;
   @override

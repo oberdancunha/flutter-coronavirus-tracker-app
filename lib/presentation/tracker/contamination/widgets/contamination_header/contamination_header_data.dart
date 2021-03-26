@@ -31,9 +31,7 @@ class ContaminationHeaderData extends StatelessWidget {
             ),
           ),
           Text(
-            NumberFormat.decimalPattern('en_US').format(
-              contamination!.confirmed,
-            ),
+            contamination!.confirmed.getOrCrash(),
             style: const TextStyle(
               color: Colors.white,
               fontSize: 43,

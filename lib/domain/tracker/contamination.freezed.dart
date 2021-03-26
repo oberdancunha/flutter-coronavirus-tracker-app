@@ -17,9 +17,9 @@ class _$ContaminationTearOff {
   const _$ContaminationTearOff();
 
   _Contamination call(
-      {required int confirmed,
-      required int deaths,
-      required int recovered,
+      {required PopulationValue confirmed,
+      required PopulationValue deaths,
+      required PopulationValue recovered,
       required DateTime lastUpdated}) {
     return _Contamination(
       confirmed: confirmed,
@@ -35,9 +35,9 @@ const $Contamination = _$ContaminationTearOff();
 
 /// @nodoc
 mixin _$Contamination {
-  int get confirmed => throw _privateConstructorUsedError;
-  int get deaths => throw _privateConstructorUsedError;
-  int get recovered => throw _privateConstructorUsedError;
+  PopulationValue get confirmed => throw _privateConstructorUsedError;
+  PopulationValue get deaths => throw _privateConstructorUsedError;
+  PopulationValue get recovered => throw _privateConstructorUsedError;
   DateTime get lastUpdated => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
@@ -50,7 +50,11 @@ abstract class $ContaminationCopyWith<$Res> {
   factory $ContaminationCopyWith(
           Contamination value, $Res Function(Contamination) then) =
       _$ContaminationCopyWithImpl<$Res>;
-  $Res call({int confirmed, int deaths, int recovered, DateTime lastUpdated});
+  $Res call(
+      {PopulationValue confirmed,
+      PopulationValue deaths,
+      PopulationValue recovered,
+      DateTime lastUpdated});
 }
 
 /// @nodoc
@@ -70,9 +74,13 @@ class _$ContaminationCopyWithImpl<$Res>
     Object? lastUpdated = freezed,
   }) {
     return _then(_value.copyWith(
-      confirmed: confirmed == freezed ? _value.confirmed : confirmed as int,
-      deaths: deaths == freezed ? _value.deaths : deaths as int,
-      recovered: recovered == freezed ? _value.recovered : recovered as int,
+      confirmed: confirmed == freezed
+          ? _value.confirmed
+          : confirmed as PopulationValue,
+      deaths: deaths == freezed ? _value.deaths : deaths as PopulationValue,
+      recovered: recovered == freezed
+          ? _value.recovered
+          : recovered as PopulationValue,
       lastUpdated:
           lastUpdated == freezed ? _value.lastUpdated : lastUpdated as DateTime,
     ));
@@ -86,7 +94,11 @@ abstract class _$ContaminationCopyWith<$Res>
           _Contamination value, $Res Function(_Contamination) then) =
       __$ContaminationCopyWithImpl<$Res>;
   @override
-  $Res call({int confirmed, int deaths, int recovered, DateTime lastUpdated});
+  $Res call(
+      {PopulationValue confirmed,
+      PopulationValue deaths,
+      PopulationValue recovered,
+      DateTime lastUpdated});
 }
 
 /// @nodoc
@@ -108,9 +120,13 @@ class __$ContaminationCopyWithImpl<$Res>
     Object? lastUpdated = freezed,
   }) {
     return _then(_Contamination(
-      confirmed: confirmed == freezed ? _value.confirmed : confirmed as int,
-      deaths: deaths == freezed ? _value.deaths : deaths as int,
-      recovered: recovered == freezed ? _value.recovered : recovered as int,
+      confirmed: confirmed == freezed
+          ? _value.confirmed
+          : confirmed as PopulationValue,
+      deaths: deaths == freezed ? _value.deaths : deaths as PopulationValue,
+      recovered: recovered == freezed
+          ? _value.recovered
+          : recovered as PopulationValue,
       lastUpdated:
           lastUpdated == freezed ? _value.lastUpdated : lastUpdated as DateTime,
     ));
@@ -127,11 +143,11 @@ class _$_Contamination extends _Contamination {
       : super._();
 
   @override
-  final int confirmed;
+  final PopulationValue confirmed;
   @override
-  final int deaths;
+  final PopulationValue deaths;
   @override
-  final int recovered;
+  final PopulationValue recovered;
   @override
   final DateTime lastUpdated;
 
@@ -174,17 +190,17 @@ class _$_Contamination extends _Contamination {
 abstract class _Contamination extends Contamination {
   const _Contamination._() : super._();
   const factory _Contamination(
-      {required int confirmed,
-      required int deaths,
-      required int recovered,
+      {required PopulationValue confirmed,
+      required PopulationValue deaths,
+      required PopulationValue recovered,
       required DateTime lastUpdated}) = _$_Contamination;
 
   @override
-  int get confirmed => throw _privateConstructorUsedError;
+  PopulationValue get confirmed => throw _privateConstructorUsedError;
   @override
-  int get deaths => throw _privateConstructorUsedError;
+  PopulationValue get deaths => throw _privateConstructorUsedError;
   @override
-  int get recovered => throw _privateConstructorUsedError;
+  PopulationValue get recovered => throw _privateConstructorUsedError;
   @override
   DateTime get lastUpdated => throw _privateConstructorUsedError;
   @override
