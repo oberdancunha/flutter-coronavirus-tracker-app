@@ -35,7 +35,7 @@ class _LocationPopupState extends State<LocationPopup> {
   @override
   Widget build(BuildContext context) => Container(
         width: 280,
-        height: 180,
+        height: 210,
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: const BorderRadius.only(
@@ -71,6 +71,12 @@ class _LocationPopupState extends State<LocationPopup> {
                 height: 1,
               ),
               const SizedBox(height: 7),
+              _printContamination(
+                foregroundColor: countryColor,
+                value: _location.countryPopulation.getOrCrash(),
+                label: 'Population',
+              ),
+              const SizedBox(height: 5),
               _printContamination(
                 foregroundColor: confirmedColor,
                 value: _location.contaminations.first().confirmed.getOrCrash(),
