@@ -14,6 +14,7 @@ import 'package:coronavirus_tracker_app/domain/tracker/contamination.dart';
 import 'package:coronavirus_tracker_app/domain/tracker/i_tracker_repository.dart';
 import 'package:coronavirus_tracker_app/domain/tracker/location.dart';
 import 'package:coronavirus_tracker_app/domain/tracker/tracker.dart';
+import 'package:coronavirus_tracker_app/domain/tracker/tracker_value_objects.dart';
 import 'package:coronavirus_tracker_app/presentation/core/app_page.dart';
 import 'package:coronavirus_tracker_app/presentation/core/app_widget.dart';
 import 'package:coronavirus_tracker_app/presentation/core/main_page.dart';
@@ -38,9 +39,9 @@ void main() {
     mockTrackerRepository = MockTrackerRepository();
     trackerDataEntityMocked = Tracker(
       contamination: Contamination(
-        confirmed: 114442646,
-        deaths: 2538808,
-        recovered: 14076469,
+        confirmed: PopulationValue(114442646),
+        deaths: PopulationValue(2538808),
+        recovered: PopulationValue(14076469),
         lastUpdated: DateTime.tryParse('2021-03-02T16:04:34.882427Z'),
       ),
       locations: KtList.of(
@@ -48,14 +49,14 @@ void main() {
           id: 30,
           country: 'Brazil',
           countryCode: 'BR',
-          countryPopulation: 209469333,
+          countryPopulation: PopulationValue(209469333),
           latitude: -14.235,
           longitude: -51.9253,
           contaminations: KtList.of(
             Contamination(
-              confirmed: 10587001,
-              deaths: 255720,
-              recovered: 9437611,
+              confirmed: PopulationValue(10587001),
+              deaths: PopulationValue(255720),
+              recovered: PopulationValue(9437611),
               lastUpdated: DateTime.tryParse('2021-03-02T16:04:34.882427Z'),
             ),
           ),
@@ -64,14 +65,14 @@ void main() {
           id: 54,
           country: 'Canada',
           countryCode: 'CA',
-          countryPopulation: 37058856,
+          countryPopulation: PopulationValue(37058856),
           latitude: 64.2823,
           longitude: -135,
           contaminations: KtList.of(
             Contamination(
-              confirmed: 875388,
-              deaths: 22014,
-              recovered: 0,
+              confirmed: PopulationValue(875388),
+              deaths: PopulationValue(22014),
+              recovered: PopulationValue(0),
               lastUpdated: DateTime.tryParse('2021-03-02T16:04:35.583773Z'),
             ),
           ),

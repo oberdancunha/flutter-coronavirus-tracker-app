@@ -9,9 +9,9 @@ class ContaminationPrimitive with _$ContaminationPrimitive {
   const ContaminationPrimitive._();
 
   const factory ContaminationPrimitive({
-    required int confirmed,
-    required int deaths,
-    required int recovered,
+    required String confirmed,
+    required String deaths,
+    required String recovered,
     required DateTime lastUpdated,
   }) = _ContaminationPrimitive;
 }
@@ -24,7 +24,7 @@ class LocationPrimitive with _$LocationPrimitive {
     required int id,
     required String country,
     required String countryCode,
-    required int countryPopulation,
+    required String countryPopulation,
     required double latitude,
     required double longitude,
     required List<ContaminationPrimitive> contaminations,
@@ -34,16 +34,16 @@ class LocationPrimitive with _$LocationPrimitive {
         id: location.id,
         country: location.country,
         countryCode: location.countryCode,
-        countryPopulation: location.countryPopulation,
+        countryPopulation: location.countryPopulation.getOrCrash(),
         latitude: location.latitude,
         longitude: location.longitude,
         contaminations: location.contaminations
             .asList()
             .map(
               (contamination) => ContaminationPrimitive(
-                confirmed: contamination.confirmed,
-                deaths: contamination.deaths,
-                recovered: contamination.recovered,
+                confirmed: contamination.confirmed.getOrCrash(),
+                deaths: contamination.deaths.getOrCrash(),
+                recovered: contamination.recovered.getOrCrash(),
                 lastUpdated: contamination.lastUpdated,
               ),
             )

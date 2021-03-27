@@ -2,6 +2,7 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/constants.dart';
+import '../../../../../domain/core/value_transformers.dart';
 import '../../../../../domain/tracker/contamination.dart';
 
 class ContaminationBodyPie extends StatelessWidget {
@@ -16,17 +17,17 @@ class ContaminationBodyPie extends StatelessWidget {
   Widget build(BuildContext context) {
     final _contaminationPieData = [
       _ContaminationPieData(
-        value: contamination.confirmed,
+        value: contamination.confirmed.getOrCrash(),
         label: 'confirmed',
         backgroundColor: Colors.black,
       ),
       _ContaminationPieData(
-        value: contamination.recovered,
+        value: contamination.recovered.getOrCrash(),
         label: 'recovered',
         backgroundColor: recoveredColorDark,
       ),
       _ContaminationPieData(
-        value: contamination.deaths,
+        value: contamination.deaths.getOrCrash(),
         label: 'deaths',
         backgroundColor: deathsColorDark,
       ),
@@ -52,7 +53,7 @@ class ContaminationBodyPie extends StatelessWidget {
           .map(
             (contamination) => PieChartSectionData(
               color: contamination.backgroundColor,
-              value: double.tryParse(contamination.value.toString()),
+              value: double.tryParse(removeDecimalPattern(contamination.value)),
               title: contamination.label,
               radius: 135,
               titleStyle: const TextStyle(
@@ -68,7 +69,7 @@ class ContaminationBodyPie extends StatelessWidget {
 
 class _ContaminationPieData {
   final String label;
-  final int value;
+  final String value;
   final Color backgroundColor;
 
   _ContaminationPieData({

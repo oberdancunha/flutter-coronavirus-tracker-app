@@ -1,5 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
+import 'tracker_value_objects.dart';
+
 part 'contamination.freezed.dart';
 
 @freezed
@@ -7,9 +9,9 @@ class Contamination with _$Contamination {
   const Contamination._();
 
   const factory Contamination({
-    required int confirmed,
-    required int deaths,
-    required int recovered,
+    required PopulationValue confirmed,
+    required PopulationValue deaths,
+    required PopulationValue recovered,
     required DateTime lastUpdated,
   }) = _Contamination;
 }

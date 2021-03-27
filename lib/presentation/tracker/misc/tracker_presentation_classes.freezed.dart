@@ -17,9 +17,9 @@ class _$ContaminationPrimitiveTearOff {
   const _$ContaminationPrimitiveTearOff();
 
   _ContaminationPrimitive call(
-      {required int confirmed,
-      required int deaths,
-      required int recovered,
+      {required String confirmed,
+      required String deaths,
+      required String recovered,
       required DateTime lastUpdated}) {
     return _ContaminationPrimitive(
       confirmed: confirmed,
@@ -35,9 +35,9 @@ const $ContaminationPrimitive = _$ContaminationPrimitiveTearOff();
 
 /// @nodoc
 mixin _$ContaminationPrimitive {
-  int get confirmed => throw _privateConstructorUsedError;
-  int get deaths => throw _privateConstructorUsedError;
-  int get recovered => throw _privateConstructorUsedError;
+  String get confirmed => throw _privateConstructorUsedError;
+  String get deaths => throw _privateConstructorUsedError;
+  String get recovered => throw _privateConstructorUsedError;
   DateTime get lastUpdated => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
@@ -50,7 +50,11 @@ abstract class $ContaminationPrimitiveCopyWith<$Res> {
   factory $ContaminationPrimitiveCopyWith(ContaminationPrimitive value,
           $Res Function(ContaminationPrimitive) then) =
       _$ContaminationPrimitiveCopyWithImpl<$Res>;
-  $Res call({int confirmed, int deaths, int recovered, DateTime lastUpdated});
+  $Res call(
+      {String confirmed,
+      String deaths,
+      String recovered,
+      DateTime lastUpdated});
 }
 
 /// @nodoc
@@ -70,9 +74,9 @@ class _$ContaminationPrimitiveCopyWithImpl<$Res>
     Object? lastUpdated = freezed,
   }) {
     return _then(_value.copyWith(
-      confirmed: confirmed == freezed ? _value.confirmed : confirmed as int,
-      deaths: deaths == freezed ? _value.deaths : deaths as int,
-      recovered: recovered == freezed ? _value.recovered : recovered as int,
+      confirmed: confirmed == freezed ? _value.confirmed : confirmed as String,
+      deaths: deaths == freezed ? _value.deaths : deaths as String,
+      recovered: recovered == freezed ? _value.recovered : recovered as String,
       lastUpdated:
           lastUpdated == freezed ? _value.lastUpdated : lastUpdated as DateTime,
     ));
@@ -86,7 +90,11 @@ abstract class _$ContaminationPrimitiveCopyWith<$Res>
           $Res Function(_ContaminationPrimitive) then) =
       __$ContaminationPrimitiveCopyWithImpl<$Res>;
   @override
-  $Res call({int confirmed, int deaths, int recovered, DateTime lastUpdated});
+  $Res call(
+      {String confirmed,
+      String deaths,
+      String recovered,
+      DateTime lastUpdated});
 }
 
 /// @nodoc
@@ -108,9 +116,9 @@ class __$ContaminationPrimitiveCopyWithImpl<$Res>
     Object? lastUpdated = freezed,
   }) {
     return _then(_ContaminationPrimitive(
-      confirmed: confirmed == freezed ? _value.confirmed : confirmed as int,
-      deaths: deaths == freezed ? _value.deaths : deaths as int,
-      recovered: recovered == freezed ? _value.recovered : recovered as int,
+      confirmed: confirmed == freezed ? _value.confirmed : confirmed as String,
+      deaths: deaths == freezed ? _value.deaths : deaths as String,
+      recovered: recovered == freezed ? _value.recovered : recovered as String,
       lastUpdated:
           lastUpdated == freezed ? _value.lastUpdated : lastUpdated as DateTime,
     ));
@@ -127,11 +135,11 @@ class _$_ContaminationPrimitive extends _ContaminationPrimitive {
       : super._();
 
   @override
-  final int confirmed;
+  final String confirmed;
   @override
-  final int deaths;
+  final String deaths;
   @override
-  final int recovered;
+  final String recovered;
   @override
   final DateTime lastUpdated;
 
@@ -175,17 +183,17 @@ class _$_ContaminationPrimitive extends _ContaminationPrimitive {
 abstract class _ContaminationPrimitive extends ContaminationPrimitive {
   const _ContaminationPrimitive._() : super._();
   const factory _ContaminationPrimitive(
-      {required int confirmed,
-      required int deaths,
-      required int recovered,
+      {required String confirmed,
+      required String deaths,
+      required String recovered,
       required DateTime lastUpdated}) = _$_ContaminationPrimitive;
 
   @override
-  int get confirmed => throw _privateConstructorUsedError;
+  String get confirmed => throw _privateConstructorUsedError;
   @override
-  int get deaths => throw _privateConstructorUsedError;
+  String get deaths => throw _privateConstructorUsedError;
   @override
-  int get recovered => throw _privateConstructorUsedError;
+  String get recovered => throw _privateConstructorUsedError;
   @override
   DateTime get lastUpdated => throw _privateConstructorUsedError;
   @override
@@ -202,7 +210,7 @@ class _$LocationPrimitiveTearOff {
       {required int id,
       required String country,
       required String countryCode,
-      required int countryPopulation,
+      required String countryPopulation,
       required double latitude,
       required double longitude,
       required List<ContaminationPrimitive> contaminations}) {
@@ -226,7 +234,7 @@ mixin _$LocationPrimitive {
   int get id => throw _privateConstructorUsedError;
   String get country => throw _privateConstructorUsedError;
   String get countryCode => throw _privateConstructorUsedError;
-  int get countryPopulation => throw _privateConstructorUsedError;
+  String get countryPopulation => throw _privateConstructorUsedError;
   double get latitude => throw _privateConstructorUsedError;
   double get longitude => throw _privateConstructorUsedError;
   List<ContaminationPrimitive> get contaminations =>
@@ -246,7 +254,7 @@ abstract class $LocationPrimitiveCopyWith<$Res> {
       {int id,
       String country,
       String countryCode,
-      int countryPopulation,
+      String countryPopulation,
       double latitude,
       double longitude,
       List<ContaminationPrimitive> contaminations});
@@ -278,7 +286,7 @@ class _$LocationPrimitiveCopyWithImpl<$Res>
           countryCode == freezed ? _value.countryCode : countryCode as String,
       countryPopulation: countryPopulation == freezed
           ? _value.countryPopulation
-          : countryPopulation as int,
+          : countryPopulation as String,
       latitude: latitude == freezed ? _value.latitude : latitude as double,
       longitude: longitude == freezed ? _value.longitude : longitude as double,
       contaminations: contaminations == freezed
@@ -299,7 +307,7 @@ abstract class _$LocationPrimitiveCopyWith<$Res>
       {int id,
       String country,
       String countryCode,
-      int countryPopulation,
+      String countryPopulation,
       double latitude,
       double longitude,
       List<ContaminationPrimitive> contaminations});
@@ -333,7 +341,7 @@ class __$LocationPrimitiveCopyWithImpl<$Res>
           countryCode == freezed ? _value.countryCode : countryCode as String,
       countryPopulation: countryPopulation == freezed
           ? _value.countryPopulation
-          : countryPopulation as int,
+          : countryPopulation as String,
       latitude: latitude == freezed ? _value.latitude : latitude as double,
       longitude: longitude == freezed ? _value.longitude : longitude as double,
       contaminations: contaminations == freezed
@@ -362,7 +370,7 @@ class _$_LocationPrimitive extends _LocationPrimitive {
   @override
   final String countryCode;
   @override
-  final int countryPopulation;
+  final String countryPopulation;
   @override
   final double latitude;
   @override
@@ -424,7 +432,7 @@ abstract class _LocationPrimitive extends LocationPrimitive {
           {required int id,
           required String country,
           required String countryCode,
-          required int countryPopulation,
+          required String countryPopulation,
           required double latitude,
           required double longitude,
           required List<ContaminationPrimitive> contaminations}) =
@@ -437,7 +445,7 @@ abstract class _LocationPrimitive extends LocationPrimitive {
   @override
   String get countryCode => throw _privateConstructorUsedError;
   @override
-  int get countryPopulation => throw _privateConstructorUsedError;
+  String get countryPopulation => throw _privateConstructorUsedError;
   @override
   double get latitude => throw _privateConstructorUsedError;
   @override

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 
 import '../../../../../core/constants.dart';
 import '../../../../../domain/tracker/contamination.dart';
@@ -24,7 +23,7 @@ class ContaminationBodyText extends StatelessWidget {
               context: context,
               backgroundColor: recoveredColorLight,
               foregroundColor: recoveredColorDark,
-              contaminationNumber: contamination.recovered,
+              contaminationNumber: contamination.recovered.getOrCrash(),
               contaminationLabel: 'recovered',
             ),
             const SizedBox(width: 10),
@@ -32,7 +31,7 @@ class ContaminationBodyText extends StatelessWidget {
               context: context,
               backgroundColor: deathsColorLight,
               foregroundColor: deathsColorDark,
-              contaminationNumber: contamination.deaths,
+              contaminationNumber: contamination.deaths.getOrCrash(),
               contaminationLabel: 'deaths',
             ),
           ],
@@ -43,7 +42,7 @@ class ContaminationBodyText extends StatelessWidget {
     required BuildContext context,
     required Color backgroundColor,
     required Color foregroundColor,
-    required int contaminationNumber,
+    required String contaminationNumber,
     required String contaminationLabel,
   }) =>
       Container(
@@ -54,7 +53,7 @@ class ContaminationBodyText extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              NumberFormat.decimalPattern('en-US').format(contaminationNumber),
+              contaminationNumber,
               style: TextStyle(
                 color: foregroundColor,
                 fontSize: 35,
