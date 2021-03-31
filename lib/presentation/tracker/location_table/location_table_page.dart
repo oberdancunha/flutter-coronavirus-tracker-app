@@ -119,8 +119,7 @@ class _LocationTablePageState extends State<LocationTablePage> {
         _buildColumn<num>(
           label: 'Deaths',
           isNumeric: true,
-          getField: (location) =>
-              int.tryParse(location.contaminations.first.deaths.replaceAll(',', ''))!,
+          getField: (location) => formatPopulationToInt(location.contaminations.first.deaths),
         ),
       ];
 
@@ -177,7 +176,7 @@ class _LocationTablePageState extends State<LocationTablePage> {
   }
 
   void _changeTextSearch(String textSearch) {
-    final textSearchTrimmed = textSearch.trim().replaceAll(RegExp(' +'), ' ');
+    final textSearchTrimmed = removeExcessiveWhiteSpaces(textSearch);
     setState(
       () {
         _locationsPrimitive = _locationsPrimitiveImmutable
