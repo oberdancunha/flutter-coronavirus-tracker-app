@@ -9,7 +9,7 @@ Tracker getTrackerDataEntity() => Tracker(
         confirmed: PopulationValue(114442646),
         deaths: PopulationValue(2538808),
         recovered: PopulationValue(14076469),
-        lastUpdated: DateTime.tryParse('2021-03-02T16:04:34.882427Z')!,
+        lastUpdated: DateValue('2021-03-02T16:04:34.882427Z'),
       ),
       locations: KtList.of(
         Location(
@@ -24,7 +24,7 @@ Tracker getTrackerDataEntity() => Tracker(
               confirmed: PopulationValue(10587001),
               deaths: PopulationValue(255720),
               recovered: PopulationValue(9437611),
-              lastUpdated: DateTime.tryParse('2021-03-02T16:04:34.882427Z')!,
+              lastUpdated: DateValue('2021-03-02T16:04:34.882427Z'),
             ),
           ),
         ),
@@ -40,7 +40,7 @@ Tracker getTrackerDataEntity() => Tracker(
               confirmed: PopulationValue(875388),
               deaths: PopulationValue(22014),
               recovered: PopulationValue(0),
-              lastUpdated: DateTime.tryParse('2021-03-02T16:04:35.583773Z')!,
+              lastUpdated: DateValue('2021-03-02T16:04:35.583773Z'),
             ),
           ),
         ),

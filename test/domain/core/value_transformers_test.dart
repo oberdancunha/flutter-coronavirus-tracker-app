@@ -41,4 +41,20 @@ void main() {
       expect(expectedValue, equals(valueFormatted));
     },
   );
+
+  test('Should transform date String in DateTime', () {
+    const dateString = '2021-03-02T16:04:33.535436Z';
+    final date = toDateTime(dateString);
+    expect(date, isA<DateTime>());
+  });
+
+  test(
+    'Should format date in "Month day, year, hour:minute"',
+    () {
+      final date = toDateTime('2021-03-02T16:04:33.535436Z');
+      const expectedDate = 'March 02, 2021, 16:04';
+      final dateFormatted = formatDate(date);
+      expect(expectedDate, equals(dateFormatted));
+    },
+  );
 }

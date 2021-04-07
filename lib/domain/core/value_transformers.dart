@@ -12,3 +12,7 @@ int formatPopulationToInt(String populationString) => int.tryParse(
 String removeDecimalPattern(String populationString) => populationString.replaceAll(',', '');
 
 String removeExcessiveWhiteSpaces(String value) => value.trim().replaceAll(RegExp(' +'), ' ');
+
+DateTime toDateTime(String date) => DateTime.tryParse(date)!;
+
+String formatDate(DateTime date) => DateFormat('MMMM dd, yyyy, kk:mm').format(date);

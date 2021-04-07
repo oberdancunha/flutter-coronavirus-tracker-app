@@ -12,7 +12,7 @@ class ContaminationPrimitive with _$ContaminationPrimitive {
     required String confirmed,
     required String deaths,
     required String recovered,
-    required DateTime lastUpdated,
+    required String lastUpdated,
   }) = _ContaminationPrimitive;
 }
 
@@ -44,7 +44,7 @@ class LocationPrimitive with _$LocationPrimitive {
                 confirmed: contamination.confirmed.getOrCrash(),
                 deaths: contamination.deaths.getOrCrash(),
                 recovered: contamination.recovered.getOrCrash(),
-                lastUpdated: contamination.lastUpdated,
+                lastUpdated: contamination.lastUpdated.getOrCrash(),
               ),
             )
             .toList(),

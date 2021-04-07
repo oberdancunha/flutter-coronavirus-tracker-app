@@ -20,7 +20,7 @@ class _$ContaminationPrimitiveTearOff {
       {required String confirmed,
       required String deaths,
       required String recovered,
-      required DateTime lastUpdated}) {
+      required String lastUpdated}) {
     return _ContaminationPrimitive(
       confirmed: confirmed,
       deaths: deaths,
@@ -38,7 +38,7 @@ mixin _$ContaminationPrimitive {
   String get confirmed => throw _privateConstructorUsedError;
   String get deaths => throw _privateConstructorUsedError;
   String get recovered => throw _privateConstructorUsedError;
-  DateTime get lastUpdated => throw _privateConstructorUsedError;
+  String get lastUpdated => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $ContaminationPrimitiveCopyWith<ContaminationPrimitive> get copyWith =>
@@ -51,10 +51,7 @@ abstract class $ContaminationPrimitiveCopyWith<$Res> {
           $Res Function(ContaminationPrimitive) then) =
       _$ContaminationPrimitiveCopyWithImpl<$Res>;
   $Res call(
-      {String confirmed,
-      String deaths,
-      String recovered,
-      DateTime lastUpdated});
+      {String confirmed, String deaths, String recovered, String lastUpdated});
 }
 
 /// @nodoc
@@ -78,7 +75,7 @@ class _$ContaminationPrimitiveCopyWithImpl<$Res>
       deaths: deaths == freezed ? _value.deaths : deaths as String,
       recovered: recovered == freezed ? _value.recovered : recovered as String,
       lastUpdated:
-          lastUpdated == freezed ? _value.lastUpdated : lastUpdated as DateTime,
+          lastUpdated == freezed ? _value.lastUpdated : lastUpdated as String,
     ));
   }
 }
@@ -91,10 +88,7 @@ abstract class _$ContaminationPrimitiveCopyWith<$Res>
       __$ContaminationPrimitiveCopyWithImpl<$Res>;
   @override
   $Res call(
-      {String confirmed,
-      String deaths,
-      String recovered,
-      DateTime lastUpdated});
+      {String confirmed, String deaths, String recovered, String lastUpdated});
 }
 
 /// @nodoc
@@ -120,7 +114,7 @@ class __$ContaminationPrimitiveCopyWithImpl<$Res>
       deaths: deaths == freezed ? _value.deaths : deaths as String,
       recovered: recovered == freezed ? _value.recovered : recovered as String,
       lastUpdated:
-          lastUpdated == freezed ? _value.lastUpdated : lastUpdated as DateTime,
+          lastUpdated == freezed ? _value.lastUpdated : lastUpdated as String,
     ));
   }
 }
@@ -141,7 +135,7 @@ class _$_ContaminationPrimitive extends _ContaminationPrimitive {
   @override
   final String recovered;
   @override
-  final DateTime lastUpdated;
+  final String lastUpdated;
 
   @override
   String toString() {
@@ -186,7 +180,7 @@ abstract class _ContaminationPrimitive extends ContaminationPrimitive {
       {required String confirmed,
       required String deaths,
       required String recovered,
-      required DateTime lastUpdated}) = _$_ContaminationPrimitive;
+      required String lastUpdated}) = _$_ContaminationPrimitive;
 
   @override
   String get confirmed => throw _privateConstructorUsedError;
@@ -195,7 +189,7 @@ abstract class _ContaminationPrimitive extends ContaminationPrimitive {
   @override
   String get recovered => throw _privateConstructorUsedError;
   @override
-  DateTime get lastUpdated => throw _privateConstructorUsedError;
+  String get lastUpdated => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ContaminationPrimitiveCopyWith<_ContaminationPrimitive> get copyWith =>
