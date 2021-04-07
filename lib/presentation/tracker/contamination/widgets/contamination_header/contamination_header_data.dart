@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 
 import '../../../../../domain/tracker/contamination.dart';
 
@@ -16,7 +15,7 @@ class ContaminationHeaderData extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Last update ${DateFormat('MMMM dd, yyyy, kk:mm').format(contamination!.lastUpdated)}',
+            'Last update ${contamination!.lastUpdated.getOrCrash()}',
             style: const TextStyle(
               color: Colors.white,
               fontSize: 18,

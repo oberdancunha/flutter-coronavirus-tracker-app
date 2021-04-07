@@ -12,6 +12,6 @@ class Contamination with _$Contamination {
     required PopulationValue confirmed,
     required PopulationValue deaths,
     required PopulationValue recovered,
-    required DateTime lastUpdated,
+    required DateValue lastUpdated,
   }) = _Contamination;
 }

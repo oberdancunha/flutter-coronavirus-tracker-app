@@ -20,7 +20,7 @@ class _$ContaminationTearOff {
       {required PopulationValue confirmed,
       required PopulationValue deaths,
       required PopulationValue recovered,
-      required DateTime lastUpdated}) {
+      required DateValue lastUpdated}) {
     return _Contamination(
       confirmed: confirmed,
       deaths: deaths,
@@ -38,7 +38,7 @@ mixin _$Contamination {
   PopulationValue get confirmed => throw _privateConstructorUsedError;
   PopulationValue get deaths => throw _privateConstructorUsedError;
   PopulationValue get recovered => throw _privateConstructorUsedError;
-  DateTime get lastUpdated => throw _privateConstructorUsedError;
+  DateValue get lastUpdated => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $ContaminationCopyWith<Contamination> get copyWith =>
@@ -54,7 +54,7 @@ abstract class $ContaminationCopyWith<$Res> {
       {PopulationValue confirmed,
       PopulationValue deaths,
       PopulationValue recovered,
-      DateTime lastUpdated});
+      DateValue lastUpdated});
 }
 
 /// @nodoc
@@ -81,8 +81,9 @@ class _$ContaminationCopyWithImpl<$Res>
       recovered: recovered == freezed
           ? _value.recovered
           : recovered as PopulationValue,
-      lastUpdated:
-          lastUpdated == freezed ? _value.lastUpdated : lastUpdated as DateTime,
+      lastUpdated: lastUpdated == freezed
+          ? _value.lastUpdated
+          : lastUpdated as DateValue,
     ));
   }
 }
@@ -98,7 +99,7 @@ abstract class _$ContaminationCopyWith<$Res>
       {PopulationValue confirmed,
       PopulationValue deaths,
       PopulationValue recovered,
-      DateTime lastUpdated});
+      DateValue lastUpdated});
 }
 
 /// @nodoc
@@ -127,8 +128,9 @@ class __$ContaminationCopyWithImpl<$Res>
       recovered: recovered == freezed
           ? _value.recovered
           : recovered as PopulationValue,
-      lastUpdated:
-          lastUpdated == freezed ? _value.lastUpdated : lastUpdated as DateTime,
+      lastUpdated: lastUpdated == freezed
+          ? _value.lastUpdated
+          : lastUpdated as DateValue,
     ));
   }
 }
@@ -149,7 +151,7 @@ class _$_Contamination extends _Contamination {
   @override
   final PopulationValue recovered;
   @override
-  final DateTime lastUpdated;
+  final DateValue lastUpdated;
 
   @override
   String toString() {
@@ -193,7 +195,7 @@ abstract class _Contamination extends Contamination {
       {required PopulationValue confirmed,
       required PopulationValue deaths,
       required PopulationValue recovered,
-      required DateTime lastUpdated}) = _$_Contamination;
+      required DateValue lastUpdated}) = _$_Contamination;
 
   @override
   PopulationValue get confirmed => throw _privateConstructorUsedError;
@@ -202,7 +204,7 @@ abstract class _Contamination extends Contamination {
   @override
   PopulationValue get recovered => throw _privateConstructorUsedError;
   @override
-  DateTime get lastUpdated => throw _privateConstructorUsedError;
+  DateValue get lastUpdated => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$ContaminationCopyWith<_Contamination> get copyWith =>

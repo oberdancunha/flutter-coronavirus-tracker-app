@@ -100,7 +100,7 @@ class ContaminationDto with _$ContaminationDto {
         confirmed: PopulationValue(confirmed),
         deaths: PopulationValue(deaths),
         recovered: PopulationValue(recovered),
-        lastUpdated: DateTime.tryParse(lastUpdated)!,
+        lastUpdated: DateValue(lastUpdated),
       );
 
   factory ContaminationDto.fromCoronaTrackerApi({

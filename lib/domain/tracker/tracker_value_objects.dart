@@ -14,3 +14,14 @@ class PopulationValue extends ValueObject<String> {
 
   PopulationValue._(this.value);
 }
+
+class DateValue extends ValueObject<String> {
+  @override
+  final Either<ValueFailure<String>, String> value;
+
+  factory DateValue(String dateString) => DateValue._(
+        right(formatDate(toDateTime(dateString))),
+      );
+
+  DateValue._(this.value);
+}
