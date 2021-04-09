@@ -14,12 +14,15 @@ void main() {
     networkInfo = NetworkInfo(mockConnectivity!);
   });
 
+  void callWhenMockCheckConnectivity(ConnectivityResult connectivityResult) =>
+      when(mockConnectivity!).calls(#checkConnectivity).thenAnswer(
+            (_) async => connectivityResult,
+          );
+
   test(
     'Should check if the connection is online (WIFI)',
     () async {
-      when(mockConnectivity!)
-          .calls(#checkConnectivity)
-          .thenAnswer((_) async => ConnectivityResult.wifi);
+      callWhenMockCheckConnectivity(ConnectivityResult.wifi);
       final isConnected = await networkInfo.isConnected;
       expect(isConnected, isTrue);
     },
@@ -28,9 +31,7 @@ void main() {
   test(
     'Should check if the connection is offline',
     () async {
-      when(mockConnectivity!)
-          .calls(#checkConnectivity)
-          .thenAnswer((_) async => ConnectivityResult.none);
+      callWhenMockCheckConnectivity(ConnectivityResult.none);
       final isConnected = await networkInfo.isConnected;
       expect(isConnected, isFalse);
     },
