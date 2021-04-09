@@ -15,7 +15,7 @@ void main() {
   });
 
   test(
-    'Should connection is online (WIFI)',
+    'Should check if the connection is online (WIFI)',
     () async {
       when(mockConnectivity!)
           .calls(#checkConnectivity)
@@ -26,7 +26,7 @@ void main() {
   );
 
   test(
-    'Should connection is offline',
+    'Should check if the connection is offline',
     () async {
       when(mockConnectivity!)
           .calls(#checkConnectivity)
