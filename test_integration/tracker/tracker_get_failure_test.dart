@@ -53,11 +53,13 @@ void main() {
     await expectLater(find.byKey(const Key('try_again')), findsOneWidget);
   }
 
+  // ignore: always_declare_return_types
+  callWhenMockTrackerRepositoryGet() => when(mockTrackerRepository).calls(#get);
+
   testWidgets(
     'Should show failure page when there is connection problem',
     (tester) async {
-      when(mockTrackerRepository)
-          .calls(#get)
+      callWhenMockTrackerRepositoryGet()
           .thenAnswer((_) async => left<Failure, Tracker>(Failure.isNotConnected()));
       await mainBody(tester);
       await expectLater(
@@ -72,8 +74,7 @@ void main() {
   testWidgets(
     'Should show failure page when there is server error',
     (tester) async {
-      when(mockTrackerRepository)
-          .calls(#get)
+      callWhenMockTrackerRepositoryGet()
           .thenAnswer((_) async => left<Failure, Tracker>(Failure.serverError()));
       await mainBody(tester);
       await expectLater(
