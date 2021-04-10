@@ -25,14 +25,17 @@ void main() {
     trackerDataEntityMocked = getTrackerDataEntity();
   });
 
-  group('Success request | ', () {
-    void setUpMockClientSuccess() {
-      when(mockClient!).calls(#get).withArgs(
+  // ignore: always_declare_return_types
+  callWhenMockHttpGet() => when(mockClient!).calls(#get).withArgs(
         positional: [any],
         named: {
           #headers: any,
         },
-      ).thenAnswer(
+      );
+
+  group('Success request | ', () {
+    void setUpMockClientSuccess() {
+      callWhenMockHttpGet().thenAnswer(
         (_) async => Response(
           trackerDataJsonMocked!,
           200,
@@ -79,12 +82,7 @@ void main() {
     'Request failure | ',
     () {
       void setUpMockClientFailure404() {
-        when(mockClient!).calls(#get).withArgs(
-          positional: [any],
-          named: {
-            #headers: any,
-          },
-        ).thenAnswer(
+        callWhenMockHttpGet().thenAnswer(
           (_) async => Response(
             'The provided data-source was not found.',
             404,

@@ -31,9 +31,15 @@ void main() {
     trackerDataEntityMocked = getTrackerDataEntity();
   });
 
+  // ignore: always_declare_return_types
+  callWhenMockNetworkIsConnected() => when(mockNetworkInfo!).calls(#isConnected);
+
+  // ignore: always_declare_return_types
+  callWhenMockNetworkGet() => when(mockTrackerDataSource!).calls(#get);
+
   group('Device is NOT connected | ', () {
     void setUpMockDeviceIsNotConnected() {
-      when(mockNetworkInfo!).calls(#isConnected).thenAnswer((_) async => false);
+      callWhenMockNetworkIsConnected().thenAnswer((_) async => false);
     }
 
     test(
@@ -50,15 +56,15 @@ void main() {
     'Device is connected | ',
     () {
       void setUpMockDeviceIsConnected() {
-        when(mockNetworkInfo!).calls(#isConnected).thenAnswer((_) async => true);
+        callWhenMockNetworkIsConnected().thenAnswer((_) async => true);
       }
 
       void setUpMockTrackerDataSourceSuccess() {
-        when(mockTrackerDataSource!).calls(#get).thenAnswer((_) async => trackerDataEntityMocked);
+        callWhenMockNetworkGet().thenAnswer((_) async => trackerDataEntityMocked);
       }
 
       void setUpMockTrackerDataSourceFailure() {
-        when(mockTrackerDataSource!).calls(#get).thenThrow(ServerException());
+        callWhenMockNetworkGet().thenThrow(ServerException());
       }
 
       test(
