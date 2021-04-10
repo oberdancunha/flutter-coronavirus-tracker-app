@@ -42,12 +42,14 @@ void main() {
     await Future<void>.value();
   }
 
+  // ignore: always_declare_return_types
+  callMockTrackerRepositoryGet() => when(mockTrackerRepository!).calls(#get);
+
   group(
     'Repository success | ',
     () {
       void setUpMockTrackerRepositoryGetSuccess() {
-        when(mockTrackerRepository!)
-            .calls(#get)
+        callMockTrackerRepositoryGet()
             .thenAnswer((_) async => right<Failure, Tracker>(trackerDataEntityMocked!));
       }
 
@@ -104,8 +106,7 @@ void main() {
       test(
         'Should state be loading and error sequentially and error should be Failure.serverError',
         () async {
-          when(mockTrackerRepository!)
-              .calls(#get)
+          callMockTrackerRepositoryGet()
               .thenAnswer((_) async => left<Failure, Tracker>(Failure.serverError()));
           await setUpLoadAndWaitResult();
           expect(
