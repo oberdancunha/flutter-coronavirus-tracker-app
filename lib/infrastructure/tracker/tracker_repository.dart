@@ -6,6 +6,7 @@ import '../../domain/core/failures.dart';
 import '../../domain/tracker/i_tracker_data_source.dart';
 import '../../domain/tracker/i_tracker_repository.dart';
 import '../../domain/tracker/tracker.dart';
+import 'tracker_dto.dart';
 
 class TrackerRepository implements ITrackerRepository {
   final INetworkInfo networkInfo;
@@ -20,9 +21,10 @@ class TrackerRepository implements ITrackerRepository {
   Future<Either<Failure, Tracker>> get() async {
     if (await networkInfo.isConnected) {
       try {
-        final trackerResult = await trackerDataSource.get();
+        final trackerResultBody = await trackerDataSource.get();
+        final trackerResult = TrackerDto.fromApi(trackerResultBody).toDomain();
 
-        return right(trackerResult!);
+        return right(trackerResult);
       } on ServerException {
         return left(Failure.serverError());
       }

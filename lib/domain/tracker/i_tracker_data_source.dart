@@ -1,5 +1,3 @@
-import 'tracker.dart';
-
 abstract class ITrackerDataSource {
-  Future<Tracker?> get();
+  Future<Map<String, dynamic>> get();
 }
