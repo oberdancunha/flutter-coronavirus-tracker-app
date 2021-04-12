@@ -6,9 +6,9 @@ import 'package:coronavirus_tracker_app/core/exceptions/server_exception.dart';
 import 'package:coronavirus_tracker_app/core/network/i_network_info.dart';
 import 'package:coronavirus_tracker_app/domain/core/failures.dart';
 import 'package:coronavirus_tracker_app/domain/tracker/i_tracker_data_source.dart';
-import 'package:coronavirus_tracker_app/domain/tracker/tracker.dart';
 import 'package:coronavirus_tracker_app/infrastructure/tracker/tracker_repository.dart';
 
+import '../../data/json_reader.dart';
 import '../../data/utils.dart';
 
 class MockNetworkInfo extends Mock implements INetworkInfo {}
@@ -19,7 +19,7 @@ void main() {
   MockNetworkInfo? mockNetworkInfo;
   MockTrackerDataSource? mockTrackerDataSource;
   late TrackerRepository trackerRepository;
-  Tracker? trackerDataEntityMocked;
+  late Map<String, dynamic> trackerDataJsonMocked;
 
   setUpAll(() {
     mockNetworkInfo = MockNetworkInfo();
@@ -28,7 +28,7 @@ void main() {
       networkInfo: mockNetworkInfo!,
       trackerDataSource: mockTrackerDataSource!,
     );
-    trackerDataEntityMocked = getTrackerDataEntity();
+    trackerDataJsonMocked = jsonReader('tracker_data_mocked.json')!;
   });
 
   // ignore: always_declare_return_types
@@ -60,7 +60,7 @@ void main() {
       }
 
       void setUpMockTrackerDataSourceSuccess() {
-        callWhenMockNetworkGet().thenAnswer((_) async => trackerDataEntityMocked);
+        callWhenMockNetworkGet().thenAnswer((_) async => trackerDataJsonMocked);
       }
 
       void setUpMockTrackerDataSourceFailure() {
@@ -82,6 +82,7 @@ void main() {
         () async {
           setUpMockDeviceIsConnected();
           setUpMockTrackerDataSourceSuccess();
+          final trackerDataEntityMocked = getTrackerDataEntity();
           final trackerResult = await trackerRepository.get();
           expect(trackerResult, equals(right(trackerDataEntityMocked)));
         },
