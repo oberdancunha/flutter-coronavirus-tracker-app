@@ -4,25 +4,25 @@ import 'package:matcher/matcher.dart';
 import 'package:mocktail/mocktail.dart';
 
 import 'package:coronavirus_tracker_app/core/exceptions/server_exception.dart';
-import 'package:coronavirus_tracker_app/domain/tracker/tracker.dart';
 import 'package:coronavirus_tracker_app/infrastructure/tracker/tracker_data_source.dart';
 
 import '../../data/json_reader.dart';
-import '../../data/utils.dart';
 
 class MockClient extends Mock implements Client {}
 
 void main() {
   MockClient? mockClient;
   late TrackerDataSource trackerDataSource;
-  String? trackerDataJsonMocked;
-  Tracker? trackerDataEntityMocked;
+  late Map<String, dynamic> trackerDataJsonMocked;
+  late String trackerDataStringMocked;
+  late String trackerDataMockedJsonFile;
 
   setUpAll(() {
     mockClient = MockClient();
     trackerDataSource = TrackerDataSource(mockClient);
-    trackerDataJsonMocked = jsonReaderToString('tracker_data_mocked.json');
-    trackerDataEntityMocked = getTrackerDataEntity();
+    trackerDataMockedJsonFile = 'tracker_data_mocked.json';
+    trackerDataJsonMocked = jsonReader(trackerDataMockedJsonFile)!;
+    trackerDataStringMocked = jsonReaderToString(trackerDataMockedJsonFile);
   });
 
   // ignore: always_declare_return_types
@@ -37,7 +37,7 @@ void main() {
     void setUpMockClientSuccess() {
       callWhenMockHttpGet().thenAnswer(
         (_) async => Response(
-          trackerDataJsonMocked!,
+          trackerDataStringMocked,
           200,
         ),
       );
@@ -66,13 +66,13 @@ void main() {
     );
 
     test(
-      'Should return the Tracker (entity) when status code is 200 (success)',
+      'Should return the Tracker json when status code is 200 (success)',
       () async {
         setUpMockClientSuccess();
         final trackerData = await trackerDataSource.get();
         expect(
           trackerData,
-          equals(trackerDataEntityMocked),
+          equals(trackerDataJsonMocked),
         );
       },
     );

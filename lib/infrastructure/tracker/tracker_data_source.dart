@@ -5,8 +5,6 @@ import 'package:http/http.dart';
 import '../../core/constants.dart';
 import '../../core/exceptions/server_exception.dart';
 import '../../domain/tracker/i_tracker_data_source.dart';
-import '../../domain/tracker/tracker.dart';
-import '../../infrastructure/tracker/tracker_dto.dart';
 
 class TrackerDataSource implements ITrackerDataSource {
   final Client? client;
@@ -14,7 +12,7 @@ class TrackerDataSource implements ITrackerDataSource {
   TrackerDataSource(this.client);
 
   @override
-  Future<Tracker?> get() async {
+  Future<Map<String, dynamic>> get() async {
     final uri = Uri.https(
       mainUrl,
       locationUrl,
@@ -28,9 +26,7 @@ class TrackerDataSource implements ITrackerDataSource {
       headers: {'content-Type': 'accept: application/json'},
     );
     if (trackerResponse.statusCode == 200) {
-      return TrackerDto.fromApi(
-        json.decode(trackerResponse.body) as Map<String, dynamic>,
-      ).toDomain();
+      return json.decode(trackerResponse.body) as Map<String, dynamic>;
     } else {
       throw ServerException();
     }
