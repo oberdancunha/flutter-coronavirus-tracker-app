@@ -1,0 +1,45 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Flutter coronavirus tracker app",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": ["--no-sound-null-safety"]
+    },
+    {
+      "name": "Flutter coronavirus tracker test",
+      "request": "launch",
+      "type": "dart",
+      "program": "./test"
+    },
+    {
+      "name": "Flutter coronavirus tracker contamination page test",
+      "request": "launch",
+      "type": "dart",
+      "program": "./test_integration/contamination/contamination_page_test.dart",
+    },
+    {
+      "name": "Flutter coronavirus tracker location page test",
+      "request": "launch",
+      "type": "dart",
+      "program": "./test_integration/location/location_page_test.dart",
+    },
+    {
+      "name": "Flutter coronavirus tracker location table page test",
+      "request": "launch",
+      "type": "dart",
+      "program": "./test_integration/location/location_table_page_test.dart",
+    },
+    {
+      "name": "Flutter coronavirus tracker failure",
+      "request": "launch",
+      "type": "dart",
+      "program": "./test_integration/tracker/tracker_get_failure_test.dart",
+    }
+  ]
+}
