@@ -85,3 +85,11 @@ Ao final da página tem um botão chamando **Try again**, permitindo que o usuá
 ## API de consulta
 
 <https://coronavirus-tracker-api.herokuapp.com>
+
+## Imagem de erro desconhecido
+
+<https://www.clipartkey.com/view/mhiohm_robot-error-404-png/>
+
+## Imagem de erro de conexão
+
+<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
